@@ -1,0 +1,322 @@
+/* latin */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v22/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvXDXbtM.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v22/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKebunDXbtM.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v7/rnCs-xNNww_2s0amA9uSsG3BafY.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v7/rnCs-xNNww_2s0amA9uetG3BafY.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Spectral';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v7/rnCu-xNNww_2s0amA9M8qtHEWfSFXQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v7/rnCs-xNNww_2s0amA9uCt23BafY.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Spectral';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v7/rnCu-xNNww_2s0amA9M8qsHDWfSFXQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Spectral';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v7/rnCu-xNNww_2s0amA9M8qt3AWfSFXQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Spectral SC';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectralsc/v6/Ktk0ALCRZonmalTgyPmRfs0OwXTQN4Y.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root
+{
+	/* A good Title font should have a beautiful Ampersand (&) and ligatures */
+	--font-title: 'Playfair Display', serif;
+	--default-font: 'Spectral', -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
+
+  /*
+		Font size variables, made with https://type-scale.com/ and https://fluid-typography.netlify.app/
+		Major Second scale of 1.20 seems comfortable on my phone
+		Minor Third scale of 1.125 seems good on desktop
+	*/
+  --fz1: calc(var(--editor-font-size) / var(--text-scale));
+  --fz2: 1rem;
+  --fz3: clamp(1.125rem, 12vw - 3.7rem, 1.2rem);
+  --fz4: clamp(1.266rem, 12vw - 3.7rem, 1.44rem);
+  --fz5: clamp(1.424rem, 12vw - 3.7rem, 1.728rem);
+  --fz6: clamp(1.602rem, 12vw - 3.7rem, 2.074rem);
+  --fz7: clamp(1.802rem, 12vw - 3.7rem, 2.488rem);
+  --fz8: clamp(2.027rem, 12vw - 3.7rem, 2.986rem);
+}
+
+body.type-scale-none {
+    --fz1: 1rem;
+    --fz2: 1rem;
+    --fz3: 1rem;
+    --fz4: 1rem;
+    --fz5: 1rem;
+    --fz6: 1rem;
+    --fz7: 1rem;
+    --fz8: 1rem;
+}
+body.type-scale-minor {
+  --fz3: 1rem;
+  --fz4: clamp(1rem, 12vw - 3.7rem, 1.1rem);
+  --fz5: clamp(1rem, 12vw - 3.7rem, 1.2rem);
+  --fz6: clamp(1.125rem, 12vw - 3.7rem, 1.3rem);
+  --fz7: clamp(1.125rem, 12vw - 3.7rem, 1.4rem);
+  --fz8: clamp(1.125rem, 12vw - 3.7rem, 1.5rem);
+}
+
+body.css-settings-manager {
+  font-size: var(--editor-font-size);
+}
+
+.theme-light {
+
+}
+
+.theme-dark {
+  --text-accent: hsl(248,75%,79%);
+}
+
+.cm-s-obsidian .cm-header,
+h2, h3, h4, h5, h6 {
+	font-weight: 300;
+}
+
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6 {
+	letter-spacing: -0.05em;
+}
+
+.markdown-preview-view h2 {
+	font-size: var(--fz7);
+	letter-spacing: -0.05em;
+}
+
+.markdown-preview-view h3 {
+	font-size: var(--fz6);
+	letter-spacing: -0.05em;
+}
+
+.markdown-preview-view h4 {
+	font-size: var(--fz5);
+}
+
+.markdown-preview-view h5 {
+	font-size: var(--fz4);
+}
+
+.markdown-preview-view h6 {
+	font-size: var(--fz3);
+}
+
+a,
+.markdown-preview-view .internal-link {
+	text-decoration: none;
+	font-family: 'Spectral SC', 'Spectral';
+	/* This CSS property should work, but the font seems not configured correctly. */
+	font-variant: small-caps;
+}
+
+.cm-header-1,
+.markdown-preview-view h1 {
+	font-family: var(--font-title);
+	font-size: var(--fz8);
+}
+
+.markdown-preview-section.markdown-preview-section h1 {
+	text-align: center;
+}
+
+.markdown-preview-view hr {
+	border-width: 1px 0 0;
+	border-style: dotted;
+}
+
+ul {
+	list-style-type: circle;
+}
+
+.markdown-preview-view blockquote {
+  margin: 0;
+}
+
+/* GRAPH */
+
+.graph-view.color-fill {}
+.theme-light .graph-view.color-fill-tag {
+  color: hsl(30, 79%, 49%);
+}
+.theme-dark .graph-view.color-fill-tag {
+  color: hsl(30, 69%, 59%);
+}
+.theme-light .graph-view.color-fill-attachment {
+  color: hsl(0, 74%, 37%);
+}
+.theme-dark .graph-view.color-fill-attachment {
+  color: hsl(0, 64%, 42%);
+}
+.graph-view.color-fill-unresolved {}
+.graph-view.color-fill-highlight {}
+
+
+.markdown-preview-section iframe {
+  width: 100%;
+}
+
+.dek {text-align: center;}
+
+/* Blockquotes > */
+.markdown-preview-view blockquote {
+	/* An attempt at steady vertical rhythm, by eye. Could be more precise with better tooling. */
+	margin-top: calc(var(--editor-font-size) * 1.5);
+}
+
+/* @settings
+
+name: Typomagical settings
+id: typomagical-settings
+settings:
+    -
+        id: theme-variant
+        title: Theme variant
+        description: Palette swaps. Don't see one you like? Let me know on forum.obsidian.md/u/hungsu!
+        type: class-select
+        allowEmpty: false
+        default: obsidian
+        options:
+            - obsidian
+            - ficus-ruby
+    -
+        id: ligatures
+        title: Ligatures
+        description: Decorative conjoined characters, such as the "ffi" in "office" and "ft" in "often".
+        type: variable-select
+        default: common-ligatures
+        options:
+            - common-ligatures
+            - no-common-ligatures
+    -
+        id: text-scale
+        title: Text scale
+        description: The rate of growth between text and heading sizes. None means headings and body text are the same size. Minor means only slight difference between body and headings. Major means dramatic change in size.
+        type: class-select
+        allowEmpty: false
+        default: minor
+        options:
+            -
+                label: None
+                value: type-scale-none
+            -
+                label: Minor
+                value: type-scale-minor
+            -
+                label: Major
+                value: type-scale-major
+*/
+
+.CodeMirror .CodeMirror-line,
+body.css-settings-manager {
+  font-variant-ligatures: var(--ligatures);
+}
+
+body.ficus-ruby {
+  --background-primary: #305654;
+  --background-primary-alt: #1E3735;
+  --background-secondary: #305654;
+  --background-secondary-alt: #1E3735;
+  --background-accent: #fff;
+  --background-modifier-border: #E8AA99;
+  --background-modifier-form-field: rgba(0, 0, 0, 0.2);
+  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.5);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-success: #197300;
+  --background-modifier-error: #361C1E;
+  --background-modifier-error-rgb: 61, 0, 0;
+  --background-modifier-error-hover: #563032;
+  --background-modifier-cover: rgba(0, 0, 0, 0.6);
+  --text-accent: #FA858F;
+  --text-accent-hover: #F4465D;
+  --text-normal: #F9EAD9;
+  --text-muted: #d5c4a1;
+  --text-faint: #bdae93;
+  --text-highlight-bg: rgba(181, 118, 20, 0.5);
+  --text-error: #800000;
+  --text-error-hover: #990000;
+  --text-selection: rgba(89, 75, 95, 0.99);
+  --text-on-accent: #fbf1c7;
+  --interactive-normal: #F4465D;
+  --interactive-hover: #F9A8B1;
+  --interactive-accent: #F4465D;
+  --interactive-accent-rgb: 123, 108, 217;
+  --interactive-accent-hover: #F9A8B1;
+  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.4);
+  --scrollbar-bg: rgba(0, 0, 0, 0.05);
+  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.2);
+  --text-title-h1: #F4465D;
+  --text-title-h2: #9ABB9A;
+  --text-title-h3: #C1C287;
+  --text-title-h4: #689d6a;
+  --text-title-h5: #F1B8B2;
+  --text-title-h6: #b16286;
+  --inline-code: #b48ead;
+  --code-block: #b48ead;
+  --pre-code-bg: rgba(0, 0, 0, 0.2);
+  --blockquote-border: #b57614;
+  --vim-cursor: #d65d0e;
+  --border-color: #504945;
+  --hover-bg: rgba(0, 0, 0, 0.5);
+}
+
+
+body.ficus-ruby .suggestion-item.is-selected {
+  background-color: var(--text-accent-hover);
+}
