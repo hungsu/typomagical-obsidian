@@ -81,30 +81,31 @@
 
   /*
 		Font size variables, made with https://type-scale.com/ and https://fluid-typography.netlify.app/
-		Major Second scale of 1.20 seems comfortable on my phone
-		Minor Third scale of 1.125 seems good on desktop
+		Major Second scale of 1.125 seems comfortable on my phone
+		Minor Third scale of 1.2 seems good on desktop
 	*/
-  --fz1: calc(var(--editor-font-size) / var(--text-scale));
-  --fz2: 1rem;
-  --fz3: clamp(1.125rem, 12vw - 3.7rem, 1.2rem);
-  --fz4: clamp(1.266rem, 12vw - 3.7rem, 1.44rem);
-  --fz5: clamp(1.424rem, 12vw - 3.7rem, 1.728rem);
-  --fz6: clamp(1.602rem, 12vw - 3.7rem, 2.074rem);
-  --fz7: clamp(1.802rem, 12vw - 3.7rem, 2.488rem);
-  --fz8: clamp(2.027rem, 12vw - 3.7rem, 2.986rem);
+  --fz1: 0.833em;
+  --fz2: 1em;
+  --fz3: clamp(1.125em, calc(1rem + 3vw), 1.2em);
+  --fz4: clamp(1.266em, calc(1rem + 3vw), 1.44em);
+  --fz5: clamp(1.424em, calc(1rem + 3vw), 1.728em);
+  --fz6: clamp(1.602em, calc(1rem + 3vw), 2.074em);
+  --fz7: clamp(1.802em, calc(1rem + 3vw), 2.488em);
+  --fz8: clamp(2.027em, calc(1rem + 3vw), 2.986em);
 }
 
 body.type-scale-none {
-    --fz1: 1rem;
-    --fz2: 1rem;
-    --fz3: 1rem;
-    --fz4: 1rem;
-    --fz5: 1rem;
-    --fz6: 1rem;
-    --fz7: 1rem;
-    --fz8: 1rem;
+    --fz1: var(--editor-font-size);
+    --fz2: var(--editor-font-size);
+    --fz3: var(--editor-font-size);
+    --fz4: var(--editor-font-size);
+    --fz5: var(--editor-font-size);
+    --fz6: var(--editor-font-size);
+    --fz7: var(--editor-font-size);
+    --fz8: var(--editor-font-size);
 }
-body.type-scale-minor {
+
+body.type-scale-slight {
   --fz3: 1rem;
   --fz4: clamp(1rem, 12vw - 3.7rem, 1.1rem);
   --fz5: clamp(1rem, 12vw - 3.7rem, 1.2rem);
@@ -113,8 +114,44 @@ body.type-scale-minor {
   --fz8: clamp(1.125rem, 12vw - 3.7rem, 1.5rem);
 }
 
-body.css-settings-manager {
-  font-size: var(--editor-font-size);
+/* 1.125 */
+body.type-scale-minor-second {
+  --fz3: 1.067em;
+  --fz4: 1.138em;
+  --fz5: 1.215em;
+  --fz6: 1.296em;
+  --fz7: 1.383em;
+  --fz8: 1.476em;
+}
+
+/* 1.125 */
+body.type-scale-major-second {
+  --fz3: 1.125em;
+  --fz4: 1.266em;
+  --fz5: 1.424em;
+  --fz6: 1.602em;
+  --fz7: 1.802em;
+  --fz8: 2.027em;
+}
+
+/* 1.2 */
+body.type-scale-minor-third {
+  --fz3: 1.2em;
+  --fz4: 1.44em;
+  --fz5: 1.728em;
+  --fz6: 2.074em;
+  --fz7: 2.488em;
+  --fz8: 2.986em;
+}
+
+/* 1.25 */
+body.type-scale-major-third {
+  --fz3: 1.25em;
+  --fz4: 1.563em;
+  --fz5: 1.953em;
+  --fz6: 2.441em;
+  --fz7: 3.052em;
+  --fz8: 3.815em;
 }
 
 .theme-light {
@@ -126,8 +163,21 @@ body.css-settings-manager {
 }
 
 .cm-s-obsidian .cm-header,
-h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
 	font-weight: 300;
+}
+
+.headings-h1-bold h1,
+.headings-bold h1 {
+	font-weight: 600;
+}
+
+.headings-bold h2,
+.headings-bold h3,
+.headings-bold h4,
+.headings-bold h5,
+.headings-bold h6 {
+	font-weight: 600;
 }
 
 .markdown-preview-view h4,
@@ -235,6 +285,7 @@ settings:
         options:
             - obsidian
             - ficus-ruby
+            - obsidian-high-contrast
     -
         id: ligatures
         title: Ligatures
@@ -242,25 +293,51 @@ settings:
         type: variable-select
         default: common-ligatures
         options:
-            - common-ligatures
-            - no-common-ligatures
+            -
+                label: On
+                value: common-ligatures
+            -
+                label: Off
+                value: no-common-ligatures
     -
         id: text-scale
         title: Text scale
-        description: The rate of growth between text and heading sizes. None means headings and body text are the same size. Minor means only slight difference between body and headings. Major means dramatic change in size.
+        description: The rate of growth between text and heading sizes. No scaling means headings and body text are the same size. Blank means Typomagical will attempt to choose the right scale based on your screen size.
         type: class-select
-        allowEmpty: false
-        default: minor
+        allowEmpty: true
+        default: none
         options:
             -
-                label: None
+                label: 1.00 No scaling
                 value: type-scale-none
             -
-                label: Minor
-                value: type-scale-minor
+                label: 1.067 Minor Second
+                value: type-scale-minor-second
             -
-                label: Major
-                value: type-scale-major
+                label: 1.125 Major Second
+                value: type-scale-major-second
+            -
+                label: 1.20 Minor Third
+                value: type-scale-minor-third
+            -
+                label: 1.25 Major Third
+                value: type-scale-major-third
+    -
+        id: heading-weight
+        title: Heading bold
+        type: class-select
+        allowEmpty: false
+        default: headings-h1-bold
+        options:
+            -
+                label: All headings are not bold
+                value: headings-regular
+            -
+                label: Only H1 is Bold
+                value: headings-h1-bold
+            -
+                label: All headings are Bold
+                value: headings-bold
 */
 
 .CodeMirror .CodeMirror-line,
@@ -316,7 +393,27 @@ body.ficus-ruby {
   --hover-bg: rgba(0, 0, 0, 0.5);
 }
 
-
 body.ficus-ruby .suggestion-item.is-selected {
   background-color: var(--text-accent-hover);
+}
+
+body.obsidian-high-contrast.theme-light {
+  --background-secondary: #fff;
+  --background-secondary-alt: #fff;
+  --text-accent: hsl(250, 65%, 50%);
+}
+
+body.obsidian-high-contrast.theme-dark {
+  --background-primary: hsl(0,0%,0%);
+  --background-primary-alt: black;
+  --background-secondary: hsl(0,0%,0%);
+}
+
+body.obsidian-high-contrast.theme-dark .checkbox-container {
+  box-shadow: 0 0 2px white;
+}
+
+body.obsidian-high-contrast.theme-dark .tooltip {
+  background-color: white;
+  color: black;
 }
