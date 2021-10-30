@@ -1,5 +1,5 @@
 
-![Screenshot](Typomagical.jpg)
+![Screenshot](https://raw.githubusercontent.com/hungsu/typomagical-obsidian/main/Typomagical.gif)
 
 # Typomagical for Obsidian
 
