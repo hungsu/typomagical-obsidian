@@ -122,15 +122,16 @@
 		Font size variables, made with https://type-scale.com/ and https://fluid-typography.netlify.app/
 		Major Second scale of 1.125 seems comfortable on my phone
 		Minor Third scale of 1.2 seems good on desktop
+    window width where things start to wrap when Readable line length setting is turned on seems to be around 782px
 	*/
   --fz1: 0.833em;
   --fz2: 1em;
   --fz3: clamp(1.125em, calc(1rem + 3vw), 1.2em);
   --fz4: clamp(1.266em, calc(1rem + 3vw), 1.44em);
   --fz5: clamp(1.424em, calc(1rem + 3vw), 1.728em);
-  --fz6: clamp(1.602em, calc(1rem + 3vw), 2.074em);
-  --fz7: clamp(1.802em, calc(1rem + 3vw), 2.488em);
-  --fz8: clamp(2.027em, calc(1rem + 3vw), 2.986em);
+  --fz6: clamp(1.602em, calc(0.8rem + 2.5vw), 2.074em);
+  --fz7: clamp(1.802em, calc(0.6rem + 3.7vw), 2.488em);
+  --fz8: clamp(2.027em, calc(0.4rem + 5.1vw), 2.986em);
 }
 
 body.type-scale-none {
