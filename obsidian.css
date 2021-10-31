@@ -319,6 +319,17 @@ ul {
 	margin-top: calc(var(--editor-font-size) * 1.5);
 }
 
+.markdown-preview-view th {
+  border-top-color: transparent;
+}
+
+.markdown-preview-view td,
+.markdown-preview-view th {
+  text-align: left;
+  border-right-color: transparent;
+  border-left-color: transparent;
+}
+
 /* @settings
 
 name: Typomagical text settings
