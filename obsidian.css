@@ -626,4 +626,9 @@ body.obsidian-high-contrast.theme-dark .suggestion-item.is-selected {
   border-right-color: transparent;
 }
 
+/* File explorer */
+/* The name of the vault */
+.mod-root > .nav-folder-title .nav-folder-title-content {
+  /* font-family: var(--font-title); */
+  font-weight: 700;
 }
