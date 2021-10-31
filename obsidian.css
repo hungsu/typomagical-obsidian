@@ -379,12 +379,73 @@ settings:
                 value: headings-bold
 */
 
-.CodeMirror .CodeMirror-line,
-body.css-settings-manager {
-  font-variant-ligatures: var(--ligatures);
+
+/* @settings
+
+name: Typomagical colour settings
+id: typomagical-colour
+settings:
+    -
+        id: theme-variant
+        title: Theme variant
+        description: Palette swaps. Don't see one you like? Let me know on forum.obsidian.md/u/hungsu!
+        type: class-select
+        allowEmpty: false
+        default: ficus-ruby
+        options:
+            -
+              label: Obsidian
+              value: obsidian
+            -
+              label: Ficus Ruby
+              value: ficus-ruby
+            -
+              label: Obsidian High Contrast
+              value: obsidian-high-contrast
+*/
+/* Same as Obsidian's default triangle but with #C94458 as fill colour. https://yoksel.github.io/url-encoder/ */
+.ficus-ruby .dropdown {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='292.4' height='292.4'%3E%3Cpath fill='%23C94458' d='M287 69.4a17.6 17.6 0 0 0-13-5.4H18.4c-5 0-9.3 1.8-12.9 5.4A17.6 17.6 0 0 0 0 82.2c0 5 1.8 9.3 5.4 12.9l128 127.9c3.6 3.6 7.8 5.4 12.8 5.4s9.2-1.8 12.8-5.4L287 95c3.5-3.5 5.4-7.8 5.4-12.8 0-5-1.9-9.2-5.5-12.8z'/%3E%3C/svg%3E%0A");
+}
+body.ficus-ruby.theme-light {
+  --background-primary: #F5F5F5;
+  --background-primary-alt: #D7E0E0;
+  --background-secondary: #B0C6C2;
+  --background-secondary-alt: #D7E0E0;
+  --background-modifier-border: #D7E0E0;
+  --background-modifier-form-field: #fff;
+  --background-modifier-form-field-highlighted: #fff;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-success: #A4E7C3;
+  --background-modifier-error: #990000;
+  --background-modifier-error-rgb: 230, 135, 135;
+  --background-modifier-error-hover: #bb0000;
+  --background-modifier-cover: rgba(0, 0, 0, 0.8);
+  --text-accent: #577A6F;
+  --text-accent-hover: #C94458;
+  --text-normal: #333834;
+  --text-muted: #525E5B;
+  --text-muted-rgb: 136, 136, 136;
+  --text-faint: #525E5B;
+  --text-error: #800000;
+  --text-error-hover: #990000;
+  --text-highlight-bg: rgba(201, 68, 88, .3);
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+  --text-selection: rgba(242, 186, 179, .66);
+  --text-on-accent: #f2f2f2;
+  --interactive-normal: #f2f3f5;
+  --interactive-hover: #e9e9e9;
+  --interactive-accent: #C94458;
+  --interactive-accent-rgb: 201, 68, 88;
+  --interactive-accent-hover: #C94458;
+  --interactive-success: #333834;
+  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
+  --scrollbar-bg: rgba(0, 0, 0, 0.05);
+  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
+  --highlight-mix-blend-mode: darken;
 }
 
-body.ficus-ruby {
+body.ficus-ruby.theme-dark {
   --background-primary: #305654;
   --background-primary-alt: #1E3735;
   --background-secondary: #305654;
@@ -432,7 +493,17 @@ body.ficus-ruby {
   --hover-bg: rgba(0, 0, 0, 0.5);
 }
 
-body.ficus-ruby .suggestion-item.is-selected {
+body.ficus-ruby.theme-light .is-selected kbd {
+  background-color: var(--background-secondary-alt);
+}
+
+body.ficus-ruby.theme-light .view-header {
+  border-top: 1px solid var(--background-primary-alt);
+  border-bottom: 2px solid var(--background-primary-alt);
+  background-color: var(--background-primary-alt);
+}
+
+body.ficus-ruby.theme-dark .suggestion-item.is-selected {
   background-color: var(--text-accent-hover);
 }
 
