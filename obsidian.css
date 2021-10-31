@@ -622,4 +622,8 @@ body.obsidian-high-contrast.theme-dark .suggestion-item.is-selected {
   padding: 1em;
 }
 
+.workspace-ribbon.mod-left.is-collapsed {
+  border-right-color: transparent;
+}
+
 }
