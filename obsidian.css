@@ -330,6 +330,15 @@ ul {
   border-left-color: transparent;
 }
 
+/* Wrap long nav text*/
+.nav-file-title,
+.nav-folder-title,
+.nav-file-title-content,
+.nav-folder-title-content {
+    white-space: normal;
+    width: auto;
+}
+
 /* @settings
 
 name: Typomagical text settings
