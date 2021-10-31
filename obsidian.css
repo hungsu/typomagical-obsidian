@@ -618,4 +618,8 @@ body.obsidian-high-contrast.theme-dark .suggestion-item.is-selected {
   background: var(--background-primary);
 }
 
+.markdown-embed .markdown-preview-view {
+  padding: 1em;
+}
+
 }
