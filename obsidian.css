@@ -610,4 +610,12 @@ body.obsidian-high-contrast.theme-dark .suggestion-item.is-selected {
 }
 
 
+
+/* The Link icon when we embed with ![[]] */
+.markdown-embed-link {
+  right: 1em;
+  top: -0.6em;
+  background: var(--background-primary);
+}
+
 }
