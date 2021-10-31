@@ -203,12 +203,16 @@ body.type-scale-major-third {
 }
 
 .cm-s-obsidian .cm-header,
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
 	font-weight: 300;
 }
 
-.headings-h1-bold h1,
-.headings-bold h1 {
+.headings-regular h1 {
+  font-weight: 300;
+}
+
+/* This .cm-s-obsidian selector is only to override .cm-s-obsidian .cm-header */
+.cm-s-obsidian .cm-header.cm-header-1 {
 	font-weight: 600;
 }
 
@@ -259,7 +263,12 @@ a,
 .cm-header-1,
 .markdown-preview-view h1 {
 	font-family: var(--font-title);
-	font-size: var(--fz8);
+	font-size: calc(var(--fz8) * 1.2);
+}
+
+.css-settings-manager .cm-header-1,
+.css-settings-manager .markdown-preview-view h1 {
+	font-family: var(--heading-font), var(--font-title);
 }
 
 .markdown-preview-section.markdown-preview-section h1 {
@@ -312,33 +321,25 @@ ul {
 
 /* @settings
 
-name: Typomagical settings
-id: typomagical-settings
+name: Typomagical text settings
+id: typomagical-text
 settings:
-    -
-        id: theme-variant
-        title: Theme variant
-        description: Palette swaps. Don't see one you like? Let me know on forum.obsidian.md/u/hungsu!
-        type: class-select
-        allowEmpty: false
-        default: obsidian
-        options:
-            - obsidian
-            - ficus-ruby
-            - obsidian-high-contrast
     -
         id: ligatures
         title: Ligatures
         description: Decorative conjoined characters, such as the "ffi" in "office" and "ft" in "often".
-        type: variable-select
-        default: common-ligatures
+        type: class-select
+        default: heading-ligatures
         options:
             -
-                label: On
-                value: common-ligatures
+                label: All ligatures
+                value: all-ligatures
             -
-                label: Off
-                value: no-common-ligatures
+                label: Ligatures on headings
+                value: heading-ligatures
+            -
+                label: No ligatures
+                value: no-ligatures
     -
         id: text-scale
         title: Text scale
@@ -378,7 +379,39 @@ settings:
             -
                 label: All headings are Bold
                 value: headings-bold
+    -
+        id: heading-font
+        title: Title font
+        description: Titles are special, and their look should reflect that. Choose a font that suits you!
+        type: variable-select
+        default: Playfair Display
+        options:
+            - Amiri
+            - Bitter
+            - Playfair Display
 */
+
+.CodeMirror .CodeMirror-line {
+  font-variant-ligatures: no-common-ligatures;
+}
+/*
+  Ligatures
+  No class is needed for all-ligatures, because ligatures are enabled by default.
+*/
+body.css-settings-manager.no-ligatures {
+  font-variant-ligatures: no-common-ligatures;
+}
+body.css-settings-manager.heading-ligatures {
+  font-variant-ligatures: no-common-ligatures;
+}
+body.css-settings-manager.heading-ligatures h1,
+body.css-settings-manager.heading-ligatures h2,
+body.css-settings-manager.heading-ligatures h3,
+body.css-settings-manager.heading-ligatures h4,
+body.css-settings-manager.heading-ligatures h5,
+body.css-settings-manager.heading-ligatures h6 {
+  font-variant-ligatures: common-ligatures;
+}
 
 
 /* @settings
