@@ -485,7 +485,7 @@ settings:
         description: Palette swaps. Don't see one you like? Let me know on forum.obsidian.md/u/hungsu!
         type: class-select
         allowEmpty: false
-        default: ficus-ruby
+        default: obsidian
         options:
             -
               label: Obsidian
@@ -493,6 +493,9 @@ settings:
             -
               label: Ficus Ruby
               value: ficus-ruby
+            -
+              label: Vileplume
+              value: vileplume
             -
               label: Obsidian High Contrast
               value: obsidian-high-contrast
@@ -600,6 +603,133 @@ body.ficus-ruby.theme-light .view-header {
 body.ficus-ruby.theme-dark .suggestion-item.is-selected {
   background-color: var(--text-accent-hover);
 }
+
+/* START Vileplume */
+body.vileplume {
+  --dark0:                    hsl(219, 38%, 21%);
+  --dark1:                    hsl(219, 37%, 36%);
+  --dark2:                    hsl(220, 22%, 51%);
+  --dark3:                    hsl(221, 22%, 55%);
+  --light0:                   #d8dee9;
+  --light1:                   #e5e9f0;
+  --light2:                   #eceff4;
+  --frost0:                   #8fbcbb;
+  --frost1:                   #88c0d0;
+  --red53:  hsl(355, 35%, 53%);
+  --red:                      hsl(352, 56%, 62%);
+  --orange:                   #d08770;
+  --yellow59:                 hsl(24, 33%, 59%);
+  --yellow:                   hsl(27, 49%, 68%);
+  --green:                    #a3be8c;
+  --bloddish64:               hsl(204, 24%, 64%);
+  --purple:                   #b48ead;
+
+  --text-title-h1:              var(--red);
+  --text-title-h2:              var(--orange);
+  --text-title-h3:              var(--yellow);
+  --text-title-h4:              var(--green);
+  --text-title-h5:              var(--bloddish64);
+  --text-title-h6:              var(--purple);
+  --text-a:                     var(--yellow);
+  --text-a-hover:               var(--yellow59);
+  --text-mark:                  var(--red);
+  --pre-code:                   var(--dark1);
+  --text-highlight-bg:          var(--red);
+  --interactive-accent:         var(--yellow59);
+  --interactive-accent-hover:   var(--red);
+  --interactive-hover:          var(--dark0);
+  --interactive-before:         var(--dark3);
+  --background-modifier-border: var(--dark2);
+  --text-accent:                var(--orange);
+  --interactive-accent-rgb:     var(--orange);
+  --inline-code:                var(--frost1);
+  --code-block:                 var(--frost1);
+  --vim-cursor:                 var(--orange);
+  --text-selection:             var(--red53); /* Annoying - affects both Edit and Preview, but Preview has translucency */
+}
+
+.vileplume ::-webkit-scrollbar {
+    background-color: transparent;
+}
+.vileplume.theme-dark ::-webkit-scrollbar-thumb {
+    background-color: var(--dark3);
+}
+
+body.vileplume.theme-dark {
+  --background-primary:         var(--dark0);
+  --background-primary-alt:     var(--dark0);
+  --background-secondary:       var(--dark1);
+  --background-secondary-alt:   var(--dark2);
+  --text-normal:                var(--light2);
+  --text-faint:                 var(--light0);
+  --text-muted:                 var(--light1);
+  --text-link:                  var(--frost0);
+  --opacity-translucency:       0.9;
+}
+body.vileplume.theme-light {
+	--background-primary:         var(--light3);
+	--background-primary-alt:     var(--light3);
+	--background-secondary:       var(--light2);
+	--background-secondary-alt:   var(--light1);
+	--text-normal:                var(--dark1);
+	--text-faint:                 var(--dark3);
+	--text-muted:                 var(--dark2);
+	--text-link:                  var(--frost0);
+}
+
+.vileplume .cm-header-1.cm-header-1,
+.vileplume .markdown-preview-section.markdown-preview-section h1
+{
+  color: var(--text-title-h1);
+  text-shadow: 1px 1px rgba(0,0,0,0.05),
+  2px 2px rgba(0,0,0,0.05),
+  3px 3px rgba(0,0,0,0.05),
+  4px 4px rgba(0,0,0,0.05),
+  5px 5px rgba(0,0,0,0.05),
+  6px 6px rgba(0,0,0,0.05),
+  7px 7px rgba(0,0,0,0.05),
+  8px 8px rgba(0,0,0,0.05),
+  9px 9px rgba(0,0,0,0.05)
+}
+
+.vileplume.theme-light .cm-header-1.cm-header-1,
+.vileplume.theme-light .markdown-preview-section.markdown-preview-section h1
+{
+  text-shadow: 1px 1px rgba(0,0,0,0.02),
+  2px 2px rgba(0,0,0,0.02),
+  3px 3px rgba(0,0,0,0.02),
+  4px 4px rgba(0,0,0,0.02),
+  5px 5px rgba(0,0,0,0.02),
+  6px 6px rgba(0,0,0,0.02),
+  7px 7px rgba(0,0,0,0.02),
+  8px 8px rgba(0,0,0,0.02),
+  9px 9px rgba(0,0,0,0.02)
+}
+
+.vileplume .dropdown {
+  background-image: url('https://cdn.discordapp.com/attachments/560318304472793114/808721915627307058/lets_go_arrow.png')
+}
+
+.vileplume .side-dock-ribbon-tab:hover,
+.vileplume .side-dock-ribbon-action:hover,
+.vileplume .side-dock-ribbon-action.is-active:hover,
+.vileplume .nav-action-button:hover,
+.vileplume .side-dock-collapse-btn:hover
+{
+    color: var(--text-a);
+}
+
+.vileplume .graph-view.color-text {
+  color: var(--text-a-hover);
+}
+.vileplume .graph-view.graph-view.color-fill-focused {
+  color: var(--yellow59);
+}
+.vileplume.theme-light .graph-view.color-fill
+{
+    color: var(--light2);
+}
+/* END Vileplume */
 
 body.obsidian-high-contrast.theme-light {
   --background-secondary: #fff;
