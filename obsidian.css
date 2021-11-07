@@ -262,6 +262,7 @@ a,
 
 .cm-header-1,
 .markdown-preview-view h1 {
+  color: var(--text-title-h1);
 	font-family: var(--font-title);
 	font-size: calc(var(--fz8) * 1.2);
 }
@@ -275,6 +276,32 @@ a,
 	text-align: center;
 }
 
+.cm-header-2,
+.markdown-preview-section h2
+{
+  color: var(--text-title-h2);
+}
+.cm-header-3,
+.markdown-preview-section h3
+{
+  color: var(--text-title-h3);
+}
+.cm-header-4,
+.markdown-preview-section h4
+{
+  color: var(--text-title-h4);
+}
+.cm-header-5,
+.markdown-preview-section h5
+{
+  color: var(--text-title-h5);
+}
+.cm-header-6,
+.markdown-preview-section h6
+{
+  color: var(--text-title-h6);
+}
+
 .markdown-preview-view hr {
 	border-width: 1px 0 0;
 	border-style: dotted;
@@ -282,6 +309,19 @@ a,
 
 ul {
 	list-style-type: circle;
+}
+
+
+a,
+.cm-hmd-internal-link
+{
+  color: var(--text-a)
+}
+a:hover,
+.cm-hmd-internal-link:hover,
+.cm-url
+{
+    color: var(--text-a-hover);
 }
 
 .markdown-preview-view blockquote {
@@ -463,10 +503,10 @@ settings:
 }
 body.ficus-ruby.theme-light {
   --background-primary: #F5F5F5;
-  --background-primary-alt: #D7E0E0;
+  --background-primary-alt: hsl(180, 13%, 86%);
   --background-secondary: #B0C6C2;
   --background-secondary-alt: #D7E0E0;
-  --background-modifier-border: #D7E0E0;
+  --background-modifier-border: hsl(45, 27%, 65%);
   --background-modifier-form-field: #fff;
   --background-modifier-form-field-highlighted: #fff;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
@@ -487,6 +527,7 @@ body.ficus-ruby.theme-light {
   --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
   --text-selection: rgba(242, 186, 179, .66);
   --text-on-accent: #f2f2f2;
+  --text-title-h1: hsl(159, 17%, 41%);
   --interactive-normal: #f2f3f5;
   --interactive-hover: #e9e9e9;
   --interactive-accent: #C94458;
@@ -532,7 +573,6 @@ body.ficus-ruby.theme-dark {
   --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.4);
   --scrollbar-bg: rgba(0, 0, 0, 0.05);
   --scrollbar-thumb-bg: rgba(0, 0, 0, 0.2);
-  --text-title-h1: #F4465D;
   --text-title-h2: #9ABB9A;
   --text-title-h3: #C1C287;
   --text-title-h4: #689d6a;
