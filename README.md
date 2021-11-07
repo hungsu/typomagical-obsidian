@@ -9,7 +9,7 @@ An Obsidian theme for typographic appreciators, with support for [Style Settings
 
 ## Features
 
-- No tacky underlines - we achieve everything with  **bold**, *italic*, [small cap]() and ***bold italic***
+- No tacky underlines - we achieve everything with  **bold**, *italic*, [small caps](https://practicaltypography.com/small-caps.html) and ***bold italic***
 - Friendly text sizing
 	- Responds correctly to the Text size slider in settings to Pinch-to-zoom, and to the Ctrl+ shortcut!
 	- Mobile friendly headings - it resizes to small and large screens!
