@@ -613,6 +613,7 @@ body.vileplume {
   --light0:                   #d8dee9;
   --light1:                   #e5e9f0;
   --light2:                   #eceff4;
+  --light3:                   #ffffff;
   --frost0:                   #8fbcbb;
   --frost1:                   #88c0d0;
   --red53:  hsl(355, 35%, 53%);
@@ -675,6 +676,8 @@ body.vileplume.theme-light {
 	--text-faint:                 var(--dark3);
 	--text-muted:                 var(--dark2);
 	--text-link:                  var(--frost0);
+	--text-highlight-bg:          var(--light0);
+	--text-selection:             var(--light0);
 }
 
 .vileplume .cm-header-1.cm-header-1,
@@ -725,10 +728,21 @@ body.vileplume.theme-light {
 .vileplume .graph-view.graph-view.color-fill-focused {
   color: var(--yellow59);
 }
-.vileplume.theme-light .graph-view.color-fill
-{
-    color: var(--light2);
+
+.vileplume.theme-dark .graph-view.color-fill {
+  color: white;
 }
+
+.vileplume.theme-light .graph-view.color-line {
+  color: hsl(83, 26%, 84%)
+}
+.vileplume.theme-light .graph-view.color-fill {
+  color: hsl(126, 26%, 51%);
+}
+.vileplume.theme-light .graph-view.graph-view.color-fill-attachment {
+  color: hsl(25, 83%, 67%)
+}
+
 /* END Vileplume */
 
 body.obsidian-high-contrast.theme-light {
