@@ -698,15 +698,14 @@ body.vileplume.theme-light {
 .vileplume.theme-light .cm-header-1.cm-header-1,
 .vileplume.theme-light .markdown-preview-section.markdown-preview-section h1
 {
-  text-shadow: 1px 1px rgba(0,0,0,0.02),
-  2px 2px rgba(0,0,0,0.02),
-  3px 3px rgba(0,0,0,0.02),
-  4px 4px rgba(0,0,0,0.02),
-  5px 5px rgba(0,0,0,0.02),
-  6px 6px rgba(0,0,0,0.02),
-  7px 7px rgba(0,0,0,0.02),
-  8px 8px rgba(0,0,0,0.02),
-  9px 9px rgba(0,0,0,0.02)
+  text-shadow: 1px 1px rgba(235,235,235,0.5),
+    2px 2px rgba(235,235,235,0.5),
+    3px 3px rgba(235,235,235,0.5),
+    4px 4px rgba(235,235,235,0.4),
+    5px 5px rgba(235,235,235,0.3),
+    6px 6px rgba(235,235,235,0.2),
+    7px 7px rgba(235,235,235,0.1),
+    8px 8px rgba(235,235,235,0.1)
 }
 
 .vileplume .dropdown {
