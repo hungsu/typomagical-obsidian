@@ -678,6 +678,8 @@ body.vileplume.theme-light {
 	--text-link:                  var(--frost0);
 	--text-highlight-bg:          var(--light0);
 	--text-selection:             var(--light0);
+  --text-a-hover:               var(--yellow);
+  --text-a:                     var(--yellow59);
 }
 
 .vileplume .cm-header-1.cm-header-1,
