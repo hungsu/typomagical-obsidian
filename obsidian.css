@@ -518,7 +518,7 @@ body.ficus-ruby.theme-light {
   --background-modifier-error-rgb: 230, 135, 135;
   --background-modifier-error-hover: #bb0000;
   --background-modifier-cover: rgba(0, 0, 0, 0.8);
-  --text-accent: #577A6F;
+  --text-accent: #800000;
   --text-accent-hover: #C94458;
   --text-normal: #333834;
   --text-muted: #525E5B;
@@ -571,16 +571,11 @@ body.ficus-ruby.theme-dark {
   --interactive-normal: #F4465D;
   --interactive-hover: #F9A8B1;
   --interactive-accent: #F4465D;
-  --interactive-accent-rgb: 123, 108, 217;
+  --interactive-accent-rgb: 205, 123, 130;
   --interactive-accent-hover: #F9A8B1;
   --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.4);
   --scrollbar-bg: rgba(0, 0, 0, 0.05);
   --scrollbar-thumb-bg: rgba(0, 0, 0, 0.2);
-  --text-title-h2: #9ABB9A;
-  --text-title-h3: #C1C287;
-  --text-title-h4: #689d6a;
-  --text-title-h5: #F1B8B2;
-  --text-title-h6: #b16286;
   --inline-code: #b48ead;
   --code-block: #b48ead;
   --pre-code-bg: rgba(0, 0, 0, 0.2);
@@ -599,9 +594,40 @@ body.ficus-ruby.theme-light .view-header {
   border-bottom: 2px solid var(--background-primary-alt);
   background-color: var(--background-primary-alt);
 }
+body.ficus-ruby.theme-light .workspace-ribbon.mod-right.is-collapsed {
+  border-left-color: var(--background-secondary-alt);
+}
+
+body.ficus-ruby.theme-light .workspace-ribbon {
+  border-left: 2px solid transparent;
+}
+
+body.ficus-ruby.theme-light .status-bar {
+  border-top: 2px solid var(--background-secondary-alt);
+}
+
+body.ficus-ruby.theme-light a, .cm-hmd-internal-link {
+  color: var(--text-accent);
+}
 
 body.ficus-ruby.theme-dark .suggestion-item.is-selected {
   background-color: var(--text-accent-hover);
+}
+
+body.ficus-ruby.theme-dark .workspace-ribbon.mod-right.is-collapsed {
+  border-left-color: var(--background-secondary-alt);
+}
+
+body.ficus-ruby.theme-dark .workspace-ribbon {
+  border-left: 2px solid transparent;
+}
+
+body.ficus-ruby.theme-dark .status-bar {
+  border-top: 2px solid var(--background-secondary-alt);
+}
+
+body.ficus-ruby.theme-dark a, .cm-hmd-internal-link {
+  color: var(--text-accent);
 }
 
 /* START Vileplume */
