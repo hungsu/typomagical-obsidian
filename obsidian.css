@@ -314,19 +314,6 @@ ul {
 	list-style-type: circle;
 }
 
-
-a,
-.cm-hmd-internal-link
-{
-  color: var(--text-a)
-}
-a:hover,
-.cm-hmd-internal-link:hover,
-.cm-url
-{
-    color: var(--text-a-hover);
-}
-
 .markdown-preview-view blockquote {
   margin: 0;
 }
