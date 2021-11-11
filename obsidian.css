@@ -274,6 +274,7 @@ a,
 	font-family: var(--heading-font), var(--font-title);
 }
 
+.HyperMD-header-1,
 .markdown-preview-section.markdown-preview-section h1 {
 	text-align: center;
 }
