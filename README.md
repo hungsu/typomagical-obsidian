@@ -22,3 +22,11 @@ An Obsidian theme for typographic appreciators, with support for [Style Settings
 
 
 ![Screenshot](typomagical-settings.jpg)
+
+## How to use it
+
+This theme is currently awaiting approval! Until then, you can manually install it by:
+
+1. Downloading this file : https://github.com/hungsu/typomagical-obsidian/raw/main/obsidian.css
+2. Renaming it to Typomagical.css
+3. Placing the file in your `.obsidian/themes` folder
