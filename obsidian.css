@@ -253,6 +253,8 @@ h2, h3, h4, h5, h6 {
 }
 
 a,
+.cm-hmd-internal-link,
+.cm-link,
 .markdown-preview-view .internal-link {
 	text-decoration: none;
 	font-family: 'Spectral SC', 'Spectral';
