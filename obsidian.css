@@ -431,10 +431,10 @@ settings:
                 value: headings-bold
     -
         id: heading-font
-        title: Title font
-        description: Titles are special, and their look should reflect that. Choose a font that suits you!
+        title: Title (H1) font
+        description: Titles, or H1s, are special. Thus, they should look special. Choose a Title font that suits you!
         type: variable-select
-        default: Playfair Display
+        default: Amiri
         options:
             - Amiri
             - Bitter
