@@ -25,8 +25,8 @@ An Obsidian theme for typographic appreciators, with support for [Style Settings
 
 ## How to use it
 
-This theme is currently awaiting approval! Until then, you can manually install it by:
+1. Open the Appearance tab in Obsidian
+2. Click the Manage button
+3. Use this search box to find “Typo”, then click “Use”
 
-1. Downloading this file : https://github.com/hungsu/typomagical-obsidian/raw/main/obsidian.css
-2. Renaming it to Typomagical.css
-3. Placing the file in your `.obsidian/themes` folder
+![Screenshot of Obsidian community themes search interface](https://forum.obsidian.md/uploads/default/original/3X/e/f/ef852693d6fc59d88a9b9edde9077cfbfe306b44.png)
