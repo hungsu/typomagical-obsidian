@@ -381,6 +381,11 @@ ul {
     width: auto;
 }
 
+/* Change inline mhchem equations font to better blend with the text */
+mjx-container mjx-math mjx-texatom{
+  font-family: var(--default-font);
+}
+
 /* @settings
 
 name: Typomagical text settings
