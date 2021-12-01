@@ -246,17 +246,17 @@ h2, h3, h4, h5, h6 {
 .markdown-preview-view h4,
 .markdown-preview-view h5,
 .markdown-preview-view h6 {
-	letter-spacing: -0.05em;
+	letter-spacing: -0.03em;
 }
 
 .markdown-preview-view h2 {
 	font-size: var(--fz7);
-	letter-spacing: -0.05em;
+	letter-spacing: -0.03em;
 }
 
 .markdown-preview-view h3 {
 	font-size: var(--fz6);
-	letter-spacing: -0.05em;
+	letter-spacing: -0.03em;
 }
 
 .markdown-preview-view h4 {
@@ -464,9 +464,6 @@ settings:
             - Playfair Display
 */
 
-.CodeMirror .CodeMirror-line {
-  font-variant-ligatures: no-common-ligatures;
-}
 /*
   Ligatures
   No class is needed for all-ligatures, because ligatures are enabled by default.
@@ -477,13 +474,16 @@ body.css-settings-manager.no-ligatures {
 body.css-settings-manager.heading-ligatures {
   font-variant-ligatures: no-common-ligatures;
 }
-body.css-settings-manager.heading-ligatures h1,
+.heading-ligatures h1,
+.heading-ligatures .cm-header-1,
 body.css-settings-manager.heading-ligatures h2,
 body.css-settings-manager.heading-ligatures h3,
 body.css-settings-manager.heading-ligatures h4,
 body.css-settings-manager.heading-ligatures h5,
-body.css-settings-manager.heading-ligatures h6 {
+body.css-settings-manager.heading-ligatures h6,
+.all-ligatures h2 {
   font-variant-ligatures: common-ligatures;
+  font-feature-settings: 'liga';
 }
 
 
