@@ -220,20 +220,26 @@ h2, h3, h4, h5, h6 {
 	font-weight: 300;
 }
 
-.headings-regular h1 {
-  font-weight: 300;
-}
-
 /* This .cm-s-obsidian selector is only to override .cm-s-obsidian .cm-header */
 .cm-s-obsidian .cm-header.cm-header-1 {
 	font-weight: 600;
 }
 
+.headings-regular .cm-header.cm-header-1,
+.headings-regular h1 {
+  font-weight: 300;
+}
+
 .headings-bold h2,
+.headings-bold .cm-header-2,
 .headings-bold h3,
+.headings-bold .cm-header-3,
 .headings-bold h4,
+.headings-bold .cm-header-4,
 .headings-bold h5,
-.headings-bold h6 {
+.headings-bold .cm-header-5,
+.headings-bold h6,
+.headings-bold .cm-header-6 {
 	font-weight: 600;
 }
 
