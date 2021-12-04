@@ -856,3 +856,8 @@ body.obsidian-high-contrast.theme-dark .suggestion-item.is-selected {
   /* font-family: var(--font-title); */
   font-weight: 700;
 }
+
+/* For wobbly inline mathjax - Issue #13 */
+.math-inline mjx-math {
+  padding: 0;
+}
