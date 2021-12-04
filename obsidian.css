@@ -387,11 +387,6 @@ ul {
     width: auto;
 }
 
-/* Change inline mhchem equations font to better blend with the text */
-mjx-container mjx-math mjx-texatom{
-  font-family: var(--default-font);
-}
-
 /* @settings
 
 name: Typomagical text settings
@@ -462,7 +457,25 @@ settings:
             - Amiri
             - Bitter
             - Playfair Display
+    -
+        id: mjx-font
+        title: MathJax font
+        description: Font for MathJax e.g. $inline equation$ and $$centered equation$$
+        type: class-select
+        default: mathjax-font-default
+        options:
+            -
+                label: MJXZERO, MJXTEX (Obsidian Default)
+                value: mathjax-font-default
+            -
+                label: Playfair
+                value: mathjax-font-typomagical
 */
+
+/* Change inline mhchem equations font to better blend with the text */
+.mathjax-font-typomagical mjx-container mjx-math mjx-texatom {
+  font-family: var(--default-font);
+}
 
 /*
   Ligatures
