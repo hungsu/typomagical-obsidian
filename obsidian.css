@@ -976,15 +976,23 @@ body.obsidian-high-contrast.theme-dark .suggestion-item.is-selected {
   border-radius: 0 4px 0 0;
 }
 
-.cm-content > .HyperMD-quote.HyperMD-quote-1.cm-line + .HyperMD-quote.HyperMD-quote-1.cm-line{
+.cm-content > .HyperMD-quote.HyperMD-quote-1.cm-line + .HyperMD-quote.HyperMD-quote-1.cm-line, 
+.cm-content > .math.math-block.cm-embed-block + .HyperMD-quote.HyperMD-quote-1.cm-line{
   padding-top: 0;
   border-top-width: 0;
   border-radius: 0 0 0 0;
 }
 
+.cm-content > .HyperMD-quote.HyperMD-quote-1.cm-line + .math.math-block.cm-embed-block{  
+  border-style: solid;
+  border-width: 0 1px 0 5px;
+  border-radius: 0 0 0 0;
+  border-color: var(--blockquote-border);
+}
+
 /* I've no idea how to select the last sibiling element */
 /* This is the closest I got - It works but it's not the best solution */
-.cm-content > .HyperMD-quote.HyperMD-quote-1.cm-line + :not(.HyperMD-quote.HyperMD-quote-1.cm-line){
+.cm-content > .HyperMD-quote.HyperMD-quote-1.cm-line + :not(.HyperMD-quote.HyperMD-quote-1.cm-line, .math.math-block.cm-embed-block){
   border-style: solid;
   border-width: 1px 1px 0 5px;
   border-radius: 0 4px 0 0;
@@ -992,4 +1000,11 @@ body.obsidian-high-contrast.theme-dark .suggestion-item.is-selected {
   transform: scaleY(-1) translateY(10px);
 }
 
+.cm-content > .HyperMD-quote.HyperMD-quote-1.cm-line + .math.math-block.cm-embed-block + :not(.HyperMD-quote.HyperMD-quote-1.cm-line, .math.math-block.cm-embed-block){
+  border-style: solid;
+  border-width: 1px 1px 0 5px;
+  border-radius: 0 4px 0 0;
+  border-color: var(--blockquote-border);
+  transform: scaleY(-1) translateY(10px);
+}
 
