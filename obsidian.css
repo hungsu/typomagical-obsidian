@@ -145,6 +145,9 @@
   --fz6: clamp(1.602em, calc(0.8rem + 2.5vw), 2.074em);
   --fz7: clamp(1.802em, calc(0.6rem + 3.7vw), 2.488em);
   --fz8: clamp(2.027em, calc(0.4rem + 5.1vw), 2.986em);
+
+  /* List indentation level for Live Preview */
+  --list-line-padding: 17px
 }
 
 body.type-scale-none {
@@ -243,30 +246,39 @@ h2, h3, h4, h5, h6 {
 	font-weight: 600;
 }
 
+.cm-header-2,
+.markdown-preview-view h2,
+.cm-header-3,
+.markdown-preview-view h3,
 .markdown-preview-view h4,
 .markdown-preview-view h5,
 .markdown-preview-view h6 {
 	letter-spacing: -0.03em;
 }
 
+/* Headers font-size, with basic support for live preview */
+.cm-header-2,
 .markdown-preview-view h2 {
 	font-size: var(--fz7);
 	letter-spacing: -0.03em;
 }
 
+.cm-header-3,
 .markdown-preview-view h3 {
 	font-size: var(--fz6);
-	letter-spacing: -0.03em;
 }
 
+.cm-header-4,
 .markdown-preview-view h4 {
 	font-size: var(--fz5);
 }
 
+.cm-header-5,
 .markdown-preview-view h5 {
 	font-size: var(--fz4);
 }
 
+.cm-header-6,
 .markdown-preview-view h6 {
 	font-size: var(--fz3);
 }
@@ -874,3 +886,64 @@ body.obsidian-high-contrast.theme-dark .suggestion-item.is-selected {
 .math-inline mjx-math {
   padding: 0;
 }
+
+
+/* Headers padding */
+/* It slightly move down the folding arrow */
+.HyperMD-header.HyperMD-header-2.cm-line,
+.HyperMD-header.HyperMD-header-3.cm-line,
+.HyperMD-header.HyperMD-header-4.cm-line,
+.HyperMD-header.HyperMD-header-5.cm-line,
+.HyperMD-header.HyperMD-header-6.cm-line{
+  padding-bottom: 20px;
+}
+
+
+/* Live Preview lists */
+/* Lists in Live Preview are a mess */
+.list-bullet{
+  visibility: hidden;
+}
+
+.list-bullet:after{
+  content: "○";
+  font-size: 55%;
+  visibility: visible;
+  padding-right: 3px;
+}
+
+.cm-list-1{
+  padding-top: 5px;
+}
+
+/* These elements have inline styles applied to them from HyperMD. The only way to override inline style is with !important */
+.HyperMD-list-line-1{
+  padding-left: 30px !important;
+}
+
+.HyperMD-list-line.HyperMD-list-line-1.cm-line{
+  padding-top: 0;
+  margin-left: var(--list-line-padding) !important;
+}
+.HyperMD-list-line.HyperMD-list-line-2.cm-line{
+  margin-left: calc(var(--list-line-padding)*2) !important;
+}
+.HyperMD-list-line.HyperMD-list-line-3.cm-line{
+  margin-left: calc(var(--list-line-padding)*3) !important;
+}
+.HyperMD-list-line.HyperMD-list-line-4.cm-line{
+  margin-left: calc(var(--list-line-padding)*4) !important;
+}
+.HyperMD-list-line.HyperMD-list-line-5.cm-line{
+  margin-left: calc(var(--list-line-padding)*5) !important;
+}
+.HyperMD-list-line.HyperMD-list-line-6.cm-line{
+  margin-left: calc(var(--list-line-padding)*6) !important;
+}
+.HyperMD-list-line.HyperMD-list-line-7.cm-line{
+  margin-left: calc(var(--list-line-padding)*7) !important;
+}
+.HyperMD-list-line.HyperMD-list-line-8.cm-line{
+  margin-left: calc(var(--list-line-padding)*8) !important;
+}
+
