@@ -145,9 +145,12 @@
   --fz6: clamp(1.602em, calc(0.8rem + 2.5vw), 2.074em);
   --fz7: clamp(1.802em, calc(0.6rem + 3.7vw), 2.488em);
   --fz8: clamp(2.027em, calc(0.4rem + 5.1vw), 2.986em);
+
+  /* List indentation level for Live Preview */
+  --list-line-padding: 18px;
   
-  /* Live Preview */
-  --list-line-padding: 17px
+  /* Blockquote border color for Live Preview */
+  --blockquote-border: #DDDDDD;
 }
 
 body.type-scale-none {
@@ -246,30 +249,39 @@ h2, h3, h4, h5, h6 {
 	font-weight: 600;
 }
 
+.cm-header-2,
+.markdown-preview-view h2,
+.cm-header-3,
+.markdown-preview-view h3,
 .markdown-preview-view h4,
 .markdown-preview-view h5,
 .markdown-preview-view h6 {
 	letter-spacing: -0.03em;
 }
 
+/* Headers font-size, with basic support for live preview */
+.cm-header-2,
 .markdown-preview-view h2 {
 	font-size: var(--fz7);
 	letter-spacing: -0.03em;
 }
 
+.cm-header-3,
 .markdown-preview-view h3 {
 	font-size: var(--fz6);
-	letter-spacing: -0.03em;
 }
 
+.cm-header-4,
 .markdown-preview-view h4 {
 	font-size: var(--fz5);
 }
 
+.cm-header-5,
 .markdown-preview-view h5 {
 	font-size: var(--fz4);
 }
 
+.cm-header-6,
 .markdown-preview-view h6 {
 	font-size: var(--fz3);
 }
@@ -364,6 +376,7 @@ ul {
 }
 
 .dek {text-align: center;}
+
 
 /* Blockquotes > */
 .markdown-preview-view blockquote {
@@ -878,28 +891,6 @@ body.obsidian-high-contrast.theme-dark .suggestion-item.is-selected {
   padding: 0;
 }
 
-/* Live Preview (basic) support */
-/* Headers font-size */
-.cm-header-2{
-	font-size: var(--fz7);
-	letter-spacing: -0.03em;
-}
-
-.cm-header-3{
-	font-size: var(--fz6);
-}
-
-.cm-header-4{
-	font-size: var(--fz5);
-}
-
-.cm-header-5{
-	font-size: var(--fz4);
-}
-
-.cm-header-6{
-	font-size: var(--fz3);
-}
 
 /* Headers padding */
 /* It slightly move down the folding arrow */
@@ -918,9 +909,16 @@ body.obsidian-high-contrast.theme-dark .suggestion-item.is-selected {
   visibility: hidden;
 }
 
-.list-bullet:after{
+.HyperMD-list-line-1 .list-bullet:after{
   content: "○";
   font-size: 55%;
+  visibility: visible;
+  padding-right: 3px;
+}
+
+.list-bullet:after{
+  content: "●";
+  font-size: 80%;
   visibility: visible;
   padding-right: 3px;
 }
@@ -929,12 +927,10 @@ body.obsidian-high-contrast.theme-dark .suggestion-item.is-selected {
   padding-top: 5px;
 }
 
-.HyperMD-list-line-1{
-  padding-left: 30px !important;
-}
-
+/* These elements have inline styles applied to them from HyperMD. The only way to override inline style is with !important */
 .HyperMD-list-line.HyperMD-list-line-1.cm-line{
   padding-top: 0;
+  padding-left: 30px !important;
   margin-left: var(--list-line-padding) !important;
 }
 .HyperMD-list-line.HyperMD-list-line-2.cm-line{
@@ -958,4 +954,42 @@ body.obsidian-high-contrast.theme-dark .suggestion-item.is-selected {
 .HyperMD-list-line.HyperMD-list-line-8.cm-line{
   margin-left: calc(var(--list-line-padding)*8) !important;
 }
+
+
+/* Live Preview Blockquotes */
+/* It seems not possibile to recreate the border */
+/* Text and background color */
+.HyperMD-quote.HyperMD-quote-1.cm-line {
+  padding-left: 20px !important;
+  background-color: transparent !important;
+}
+
+.cm-quote.cm-quote-1{
+  color: var(--text-normal) !important;
+}
+
+/* Box border - It first add the top border all the elements and then it removes it from the others */
+.cm-content > .HyperMD-quote.HyperMD-quote-1.cm-line{
+  padding-top: 10px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-radius: 0 4px 0 0;
+}
+
+.cm-content > .HyperMD-quote.HyperMD-quote-1.cm-line + .HyperMD-quote.HyperMD-quote-1.cm-line{
+  padding-top: 0;
+  border-top-width: 0;
+  border-radius: 0 0 0 0;
+}
+
+/* I've no idea how to select the last sibiling element */
+/* This is the closest I got - It works but it's not the best solution */
+.cm-content > .HyperMD-quote.HyperMD-quote-1.cm-line + :not(.HyperMD-quote.HyperMD-quote-1.cm-line){
+  border-style: solid;
+  border-width: 1px 1px 0 5px;
+  border-radius: 0 4px 0 0;
+  border-color: var(--blockquote-border);
+  transform: scaleY(-1) translateY(10px);
+}
+
 
