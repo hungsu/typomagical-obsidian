@@ -987,7 +987,7 @@ body.obsidian-high-contrast.theme-dark .suggestion-item.is-selected {
   border-style: solid;
   border-width: 0 1px 0 5px;
   border-radius: 0 0 0 0;
-  border-color: var(--blockquote-border);
+  border-color: var(--background-modifier-border);
 }
 
 /* I've no idea how to select the last sibiling element */
@@ -996,7 +996,7 @@ body.obsidian-high-contrast.theme-dark .suggestion-item.is-selected {
   border-style: solid;
   border-width: 1px 1px 0 5px;
   border-radius: 0 4px 0 0;
-  border-color: var(--blockquote-border);
+  border-color: var(--background-modifier-border);
   transform: scaleY(-1) translateY(10px);
 }
 
@@ -1004,7 +1004,6 @@ body.obsidian-high-contrast.theme-dark .suggestion-item.is-selected {
   border-style: solid;
   border-width: 1px 1px 0 5px;
   border-radius: 0 4px 0 0;
-  border-color: var(--blockquote-border);
+  border-color: var(--background-modifier-border);
   transform: scaleY(-1) translateY(10px);
 }
-
