@@ -30,3 +30,7 @@ An Obsidian theme for typographic appreciators, with support for [Style Settings
 3. Use this search box to find “Typo”, then click “Use”
 
 ![Screenshot of Obsidian community themes search interface](https://forum.obsidian.md/uploads/default/original/3X/e/f/ef852693d6fc59d88a9b9edde9077cfbfe306b44.png)
+
+## Further reading
+
+[Decisions](./decisions.md) - a list of decisions made, along with reasoning.
