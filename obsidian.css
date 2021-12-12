@@ -271,6 +271,12 @@ h2, h3, h4, h5, h6 {
 	font-size: var(--fz3);
 }
 
+
+
+/*
+  Links
+  [[]]
+*/
 a,
 .cm-hmd-internal-link,
 .cm-link,
@@ -280,6 +286,12 @@ a,
 	/* This CSS property should work, but the font seems not configured correctly. */
 	font-variant: small-caps;
 }
+.markdown-source-view.mod-cm6 .cm-underline {
+  text-decoration: none;
+}
+/* END Links */
+
+
 
 .cm-header-1,
 .markdown-preview-view h1 {
