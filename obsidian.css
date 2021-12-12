@@ -345,10 +345,6 @@ ul {
 	list-style-type: circle;
 }
 
-.markdown-preview-view blockquote {
-  margin: 0;
-}
-
 /* GRAPH */
 
 .graph-view.color-fill {}
@@ -374,11 +370,28 @@ ul {
 
 .dek {text-align: center;}
 
-/* Blockquotes > */
+/*
+  Blockquotes
+  >
+*/
 .markdown-preview-view blockquote {
+  margin: 0;
+
 	/* An attempt at steady vertical rhythm, by eye. Could be more precise with better tooling. */
 	margin-top: calc(var(--editor-font-size) * 1.5);
 }
+/* Revert Live Preview Blockquote to look like regular Preview blockquote */
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
+  border-width: 1px 1px 1px 5px;
+  background-color: initial;
+  padding: 10px 20px;
+}
+/* The text inside a Live Preview blockquote */
+.cm-s-obsidian span.cm-quote {
+  /* This was originally --text-muted. I don't know why. */
+  color: var(--text-normal);
+}
+/* END Blockquotes */
 
 .markdown-preview-view th {
   border-top-color: transparent;
