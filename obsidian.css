@@ -336,6 +336,9 @@ a,
 .markdown-preview-view .internal-link {
 	text-decoration: none;
 	font-family: 'Spectral SC', 'Spectral', serif;
+
+  /* This is not how Spectral SC was intended to be used. But without this property, the small caps are too similar in size to upper case. */
+  font-variant: small-caps;
 }
 .markdown-source-view.mod-cm6 .cm-underline {
   text-decoration: none;
