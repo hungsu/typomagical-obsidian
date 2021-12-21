@@ -15,6 +15,15 @@
   src: url(https://fonts.gstatic.com/s/playfairdisplay/v22/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKebunDXbtM.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+/* latin-ext */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v25/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKebunDZbtPY_Q.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
 
 @font-face {
   font-family: 'Amiri';
@@ -33,26 +42,34 @@
   src: url(https://fonts.gstatic.com/s/amiri/v17/J7acnpd8CGxBHp2VkaY_zp4.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
-/* latin */
+/* latin-ext */
 @font-face {
-  font-family: 'Bitter';
-  font-style: italic;
+  font-family: 'Amiri';
+  font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/bitter/v19/raxjHiqOu8IVPmn7epZnDMyKBvHf5D6cB_v-X3By.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/amiri/v17/J7acnpd8CGxBHp2VkaYxzp5yGw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
+
 /* latin */
 @font-face {
   font-family: 'Bitter';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/bitter/v19/raxhHiqOu8IVPmnRc6SY1KXhnF_Y8RHYOLjOXQ.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/bitter/v19/raxhHiqOu8IVPmnRc6SY1KXhnF_Y8SjYOLjOXQ.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
+/* latin-ext */
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/bitter/v19/raxhHiqOu8IVPmnRc6SY1KXhnF_Y8SjYOLbOXWh2.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
 
 
 @font-face {
