@@ -947,3 +947,24 @@ body.obsidian-high-contrast.theme-dark .suggestion-item.is-selected {
 .math-inline mjx-math {
   padding: 0;
 }
+
+
+
+/* Calendar by liamcain START */
+#calendar-container h3.title {
+  font-family: var(--font-title);
+}
+#calendar-container .year {
+  color: var(--text);
+  letter-spacing: -0.05em
+}
+#calendar-container .month {
+  font-weight: 700;
+}
+#calendar-container .today:not(.active) {
+  color: var(--text-accent)
+}
+#calendar-container .reset-button {
+  color: var(--text-accent)
+}
+/* Calendar END */
