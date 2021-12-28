@@ -440,6 +440,9 @@ ul {
 }
 /* END Blockquotes */
 
+
+
+/* Tables START */
 .markdown-preview-view th {
   border-top-color: transparent;
 }
@@ -449,6 +452,9 @@ ul {
   border-right-color: transparent;
   border-left-color: transparent;
 }
+/* Tables END */
+
+
 
 /* Wrap long nav text*/
 .nav-file-title,
