@@ -224,6 +224,10 @@ body.type-scale-major-third {
   --text-accent: hsl(248,75%,79%);
 }
 
+
+
+/* Headings START */
+
 .cm-s-obsidian .cm-header,
 h2, h3, h4, h5, h6 {
 	font-weight: 300;
@@ -252,30 +256,40 @@ h2, h3, h4, h5, h6 {
 	font-weight: 600;
 }
 
+.cm-header-2,
+.markdown-preview-view h2,
+.cm-header-3,
+.markdown-preview-view h3,
+.cm-header-4,
 .markdown-preview-view h4,
+.cm-header-5,
 .markdown-preview-view h5,
+.cm-header-6,
 .markdown-preview-view h6 {
 	letter-spacing: -0.03em;
 }
 
+.cm-header-2,
 .markdown-preview-view h2 {
 	font-size: var(--fz7);
-	letter-spacing: -0.03em;
 }
 
+.cm-header-3,
 .markdown-preview-view h3 {
 	font-size: var(--fz6);
-	letter-spacing: -0.03em;
 }
 
+.cm-header-4,
 .markdown-preview-view h4 {
 	font-size: var(--fz5);
 }
 
+.cm-header-5,
 .markdown-preview-view h5 {
 	font-size: var(--fz4);
 }
 
+.cm-header-6,
 .markdown-preview-view h6 {
 	font-size: var(--fz3);
 }
@@ -323,6 +337,8 @@ h2, h3, h4, h5, h6 {
   color: var(--text-title-h6);
 }
 
+/* Headings END */
+
 
 
 /*
@@ -368,6 +384,7 @@ h2, h3, h4, h5, h6 {
 }
 
 a,
+.cm-url,
 .cm-hmd-internal-link,
 .cm-link,
 .markdown-preview-view .internal-link {
@@ -376,8 +393,15 @@ a,
   font-variant-ligatures: none;
 }
 
+.markdown-source-view.mod-cm6 .cm-url,
 .markdown-source-view.mod-cm6 .cm-underline {
+  color: var(--text-accent);
   text-decoration: none;
+}
+
+.markdown-source-view.mod-cm6 .cm-url:hover,
+.markdown-source-view.mod-cm6 .cm-underline:hover {
+  color: var(--text-accent-hover)
 }
 
 /* END Links */
@@ -409,6 +433,7 @@ ul {
   list-style-type: circle;
 }
 
+.markdown-source-view.mod-cm6 .cm-formatting-list-ol,
 ol li::marker {
   font-family: 'Concourse Index';
 }
