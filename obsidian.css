@@ -373,6 +373,7 @@ a,
 .markdown-preview-view .internal-link {
 	text-decoration: none;
 	font-family: 'Alegreya SC', 'Spectral', serif;
+  font-variant-ligatures: none;
 }
 
 .markdown-source-view.mod-cm6 .cm-underline {
