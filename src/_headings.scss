@@ -1,0 +1,226 @@
+/* Headings START */
+
+@font-face {
+	font-family: "Amiri";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/amiri/v17/J7aRnpd8CGxBHpUutLM.woff2)
+		format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+		U+FEFF, U+FFFD;
+}
+/* latin */
+@font-face {
+	font-family: "Amiri";
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/amiri/v17/J7acnpd8CGxBHp2VkaY_zp4.woff2)
+		format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+		U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+	font-family: "Amiri";
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/amiri/v17/J7acnpd8CGxBHp2VkaYxzp5yGw.woff2)
+		format("woff2");
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+		U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+	font-family: "Bitter";
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/bitter/v19/raxhHiqOu8IVPmnRc6SY1KXhnF_Y8SjYOLjOXQ.woff2)
+		format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+		U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+	font-family: "Bitter";
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/bitter/v19/raxhHiqOu8IVPmnRc6SY1KXhnF_Y8SjYOLbOXWh2.woff2)
+		format("woff2");
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+		U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+	font-family: "Playfair Display";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/playfairdisplay/v22/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvXDXbtM.woff2)
+		format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+		U+FEFF, U+FFFD;
+}
+@font-face {
+	font-family: "Playfair Display";
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/playfairdisplay/v22/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKebunDXbtM.woff2)
+		format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+		U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+	font-family: "Playfair Display";
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/playfairdisplay/v25/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKebunDZbtPY_Q.woff2)
+		format("woff2");
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+		U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+:root {
+	/* A good Title font should have a beautiful Ampersand (&) and ligatures */
+	--font-title: "Amiri";
+}
+
+.cm-s-obsidian .cm-header,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 300;
+}
+
+/* This .cm-s-obsidian selector is only to override .cm-s-obsidian .cm-header */
+.cm-s-obsidian .cm-header.cm-header-1 {
+	font-weight: 600;
+}
+
+.headings-regular .cm-header.cm-header-1,
+.headings-regular h1 {
+	font-weight: 300;
+}
+
+.headings-bold h2,
+.headings-bold .cm-header-2,
+.headings-bold h3,
+.headings-bold .cm-header-3,
+.headings-bold h4,
+.headings-bold .cm-header-4,
+.headings-bold h5,
+.headings-bold .cm-header-5,
+.headings-bold h6,
+.headings-bold .cm-header-6 {
+	font-weight: 600;
+}
+
+.cm-header-1,
+.markdown-preview-view h1,
+.cm-header-2,
+.markdown-preview-view h2,
+.cm-header-3,
+.markdown-preview-view h3,
+.cm-header-4,
+.markdown-preview-view h4,
+.cm-header-5,
+.markdown-preview-view h5,
+.cm-header-6,
+.markdown-preview-view h6 {
+	line-height: 1.2;
+}
+
+.cm-header-2,
+.markdown-preview-view h2,
+.cm-header-3,
+.markdown-preview-view h3,
+.cm-header-4,
+.markdown-preview-view h4,
+.cm-header-5,
+.markdown-preview-view h5,
+.cm-header-6,
+.markdown-preview-view h6 {
+	letter-spacing: -0.03em;
+}
+
+.cm-header-2,
+.markdown-preview-view h2 {
+	font-size: var(--fz7);
+}
+
+.cm-header-3,
+.markdown-preview-view h3 {
+	font-size: var(--fz6);
+}
+
+.cm-header-4,
+.markdown-preview-view h4 {
+	font-size: var(--fz5);
+}
+
+.cm-header-5,
+.markdown-preview-view h5 {
+	font-size: var(--fz4);
+}
+
+.cm-header-6,
+.markdown-preview-view h6 {
+	font-size: var(--fz3);
+}
+
+.cm-header-1,
+.markdown-preview-view h1 {
+	color: var(--text-title-h1);
+	font-family: var(--font-title);
+	font-size: calc(var(--fz8) * 1.1);
+}
+
+.css-settings-manager .cm-header-1,
+.css-settings-manager .markdown-preview-view h1 {
+	font-family: var(--heading-font), var(--font-title);
+}
+
+.HyperMD-header-1,
+.markdown-preview-section.markdown-preview-section h1 {
+	text-align: center;
+}
+
+// Some colour palettes in style settings set different colours per header. This makes that possible
+.cm-header-2,
+.markdown-preview-section h2 {
+	color: var(--text-title-h2);
+}
+.cm-header-3,
+.markdown-preview-section h3 {
+	color: var(--text-title-h3);
+}
+.cm-header-4,
+.markdown-preview-section h4 {
+	color: var(--text-title-h4);
+}
+.cm-header-5,
+.markdown-preview-section h5 {
+	color: var(--text-title-h5);
+}
+.cm-header-6,
+.markdown-preview-section h6 {
+	color: var(--text-title-h6);
+}
+
+/* Headings END */

@@ -38,3 +38,26 @@ Plain CSS
 - Organisation of so many parts in a single obsidian.css file is difficult.
 - CSS variables are cumbersome to write.
 - We miss out on interesting preprocessor features, such as mixins, functions, and simpler calculations.
+
+## 3. File watcher and mover
+
+I need some form of file watcher to move CSS from this repo to my vault anyway during development. Doing this manually was causing significant errors, such as CRLF in my source control because I had copied back from my Windows machine. In general it was also becoming hard to track the difference between what was in source and what I was experimenting with in my Obsidian vault.
+### Options
+
+- Nothing - continue copy manually
+- Grunt
+- Sass
+- Research more options
+
+### Decision
+
+Sass
+
+### Reasoning
+
+- The Sass builder already provides an option to copy files where I want. This means I also get Sass preprocessing.
+
+### Consequences
+
+- Outside developers must know Sass and have it installed to contribute.
+- var intellisense no longer works
