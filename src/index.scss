@@ -291,6 +291,19 @@ settings:
 			-
 				label: Neuomorphic soft shadows
 				value: blockquote-neuomorphic
+	-
+		id: alignment
+		title: Alignment
+		description: How all text is aligned
+		type: class-select
+		default: align-left
+		options:
+			-
+				label: Left
+				value: align-left
+			-
+				label: Justified
+				value: align-justified
 	*/
 
 /* Change inline mhchem equations font to better blend with the text */
@@ -323,6 +336,13 @@ body.css-settings-manager.heading-ligatures h6,
 .ordinary-ol .markdown-source-view.mod-cm6 .cm-formatting-list-ol,
 .ordinary-ol ol li::marker {
 	font-family: var(--default-font);
+}
+
+
+.align-justified {
+  p {
+	  text-align: justify;
+  }
 }
 
 /* @settings
@@ -707,6 +727,13 @@ body.obsidian-high-contrast.theme-light .suggestion-hotkey {
 }
 
 /* Calendar by liamcain START */
+#calendar-container {
+	.active {
+		.dot-container {
+			--color-dot: var(--text-on-accent)
+		}
+	}
+}
 #calendar-container h3.title {
 	font-family: var(--font-title);
 }
@@ -717,8 +744,13 @@ body.obsidian-high-contrast.theme-light .suggestion-hotkey {
 #calendar-container .month {
 	font-weight: 700;
 }
+
+#calendar-container .today {
+	font-style: italic;
+}
 #calendar-container .today:not(.active) {
-	color: var(--text-accent);
+	// color: var(--text-accent);
+	background-image: linear-gradient(transparent, var(--interactive-hover));
 }
 #calendar-container .reset-button {
 	color: var(--text-accent);
