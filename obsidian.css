@@ -243,7 +243,7 @@ h6 {
 .markdown-preview-view h1 {
   color: var(--text-title-h1);
   font-family: var(--font-title);
-  font-size: calc(var(--fz8) * 1.1);
+  font-size: calc(var(--fz8) * 1.15);
 }
 
 .css-settings-manager .cm-header-1,
@@ -279,19 +279,6 @@ h6 {
 .cm-header-6,
 .markdown-preview-section h6 {
   color: var(--text-title-h6);
-}
-
-.markdown-preview-view h1,
-.markdown-preview-view h2,
-.markdown-preview-view h3,
-.markdown-preview-view h4,
-.markdown-preview-view h5,
-.markdown-preview-view h6 {
-  margin: 0 0 calc(var(--editor-font-size) * 1.2);
-}
-
-.cm-s-obsidian .HyperMD-header {
-  padding-bottom: calc(var(--editor-font-size) * 1.2);
 }
 
 /* Headings END */
@@ -381,12 +368,43 @@ ul {
   list-style-type: circle;
 }
 
-.markdown-source-view.mod-cm6 .cm-formatting-list-ol,
-ol li::marker {
+.circled-ol ol li::marker {
   font-family: "Concourse Index";
 }
 
 /* Lists END */
+/*
+	Blockquotes
+	>
+*/
+.markdown-preview-view blockquote {
+  margin: 0;
+  /* An attempt at steady vertical rhythm, by eye. Could be more precise with better tooling. */
+  margin-top: calc(var(--editor-font-size) * 1.5);
+}
+
+/* Revert Live Preview Blockquote to look like regular Preview blockquote */
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
+  border-width: 1px 1px 1px 5px;
+  background-color: initial;
+  padding: 10px 20px;
+}
+
+/* The text inside a Live Preview blockquote */
+.cm-s-obsidian span.cm-quote {
+  /* This was originally --text-muted. I don't know why. */
+  color: var(--text-normal);
+}
+
+.blockquote-neuomorphic .markdown-preview-view blockquote {
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  padding: 10px 20px;
+  position: relative;
+  box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.05), 10px 10px 30px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.01);
+}
+
 @font-face {
   font-family: "Spectral";
   font-style: normal;
@@ -450,6 +468,10 @@ ol li::marker {
 :root {
   --default-font: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
+}
+
+.theme-light {
+  --text-accent-hover: #886a3b;
 }
 
 .theme-dark {
@@ -529,113 +551,126 @@ ol li::marker {
 
 /* @settings
 
-	name: Typomagical text settings
-	id: typomagical-text
-	settings:
+name: Typomagical text settings
+id: typomagical-text
+settings:
+	-
+		id: ligatures
+		title: Ligatures
+		description: Decorative conjoined characters, such as the "ffi" in "office" and "ft" in "often".
+		type: class-select
+		default: heading-ligatures
+		options:
 			-
-					id: ligatures
-					title: Ligatures
-					description: Decorative conjoined characters, such as the "ffi" in "office" and "ft" in "often".
-					type: class-select
-					default: heading-ligatures
-					options:
-							-
-									label: All ligatures
-									value: all-ligatures
-							-
-									label: Ligatures on headings
-									value: heading-ligatures
-							-
-									label: No ligatures
-									value: no-ligatures
+				label: All ligatures
+				value: all-ligatures
 			-
-					id: text-scale
-					title: Text scale
-					description: The rate of growth between text and heading sizes. No scaling means headings and body text are the same size. Blank means Typomagical will attempt to choose the right scale based on your screen size.
-					type: class-select
-					allowEmpty: true
-					default: none
-					options:
-							-
-									label: 1.00 No scaling
-									value: type-scale-none
-							-
-									label: 1.067 Minor Second
-									value: type-scale-minor-second
-							-
-									label: 1.125 Major Second
-									value: type-scale-major-second
-							-
-									label: 1.20 Minor Third
-									value: type-scale-minor-third
-							-
-									label: 1.25 Major Third
-									value: type-scale-major-third
+				label: Ligatures on headings
+				value: heading-ligatures
 			-
-					id: heading-weight
-					title: Heading bold
-					type: class-select
-					allowEmpty: false
-					default: headings-h1-bold
-					options:
-							-
-									label: All headings are not bold
-									value: headings-regular
-							-
-									label: Only H1 is Bold
-									value: headings-h1-bold
-							-
-									label: All headings are Bold
-									value: headings-bold
+				label: No ligatures
+				value: no-ligatures
+	-
+		id: text-scale
+		title: Text scale
+		description: The rate of growth between text and heading sizes. No scaling means headings and body text are the same size. Blank means Typomagical will attempt to choose the right scale based on your screen size.
+		type: class-select
+		allowEmpty: true
+		default: none
+		options:
 			-
-					id: heading-font
-					title: Title (H1) font
-					description: Titles, or H1s, are special. Thus, they should look special. Choose a Title font that suits you!
-					type: variable-select
-					default: Amiri
-					options:
-							- Amiri
-							- Bitter
-							- Playfair Display
+				label: 1.00 No scaling
+				value: type-scale-none
 			-
-					id: mjx-font
-					title: MathJax font
-					description: Font for MathJax e.g. $inline equation$ and $$centered equation$$
-					type: class-select
-					default: mathjax-font-default
-					options:
-							-
-									label: MJXZERO, MJXTEX (Obsidian Default)
-									value: mathjax-font-default
-							-
-									label: Spectral
-									value: mathjax-font-typomagical
+				label: 1.067 Minor Second
+				value: type-scale-minor-second
 			-
-					id: ordered-lists
-					title: List numbers
-					description: Whether numerical lists should have circled, or ordinary numbers
-					type: class-select
-					default: circled-ol
-					options:
-							-
-									label: Circled
-									value: circled-ol
-							-
-									label: Ordinary
-									value: ordinary-ol
+				label: 1.125 Major Second
+				value: type-scale-major-second
 			-
-					id: link-font
-					title: Link font
-					description: The font for links
-					type: class-select
-					default: ss-links-sc
-					options:
-							-
-									label: Alegreya SC
-									value: ss-links-sc
-							-
-									label: Spectral (Same as other text)
-									value: ss-links-spectral
+				label: 1.20 Minor Third
+				value: type-scale-minor-third
+			-
+				label: 1.25 Major Third
+				value: type-scale-major-third
+	-
+		id: heading-weight
+		title: Heading bold
+		type: class-select
+		allowEmpty: false
+		default: headings-h1-bold
+		options:
+			-
+				label: All headings are not bold
+				value: headings-regular
+			-
+				label: Only H1 is Bold
+				value: headings-h1-bold
+			-
+				label: All headings are Bold
+				value: headings-bold
+	-
+		id: heading-font
+		title: Title (H1) font
+		description: Titles, or H1s, are special. Thus, they should look special. Choose a Title font that suits you!
+		type: variable-select
+		default: Amiri
+		options:
+				- Amiri
+				- Bitter
+				- Playfair Display
+	-
+		id: mjx-font
+		title: MathJax font
+		description: Font for MathJax e.g. $inline equation$ and $$centered equation$$
+		type: class-select
+		default: mathjax-font-default
+		options:
+			-
+				label: MJXZERO, MJXTEX (Obsidian Default)
+				value: mathjax-font-default
+			-
+				label: Spectral
+				value: mathjax-font-typomagical
+	-
+		id: ordered-lists
+		title: List numbers
+		description: Whether numerical lists should have circled, or ordinary numbers
+		type: class-select
+		default: circled-ol
+		options:
+			-
+				label: Circled
+				value: circled-ol
+			-
+				label: Ordinary
+				value: ordinary-ol
+	-
+		id: link-font
+		title: Link font
+		description: The font for links
+		type: class-select
+		default: ss-links-sc
+		options:
+			-
+				label: Alegreya SC
+				value: ss-links-sc
+			-
+				label: Spectral (Same as other text)
+				value: ss-links-spectral
+	-
+		id: blockquote
+		title: Blockquotes
+		description: How all blockquotes should look
+		type: class-select
+		default: ss-links-sc
+		options:
+			-
+				label: Plain box
+				value: blockquote-plain
+			-
+				label: Neuomorphic soft shadows
+				value: blockquote-neuomorphic
 	*/
 /* Change inline mhchem equations font to better blend with the text */
 .mathjax-font-typomagical mjx-container mjx-math mjx-texatom {
@@ -673,29 +708,29 @@ body.css-settings-manager.heading-ligatures h6,
 
 /* @settings
 
-	name: Typomagical colour settings
-	id: typomagical-colour
-	settings:
+name: Typomagical colour settings
+id: typomagical-colour
+settings:
+	-
+		id: theme-variant
+		title: Theme variant
+		description: Palette swaps. Don't see one you like? Let me know on forum.obsidian.md/u/hungsu!
+		type: class-select
+		allowEmpty: false
+		default: obsidian
+		options:
 			-
-					id: theme-variant
-					title: Theme variant
-					description: Palette swaps. Don't see one you like? Let me know on forum.obsidian.md/u/hungsu!
-					type: class-select
-					allowEmpty: false
-					default: obsidian
-					options:
-							-
-								label: Obsidian
-								value: obsidian
-							-
-								label: Ficus Ruby
-								value: ficus-ruby
-							-
-								label: Vileplume
-								value: vileplume
-							-
-								label: Obsidian High Contrast
-								value: obsidian-high-contrast
+				label: Obsidian
+				value: obsidian
+			-
+				label: Ficus Ruby
+				value: ficus-ruby
+			-
+				label: Vileplume
+				value: vileplume
+			-
+				label: Obsidian High Contrast
+				value: obsidian-high-contrast
 	*/
 /* Same as Obsidian's default triangle but with #C94458 as fill colour. https://yoksel.github.io/url-encoder/ */
 .ficus-ruby .dropdown {
@@ -1052,6 +1087,10 @@ body.obsidian-high-contrast.theme-light .suggestion-hotkey {
 }
 
 /* Calendar by liamcain START */
+#calendar-container .active .dot-container {
+  --color-dot: var(--text-on-accent) ;
+}
+
 #calendar-container h3.title {
   font-family: var(--font-title);
 }
@@ -1065,8 +1104,12 @@ body.obsidian-high-contrast.theme-light .suggestion-hotkey {
   font-weight: 700;
 }
 
+#calendar-container .today {
+  font-style: italic;
+}
+
 #calendar-container .today:not(.active) {
-  color: var(--text-accent);
+  background-image: linear-gradient(transparent, var(--interactive-hover));
 }
 
 #calendar-container .reset-button {

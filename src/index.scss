@@ -2,6 +2,7 @@
 @use "./_headings.scss";
 @use "./links";
 @use "./lists";
+@use "./blockquote";
 
 @font-face {
 	font-family: "Spectral";
@@ -277,6 +278,19 @@ settings:
 			-
 				label: Spectral (Same as other text)
 				value: ss-links-spectral
+	-
+		id: blockquote
+		title: Blockquotes
+		description: How all blockquotes should look
+		type: class-select
+		default: ss-links-sc
+		options:
+			-
+				label: Plain box
+				value: blockquote-plain
+			-
+				label: Neuomorphic soft shadows
+				value: blockquote-neuomorphic
 	*/
 
 /* Change inline mhchem equations font to better blend with the text */
