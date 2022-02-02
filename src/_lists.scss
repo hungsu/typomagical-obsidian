@@ -17,11 +17,9 @@ ul {
   list-style-type: circle;
 }
 
-.markdown-source-view.mod-cm6 .cm-formatting-list-ol,
-ol li::marker {
+// Controlled by a style setting
+.circled-ol ol li::marker {
   font-family: 'Concourse Index';
 }
-
-// This is also controlled by a style setting
 
 /* Lists END */
