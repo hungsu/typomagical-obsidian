@@ -465,6 +465,15 @@ body.ficus-ruby.theme-light .view-header {
 	border-bottom: 2px solid var(--background-primary-alt);
 	background-color: var(--background-primary-alt);
 }
+
+body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header > .view-header-title-container:before {
+	background: linear-gradient(to top, transparent, transparent)!important;
+}
+
+body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header > .view-header-title-container:after {
+	background: linear-gradient(to top, transparent, transparent)!important;
+}
+
 body.ficus-ruby.theme-light .workspace-ribbon.mod-right.is-collapsed {
 	border-left-color: var(--background-secondary-alt);
 }
@@ -477,9 +486,12 @@ body.ficus-ruby.theme-light .status-bar {
 	border-top: 2px solid var(--background-secondary-alt);
 }
 
-body.ficus-ruby.theme-light a,
-.cm-hmd-internal-link {
-	color: var(--text-accent);
+body.ficus-ruby.theme-light .view-action {
+	color: var(--text-muted);
+}
+
+body.ficus-ruby.theme-dark .view-action {
+	color: var(--text-muted);
 }
 
 body.ficus-ruby.theme-dark .suggestion-item.is-selected {
