@@ -97,6 +97,7 @@
 :root {
 	/* A good Title font should have a beautiful Ampersand (&) and ligatures */
 	--font-title: "Amiri";
+	--line-height-headings: 1.2; // Also controlled by style settings id line-height-headings in index.scss
 }
 
 .cm-s-obsidian .cm-header,
@@ -143,7 +144,7 @@ h6 {
 .markdown-preview-view h5,
 .cm-header-6,
 .markdown-preview-view h6 {
-	line-height: 1.2;
+	line-height: var(--line-height-headings);
 }
 
 .cm-header-2,
@@ -188,7 +189,7 @@ h6 {
 .markdown-preview-view h1 {
 	color: var(--text-title-h1);
 	font-family: var(--font-title);
-	font-size: calc(var(--fz8) * 1.1);
+	font-size: calc(var(--fz8) * 1.15); // Amiri is slightly smaller than Spectral at the same font size. This
 }
 
 .css-settings-manager .cm-header-1,

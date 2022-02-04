@@ -86,6 +86,7 @@
 :root {
 	--default-font: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
 		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
+	--line-height-body: 1.45; // Also modified by style-settings id line-height-body
 }
 
 .theme-light {
@@ -304,6 +305,24 @@ settings:
 			-
 				label: Justified
 				value: align-justified
+	-
+		id: line-height-headings
+		title: Line Height on Headings
+		description: Height of each line in headings. I recommend around 1.2
+		type: variable-number-slider
+		default: 1.2
+		min: 1.00
+		max: 2.00
+		step: 0.05
+	-
+		id: line-height-body
+		title: Line Height in Body
+		description: Height of each line in a multi-line passage. Obsidian default is 1.5.
+		type: variable-number-slider
+		default: 1.45
+		min: 1.00
+		max: 2.00
+		step: 0.05
 	*/
 
 /* Change inline mhchem equations font to better blend with the text */
@@ -338,6 +357,11 @@ body.css-settings-manager.heading-ligatures h6,
 	font-family: var(--default-font);
 }
 
+.ͼ1 .cm-scroller,
+.markdown-preview-view {
+	// From style-settings id line-height-body
+	line-height: var(--line-height-body);
+}
 
 .align-justified {
   p {
@@ -508,6 +532,10 @@ body.ficus-ruby.theme-dark .workspace-ribbon {
 
 body.ficus-ruby.theme-dark .status-bar {
 	border-top: 2px solid var(--background-secondary-alt);
+}
+
+.markdown-source-view.mod-cm6 .cm-gutters {
+background-color: transparent !important;
 }
 
 body.ficus-ruby.theme-dark a,
