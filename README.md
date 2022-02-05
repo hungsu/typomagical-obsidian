@@ -33,4 +33,5 @@ An Obsidian theme for typographic appreciators, with support for [Style Settings
 
 ## Further reading
 
-[Decisions](./decisions.md) - a list of decisions made, along with reasoning.
+- [Decisions](./decisions.md) - a list of decisions made, along with reasoning.
+- [Contributing](./CONTRIBUTING.md) - If you are a developer and want to submit a change, look here

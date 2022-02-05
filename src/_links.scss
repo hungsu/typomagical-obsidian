@@ -1,0 +1,84 @@
+/*
+Links
+[[]]
+*/
+
+// Alegreya SC was chosen over Spectral SC for having a shorter x-height, and beautiful Ampersands.
+
+/* latin */
+@font-face {
+	font-family: "Alegreya SC";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/alegreyasc/v15/taiOGmRtCJ62-O0HhNEa-Z6v2ZA.woff2)
+		format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+		U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+	font-family: "Alegreya SC";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/alegreyasc/v15/taiOGmRtCJ62-O0HhNEa-Z6h2ZAJaQ.woff2)
+		format("woff2");
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+		U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+	font-family: "Alegreya SC";
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/alegreyasc/v15/taiTGmRtCJ62-O0HhNEa-ZYU_IU2SKo.woff2)
+		format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+		U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+	font-family: "Alegreya SC";
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/alegreyasc/v15/taiTGmRtCJ62-O0HhNEa-ZYU_IU4SKqGFQ.woff2)
+		format("woff2");
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+		U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+:root {
+	--font-links: "Alegreya SC", "Spectral", serif;
+}
+
+a,
+.cm-url,
+.cm-hmd-internal-link,
+.cm-link,
+.markdown-preview-view .internal-link {
+	text-decoration: none;
+	font-family: var(--font-links);
+	font-variant-ligatures: none;
+}
+
+.markdown-source-view.mod-cm6 .cm-url,
+.markdown-source-view.mod-cm6 .cm-underline {
+	color: var(--text-accent);
+	text-decoration: none;
+}
+
+.markdown-source-view.mod-cm6 .cm-url:hover,
+.markdown-source-view.mod-cm6 .cm-underline:hover {
+	color: var(--text-accent-hover);
+}
+
+body.ss-links-spectral {
+	--font-links: "Spectral", serif;
+}
+
+/* END Links */
