@@ -200,6 +200,29 @@ name: Typomagical title settings
 id: typomagical-title
 settings:
 	-
+		id: font-title
+		title: Title (H1) font
+		description: Titles, or H1s, are special. Thus, they should look special. Choose a Title font that suits you!
+		type: variable-select
+		default: Amiri
+		options:
+				- Amiri
+				- Bitter
+				- Playfair Display
+	-
+		id: alignment-title
+		title: Alignment on Title
+		description: H1 '# ' alignment
+		type: class-select
+		default: align-title-center
+		options:
+			-
+				label: Left
+				value: align-title-left
+			-
+				label: Centered
+				value: align-title-center
+	-
 		id: title-gradient
 		title: Title gradient
 		description: Apply a vertical gradient to titles
@@ -240,9 +263,13 @@ settings:
 	}
 }
 
-.HyperMD-header-1,
-.markdown-preview-section.markdown-preview-section h1 {
-	text-align: center;
+
+body:not(.align-title-left) {
+	.embedded-note-title.embedded-note-title,
+	.HyperMD-header-1,
+	.markdown-preview-section.markdown-preview-section h1 {
+		text-align: center;
+	}
 }
 
 // Some colour palettes in style settings set different colours per header. This makes that possible

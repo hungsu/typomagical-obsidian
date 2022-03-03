@@ -232,16 +232,6 @@ settings:
 				label: All headings are Bold
 				value: headings-bold
 	-
-		id: font-title
-		title: Title (H1) font
-		description: Titles, or H1s, are special. Thus, they should look special. Choose a Title font that suits you!
-		type: variable-select
-		default: Amiri
-		options:
-				- Amiri
-				- Bitter
-				- Playfair Display
-	-
 		id: mjx-font
 		title: MathJax font
 		description: Font for MathJax e.g. $inline equation$ and $$centered equation$$
@@ -322,7 +312,7 @@ settings:
 	-
 		id: line-height-headings
 		title: Line Height on Headings
-		description: Height of each line in headings. I recommend around 1.2
+		description: Height of each line in headings. I recommend around 1.2. If you have Embedded Note Titles plugin, that setting overrides this.
 		type: variable-number-slider
 		default: 1.2
 		min: 1.00
