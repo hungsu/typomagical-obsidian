@@ -186,17 +186,58 @@ h1.embedded-note-title.embedded-note-title, // mgmeyers Embedded Note Titles
 	font-size: var(--fz3);
 }
 
-h1.embedded-note-title.embedded-note-title.embedded-note-title, // mgmeyers Embedded Note Titles. Three classes needed to override default style without !important
+h1.embedded-note-title.embedded-note-title.embedded-note-title,
 .cm-header-1,
 .markdown-preview-view h1 {
 	color: var(--text-title-h1);
 	font-family: var(--font-title);
-	font-size: calc(var(--fz8) * 1.15); // Amiri is slightly smaller than Spectral at the same font size. This
+	font-size: calc(var(--fz8) * 1.15); // Amiri is slightly smaller than Spectral at the same font size.
 }
 
-.css-settings-manager .cm-header-1,
-.css-settings-manager .markdown-preview-view h1 {
-	font-family: var(--heading-font), var(--font-title);
+/* @settings
+
+name: Typomagical title settings
+id: typomagical-title
+settings:
+	-
+		id: title-gradient
+		title: Title gradient
+		description: Apply a vertical gradient to titles
+		type: class-select
+		allowEmpty: false
+		default: ss-title-solid
+		options:
+			-
+				label: No gradient
+				value: ss-title-solid
+			-
+				label: Vertical gradient
+				value: ss-title-gradient
+	*/
+
+.theme-light {
+	--title-gradient-top: var(--text-accent);
+	--title-gradient-bottom: var(--text-normal);
+}
+.theme-dark {
+	--title-gradient-top: var(--text-normal);
+	--title-gradient-bottom: var(--text-accent);
+}
+.ss-title-gradient {
+	h1.embedded-note-title.embedded-note-title.embedded-note-title,
+	.cm-header-1,
+	.markdown-preview-view h1 {
+		background-image: -webkit-linear-gradient(-90deg, var(--title-gradient-top) 0%, var(--title-gradient-bottom) 100%);
+		-webkit-text-fill-color: transparent;
+		-webkit-background-clip: text;
+	}
+
+	&.vileplume {
+		.cm-header-1,
+		.markdown-preview-section.markdown-preview-section h1 {
+			text-shadow: none !important;
+		}
+	}
 }
 
 .HyperMD-header-1,
