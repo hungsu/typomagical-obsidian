@@ -196,12 +196,12 @@ h1.embedded-note-title.embedded-note-title.embedded-note-title,
 
 /* @settings
 
-name: Typomagical title settings
+name: Typomagical H1 (Title) settings
 id: typomagical-title
 settings:
 	-
 		id: font-title
-		title: Title (H1) font
+		title: Title font
 		description: Titles, or H1s, are special. Thus, they should look special. Choose a Title font that suits you!
 		type: variable-select
 		default: Amiri
@@ -211,8 +211,8 @@ settings:
 				- Playfair Display
 	-
 		id: alignment-title
-		title: Alignment on Title
-		description: H1 '# ' alignment
+		title: Title alignment
+		description: The horizontal alignment
 		type: class-select
 		default: align-title-center
 		options:
