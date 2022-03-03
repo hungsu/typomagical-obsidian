@@ -1,4 +1,5 @@
 @use "./_type-scale.scss";
+@use "./_font.scss";
 @use "./_headings.scss";
 @use "./links";
 @use "./lists";
@@ -266,6 +267,19 @@ settings:
 			-
 				label: Ordinary
 				value: ordinary-ol
+	-
+		id: default-font
+		title: Body font
+		description: The font for body
+		type: variable-select
+		default: Spectral
+		options:
+			-
+				label: Spectral
+				value: Spectral
+			-
+				label: Source Sans Pro
+				value: Source Sans Pro
 	-
 		id: link-font
 		title: Link font
