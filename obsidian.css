@@ -506,6 +506,10 @@ body.ss-links-spectral {
   --font-links: "Spectral", serif;
 }
 
+body.ss-links-sans {
+  --font-links: "Source Sans Pro", sans-serif;
+}
+
 /* END Links */
 /* Lists START */
 /*
@@ -811,8 +815,11 @@ settings:
 				label: Alegreya SC
 				value: ss-links-sc
 			-
-				label: Spectral (Same as other text)
+				label: Spectral (Serif)
 				value: ss-links-spectral
+			-
+				label: Source Sans Pro
+				value: ss-links-sans
 	-
 		id: blockquote
 		title: Blockquotes
