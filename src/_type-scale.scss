@@ -1,7 +1,5 @@
 :root {
 	--default-font: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
-	/* A good Title font should have a beautiful Ampersand (&) and ligatures */
-	--font-title: "Amiri";
 
 	/*
 		Font size variables, made with https://type-scale.com/ and https://fluid-typography.netlify.app/
@@ -9,72 +7,68 @@
 		Minor Third scale of 1.2 seems good on desktop
 		window width where things start to wrap when Readable line length setting is turned on seems to be around 782px
 	*/
-	--fz1: 0.833em;
-	--fz2: 1em;
-	--fz3: clamp(1.125em, calc(1rem + 3vw), 1.2em);
-	--fz4: clamp(1.266em, calc(1rem + 3vw), 1.44em);
-	--fz5: clamp(1.424em, calc(1rem + 3vw), 1.728em);
-	--fz6: clamp(1.602em, calc(0.8rem + 2.5vw), 2.074em);
-	--fz7: clamp(1.802em, calc(0.6rem + 3.7vw), 2.488em);
-	--fz8: clamp(2.027em, calc(0.4rem + 5.1vw), 2.986em);
+	--h6: clamp(1.125em, calc(1rem + 3vw), 1.2em);
+	--h5: clamp(1.266em, calc(1rem + 3vw), 1.44em);
+	--h4: clamp(1.424em, calc(1rem + 3vw), 1.728em);
+	--h3: clamp(1.602em, calc(0.8rem + 2.5vw), 2.074em);
+	--h2: clamp(1.802em, calc(0.6rem + 3.7vw), 2.488em);
+	--h1: clamp(2.027em, calc(0.4rem + 5.1vw), 2.986em);
 }
 
 body.type-scale-none {
-	--fz1: var(--editor-font-size);
-	--fz2: var(--editor-font-size);
-	--fz3: var(--editor-font-size);
-	--fz4: var(--editor-font-size);
-	--fz5: var(--editor-font-size);
-	--fz6: var(--editor-font-size);
-	--fz7: var(--editor-font-size);
-	--fz8: var(--editor-font-size);
+	--h6: var(--editor-font-size);
+	--h5: var(--editor-font-size);
+	--h4: var(--editor-font-size);
+	--h3: var(--editor-font-size);
+	--h2: var(--editor-font-size);
+	--h1: var(--editor-font-size);
 }
 
 body.type-scale-slight {
-	--fz3: 1rem;
-	--fz4: clamp(1rem, 12vw - 3.7rem, 1.1rem);
-	--fz5: clamp(1rem, 12vw - 3.7rem, 1.2rem);
-	--fz6: clamp(1.125rem, 12vw - 3.7rem, 1.3rem);
-	--fz7: clamp(1.125rem, 12vw - 3.7rem, 1.4rem);
-	--fz8: clamp(1.125rem, 12vw - 3.7rem, 1.5rem);
+	--h6: 1rem;
+	--h5: clamp(1rem, 12vw - 3.7rem, 1.1rem);
+	--h4: clamp(1rem, 12vw - 3.7rem, 1.2rem);
+	--h3: clamp(1.125rem, 12vw - 3.7rem, 1.3rem);
+	--h2: clamp(1.125rem, 12vw - 3.7rem, 1.4rem);
+	--h1: clamp(1.125rem, 12vw - 3.7rem, 1.5rem);
 }
 
 /* 1.125 */
 body.type-scale-minor-second {
-	--fz3: 1.067em;
-	--fz4: 1.138em;
-	--fz5: 1.215em;
-	--fz6: 1.296em;
-	--fz7: 1.383em;
-	--fz8: 1.476em;
+	--h6: 1.067em;
+	--h5: 1.138em;
+	--h4: 1.215em;
+	--h3: 1.296em;
+	--h2: 1.383em;
+	--h1: 1.476em;
 }
 
 /* 1.125 */
 body.type-scale-major-second {
-	--fz3: 1.125em;
-	--fz4: 1.266em;
-	--fz5: 1.424em;
-	--fz6: 1.602em;
-	--fz7: 1.802em;
-	--fz8: 2.027em;
+	--h6: 1.125em;
+	--h5: 1.266em;
+	--h4: 1.424em;
+	--h3: 1.602em;
+	--h2: 1.802em;
+	--h1: 2.027em;
 }
 
 /* 1.2 */
 body.type-scale-minor-third {
-	--fz3: 1.2em;
-	--fz4: 1.44em;
-	--fz5: 1.728em;
-	--fz6: 2.074em;
-	--fz7: 2.488em;
-	--fz8: 2.986em;
+	--h6: 1.2em;
+	--h5: 1.44em;
+	--h4: 1.728em;
+	--h3: 2.074em;
+	--h2: 2.488em;
+	--h1: 2.986em;
 }
 
 /* 1.25 */
 body.type-scale-major-third {
-	--fz3: 1.25em;
-	--fz4: 1.563em;
-	--fz5: 1.953em;
-	--fz6: 2.441em;
-	--fz7: 3.052em;
-	--fz8: 3.815em;
+	--h6: 1.25em;
+	--h5: 1.563em;
+	--h4: 1.953em;
+	--h3: 2.441em;
+	--h2: 3.052em;
+	--h1: 3.815em;
 }
