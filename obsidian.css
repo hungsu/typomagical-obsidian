@@ -548,6 +548,11 @@ ul {
 }
 .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote + .HyperMD-quote {
   border-top-width: 0;
+  top: -1px;
+  background-color: var(--background-primary);
+}
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote + .HyperMD-quote + .HyperMD-quote {
+  top: -2px;
 }
 
 /* The text inside a Live Preview blockquote */

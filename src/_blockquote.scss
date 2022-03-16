@@ -21,6 +21,11 @@
   }
   .HyperMD-quote + .HyperMD-quote {
     border-top-width: 0;
+    top: -1px; // Extreme hack to hide borders inside blockquotes
+    background-color: var(--background-primary);
+  }
+  .HyperMD-quote + .HyperMD-quote + .HyperMD-quote {
+    top: -2px; // Gross hack to hide borders inside blockquotes
   }
 }
 
