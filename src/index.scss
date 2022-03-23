@@ -774,6 +774,7 @@ body.obsidian-high-contrast.theme-light .suggestion-hotkey {
 
 /* Calendar by liamcain START */
 #calendar-container {
+	--color-text-today: var(--txt-accent)
 	.active {
 		.dot-container {
 			--color-dot: var(--text-on-accent)

@@ -585,6 +585,13 @@ ul {
   padding: 0.5em;
 }
 
+ul.dataview-ul {
+  list-style: none;
+  padding-inline-start: 0;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+}
+
 @font-face {
   font-family: "Spectral";
   font-style: normal;
@@ -1318,8 +1325,13 @@ body.obsidian-high-contrast.theme-light .suggestion-hotkey {
 }
 
 /* Calendar by liamcain START */
-#calendar-container .active .dot-container {
-  --color-dot: var(--text-on-accent) ;
+#calendar-container {
+  --color-text-today: var(--txt-accent)
+  .active {
+  	.dot-container {
+  		--color-dot: var(--text-on-accent)
+  	}
+  } ;
 }
 
 #calendar-container h3.title {
