@@ -44,3 +44,62 @@
   box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.05), 10px 10px 30px rgba(0, 0, 0, 0.2);
   background-color: rgba(255, 255, 255, 0.01);
 }
+
+.callout-icon-only {
+	.callout {
+		background-color: transparent !important;
+
+		border-width: 0;
+		.callout-icon {
+			padding-right: 10px;
+		}
+		svg {
+			transform: scale(1.25);
+		}
+		.callout-title {
+			background-color: transparent;
+			padding-left: 0;
+			padding-top: 1em;
+			padding-bottom: 0;
+		}
+		.callout-content {
+			padding-left: 36px;
+			p:first-child {
+				margin-top: 0;
+			}
+		}
+	}
+}
+
+.callout-border-gradient {
+	.callout {
+		background-color: transparent !important;
+
+		border-style: solid;
+		border-width: 1px 1px 1px 0;
+		border-image: linear-gradient(
+				90deg,
+				transparent,
+				rgba(var(--callout-color), 0.25)
+			)
+			1;
+		.callout-icon {
+			padding-right: 10px;
+		}
+		svg {
+			transform: scale(1.25);
+		}
+		.callout-title {
+			background-color: transparent;
+			padding-left: 0;
+			padding-top: 1em;
+			padding-bottom: 1em;
+		}
+		.callout-content {
+			padding-left: 36px;
+			p:first-child {
+				margin-top: 0;
+			}
+		}
+	}
+}

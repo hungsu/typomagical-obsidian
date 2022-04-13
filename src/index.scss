@@ -192,7 +192,7 @@ settings:
 		title: Blockquotes
 		description: How all blockquotes should look
 		type: class-select
-		default: ss-links-sc
+		default: blockquote-plain
 		options:
 			-
 				label: Plain box
@@ -200,6 +200,21 @@ settings:
 			-
 				label: Neuomorphic soft shadows
 				value: blockquote-neuomorphic
+	-
+		id: callout-style
+		title: Callout style
+		type: class-select
+		default: callout-default
+		options:
+			-
+				label: Obsidian default
+				value: callout-default
+			-
+				label: Icon only
+				value: callout-icon-only
+			-
+				label: Icon and gradient border
+				value: callout-border-gradient
 	-
 		id: alignment
 		title: Alignment
