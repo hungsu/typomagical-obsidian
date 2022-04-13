@@ -18,8 +18,24 @@ ul {
 }
 
 // Controlled by a style setting
-.circled-ol ol li::marker {
-  font-family: 'Concourse Index';
+
+.circled-ol {
+	ol {
+		padding-inline-start: 36px;
+	}
+	ol li {
+		// We cannot use ::marker because it does not have margin or width properties
+		list-style: none;
+		margin-left: 0;
+	}
+	ol li::before {
+		counter-increment: foobar;
+		content: counter(foobar);
+		font-size: 1.10rem;
+		position: absolute;
+		margin-left: -2.3rem;
+		font-family: 'Concourse Index';
+	}
 }
 
 /* Lists END */
