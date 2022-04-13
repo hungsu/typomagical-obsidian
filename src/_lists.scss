@@ -22,6 +22,7 @@ ul {
 .circled-ol {
 	ol {
 		padding-inline-start: 36px;
+		counter-reset: foobar;
 	}
 	ol li {
 		// We cannot use ::marker because it does not have margin or width properties

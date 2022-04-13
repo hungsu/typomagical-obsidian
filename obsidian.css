@@ -674,6 +674,7 @@ ul {
 
 .circled-ol ol {
   padding-inline-start: 36px;
+  counter-reset: foobar;
 }
 .circled-ol ol li {
   list-style: none;
