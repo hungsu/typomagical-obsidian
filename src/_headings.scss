@@ -221,6 +221,13 @@ settings:
 		-webkit-background-clip: text;
 	}
 
+	// Three classes are needed to overcome default style
+	h1 .is-unresolved.is-unresolved {
+		background-image: -webkit-linear-gradient(-90deg, var(--title-gradient-top) 0%, var(--title-gradient-bottom) 100%);
+		-webkit-text-fill-color: transparent;
+		-webkit-background-clip: text;
+	}
+
 	&.vileplume {
 		.cm-header-1,
 		.markdown-preview-section.markdown-preview-section h1 {
