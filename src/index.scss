@@ -292,6 +292,12 @@ body.css-settings-manager.heading-ligatures h6,
   }
 }
 
+// On mobile, if user turns on Editor/Fold Heading or Editor/Fold List, it bumps in the headings in an ugly way
+.is-mobile .markdown-rendered .heading-collapse-indicator {
+	margin-left: -30px; // Reset to what it was before
+	transform: translateX(6px);
+}
+
 /* @settings
 
 name: Typomagical colour settings

@@ -1083,6 +1083,11 @@ body.css-settings-manager.heading-ligatures h6,
   text-align: justify;
 }
 
+.is-mobile .markdown-rendered .heading-collapse-indicator {
+  margin-left: -30px;
+  transform: translateX(6px);
+}
+
 /* @settings
 
 name: Typomagical colour settings
