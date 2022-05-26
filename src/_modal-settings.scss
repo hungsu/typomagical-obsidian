@@ -1,0 +1,26 @@
+.modal.mod-settings {
+	max-width: none;
+	width: 100%;
+	align-self: flex-end;
+}
+
+.setting-item-description {
+	line-height: 1.4;
+}
+
+.community-theme.is-selected.is-selected {
+    .community-theme-info {
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .community-theme-info::after {
+        content: "Customize using the Style Settings plugin!";
+        line-height: 1.4;
+        position: relative;
+        background: var(--background-primary-alt);
+        white-space: pre-wrap;
+        text-align: center;
+        padding: 0.5em;
+    }
+}
