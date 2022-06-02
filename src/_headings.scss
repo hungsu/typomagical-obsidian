@@ -72,29 +72,27 @@ h4,
 h5,
 h6 {
 	font-weight: 300;
+	font-weight: var(--heading-weight);
 }
 
+.css-settings-manager h1.embedded-note-title,
+.css-settings-manager h1.cm-line.embedded-note-title,
 /* This .cm-s-obsidian selector is only to override .cm-s-obsidian .cm-header */
 .cm-s-obsidian .cm-header.cm-header-1 {
-	font-weight: 600;
+	font-weight: 700;
+	font-weight: var(--title-weight);
 }
 
-.headings-regular .cm-header.cm-header-1,
-.headings-regular h1 {
-	font-weight: 300;
-}
-
-.headings-bold h2,
-.headings-bold .cm-header-2,
-.headings-bold h3,
-.headings-bold .cm-header-3,
-.headings-bold h4,
-.headings-bold .cm-header-4,
-.headings-bold h5,
-.headings-bold .cm-header-5,
-.headings-bold h6,
-.headings-bold .cm-header-6 {
-	font-weight: 600;
+h1,
+h1.embedded-note-title.embedded-note-title.embedded-note-title,
+.cm-header-1,
+.markdown-preview-view h1 {
+	font-weight: 700;
+	font-weight: var(--title-weight);
+	color: var(--text-title-h1);
+	font-family: var(--font-title);
+	font-size: var(--h1); // Amiri is slightly smaller than Spectral at the same font size.
+	padding-bottom: 7px; // Without this, heading descenders like "y" get cut off at short line-heights
 }
 
 h1.embedded-note-title.embedded-note-title, // mgmeyers Embedded Note Titles
@@ -123,6 +121,8 @@ h1.embedded-note-title.embedded-note-title, // mgmeyers Embedded Note Titles
 .markdown-preview-view h5,
 .cm-header-6,
 .markdown-preview-view h6 {
+	font-weight: 300;
+	font-weight: var(--heading-weight);
 	letter-spacing: -0.03em;
 }
 
@@ -151,18 +151,9 @@ h1.embedded-note-title.embedded-note-title, // mgmeyers Embedded Note Titles
 	font-size: var(--h6);
 }
 
-h1.embedded-note-title.embedded-note-title.embedded-note-title,
-.cm-header-1,
-.markdown-preview-view h1 {
-	color: var(--text-title-h1);
-	font-family: var(--font-title);
-	font-size: var(--h1); // Amiri is slightly smaller than Spectral at the same font size.
-	padding-bottom: 7px; // Without this, heading descenders like "y" get cut off at short line-heights
-}
-
 /* @settings
 
-name: Typomagical H1 (Title) settings
+name: Typomagical Heading settings
 id: typomagical-title
 settings:
 	-
@@ -175,6 +166,15 @@ settings:
 				- Amiri
 				- Bitter
 				- Playfair Display
+	-
+		id: title-weight
+		title: Title weight
+		description: The boldness of H1 text
+		type: variable-number-slider
+		default: 650
+		min: 400
+		max: 900
+		step: 50
 	-
 		id: alignment-title
 		title: Title alignment
@@ -202,11 +202,29 @@ settings:
 			-
 				label: Vertical gradient
 				value: ss-title-gradient
+	-
+		id: heading-weight
+		title: Heading weight
+		description: The boldness of headings. I recommend choosing something different from your Title weight, and Body weight
+		type: variable-number-slider
+		default: 600
+		min: 200
+		max: 800
+		step: 100
+	-
+		id: line-height-headings
+		title: Heading line height
+		description: Height of each line in headings. I recommend around 1.2. If you have Embedded Note Titles plugin, that setting overrides this.
+		type: variable-number-slider
+		default: 1.2
+		min: 1.00
+		max: 2.00
+		step: 0.05
 	*/
 
 .theme-light {
 	--title-gradient-top: var(--text-accent);
-	--title-gradient-bottom: var(--text-normal);
+	--title-gradient-bottom: hsl(249, 34%, 35%);
 }
 .theme-dark {
 	--title-gradient-top: var(--text-normal);

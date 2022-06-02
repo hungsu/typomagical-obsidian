@@ -9,7 +9,7 @@
 @use "./plugins/dataview";
 
 :root {
-	--default-font: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
+	--font-default: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
 		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
 	--line-height-body: 1.45; // Also modified by style-settings id line-height-body
 }
@@ -19,6 +19,10 @@
 
 .theme-dark {
 	--text-accent: hsl(248, 75%, 79%);
+}
+
+body {
+	font-weight: var(--body-weight);
 }
 
 .markdown-preview-view hr {
@@ -117,22 +121,6 @@ settings:
 				label: 1.25 Major Third
 				value: type-scale-major-third
 	-
-		id: heading-weight
-		title: Heading bold
-		type: class-select
-		allowEmpty: false
-		default: headings-h1-bold
-		options:
-			-
-				label: All headings are not bold
-				value: headings-regular
-			-
-				label: Only H1 is Bold
-				value: headings-h1-bold
-			-
-				label: All headings are Bold
-				value: headings-bold
-	-
 		id: mjx-font
 		title: MathJax font
 		description: Font for MathJax e.g. $inline equation$ and $$centered equation$$
@@ -171,6 +159,24 @@ settings:
 			-
 				label: Source Sans Pro
 				value: Source Sans Pro
+	-
+		id: body-weight
+		title: Body text weight
+		description: The boldness of body text. For high resolution displays I recommend 300 or 400.
+		type: variable-number-slider
+		default: 400
+		min: 200
+		max: 800
+		step: 100
+	-
+		id: line-height-body
+		title: Body line height
+		description: Height of each line in a multi-line passage. Obsidian default is 1.5.
+		type: variable-number-slider
+		default: 1.45
+		min: 1.00
+		max: 2.00
+		step: 0.05
 	-
 		id: link-font
 		title: Link font
@@ -228,24 +234,6 @@ settings:
 			-
 				label: Justified
 				value: align-justified
-	-
-		id: line-height-headings
-		title: Line Height on Headings
-		description: Height of each line in headings. I recommend around 1.2. If you have Embedded Note Titles plugin, that setting overrides this.
-		type: variable-number-slider
-		default: 1.2
-		min: 1.00
-		max: 2.00
-		step: 0.05
-	-
-		id: line-height-body
-		title: Line Height in Body
-		description: Height of each line in a multi-line passage. Obsidian default is 1.5.
-		type: variable-number-slider
-		default: 1.45
-		min: 1.00
-		max: 2.00
-		step: 0.05
 	*/
 
 /* Change inline mhchem equations font to better blend with the text */
