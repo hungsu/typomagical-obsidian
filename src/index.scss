@@ -25,6 +25,13 @@ body {
 	font-weight: var(--body-weight);
 }
 
+b,
+// .cm-s-obsidian .cm-strong is an existing selector
+.cm-s-obsidian .cm-strong {
+	font-weight: 600;
+	font-weight: var(--bold-weight);
+}
+
 .markdown-preview-view hr {
 	border-width: 1px 0 0;
 	border-style: dotted;
@@ -165,6 +172,15 @@ settings:
 		description: The boldness of body text. For high resolution displays I recommend 300 or 400.
 		type: variable-number-slider
 		default: 400
+		min: 200
+		max: 800
+		step: 100
+	-
+		id: bold-weight
+		title: Bold text weight
+		description: The boldness of **bold** text. I recommend 600 or 700.
+		type: variable-number-slider
+		default: 600
 		min: 200
 		max: 800
 		step: 100
