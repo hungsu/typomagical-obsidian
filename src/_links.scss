@@ -60,21 +60,27 @@ a,
 .cm-url,
 .cm-hmd-internal-link,
 .cm-link,
+.markdown-rendered .internal-link,
 .markdown-preview-view .internal-link {
 	text-decoration: none;
 	font-family: var(--font-links);
 	font-variant-ligatures: none;
+	&:hover {
+		color: var(--text-accent-hover);
+	}
+}
+
+.markdown-rendered .internal-link:hover {
+	text-decoration: underline;
 }
 
 .markdown-source-view.mod-cm6 .cm-url,
 .markdown-source-view.mod-cm6 .cm-underline {
 	color: var(--text-accent);
 	text-decoration: none;
-}
-
-.markdown-source-view.mod-cm6 .cm-url:hover,
-.markdown-source-view.mod-cm6 .cm-underline:hover {
-	color: var(--text-accent-hover);
+	&:hover {
+		color: var(--text-accent-hover);
+	}
 }
 
 body.ss-links-spectral {

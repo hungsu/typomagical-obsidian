@@ -17,12 +17,12 @@
 }
 
 body.type-scale-none {
-  --h6: var(--editor-font-size);
-  --h5: var(--editor-font-size);
-  --h4: var(--editor-font-size);
-  --h3: var(--editor-font-size);
-  --h2: var(--editor-font-size);
-  --h1: var(--editor-font-size);
+  --h6: var(--font-text-size);
+  --h5: var(--font-text-size);
+  --h4: var(--font-text-size);
+  --h3: var(--font-text-size);
+  --h2: var(--font-text-size);
+  --h1: var(--font-text-size);
 }
 
 body.type-scale-slight {
@@ -445,7 +445,7 @@ h1.embedded-note-title.embedded-note-title,
 
 /* @settings
 
-name: Typomagical Heading settings
+name: Typomagical Headings
 id: typomagical-title
 settings:
 	-
@@ -466,7 +466,7 @@ settings:
 		default: 650
 		min: 400
 		max: 900
-		step: 50
+		step: 25
 	-
 		id: alignment-title
 		title: Title alignment
@@ -504,6 +504,29 @@ settings:
 		max: 800
 		step: 100
 	-
+		id: text-scale
+		title: Heading scale
+		description: The rate of growth between text and heading sizes. No scaling means headings and body text are the same size. Blank means Typomagical will attempt to choose the right scale based on your screen size.
+		type: class-select
+		allowEmpty: true
+		default: none
+		options:
+			-
+				label: 1.00 No scaling
+				value: type-scale-none
+			-
+				label: 1.067 Minor Second
+				value: type-scale-minor-second
+			-
+				label: 1.125 Major Second
+				value: type-scale-major-second
+			-
+				label: 1.20 Minor Third
+				value: type-scale-minor-third
+			-
+				label: 1.25 Major Third
+				value: type-scale-major-third
+	-
 		id: line-height-headings
 		title: Heading line height
 		description: Height of each line in headings. I recommend around 1.2. If you have Embedded Note Titles plugin, that setting overrides this.
@@ -512,6 +535,12 @@ settings:
 		min: 1.00
 		max: 2.00
 		step: 0.05
+	-
+		id: heading-ligatures
+		title: Heading ligatures
+		description: Decorative conjoined characters, such as the "ffi" in "office" and "ft" in "often".
+		type: class-toggle
+		default: true
 	*/
 .theme-light {
   --title-gradient-top: var(--text-accent);
@@ -569,6 +598,30 @@ body:not(.align-title-left) .markdown-preview-section.markdown-preview-section h
 .cm-header-6,
 .markdown-preview-section h6 {
   color: var(--text-title-h6);
+}
+
+.css-settings-manager h1,
+.css-settings-manager h2,
+.css-settings-manager h3,
+.css-settings-manager h4,
+.css-settings-manager h5,
+.css-settings-manager h6 {
+  font-variant-ligatures: none;
+}
+.css-settings-manager.heading-ligatures h1,
+.css-settings-manager.heading-ligatures .cm-header-1,
+.css-settings-manager.heading-ligatures h2,
+.css-settings-manager.heading-ligatures .cm-header-2,
+.css-settings-manager.heading-ligatures h3,
+.css-settings-manager.heading-ligatures .cm-header-3,
+.css-settings-manager.heading-ligatures h4,
+.css-settings-manager.heading-ligatures .cm-header-4,
+.css-settings-manager.heading-ligatures h5,
+.css-settings-manager.heading-ligatures .cm-header-5,
+.css-settings-manager.heading-ligatures h6,
+.css-settings-manager.heading-ligatures .cm-header-6 {
+  font-variant-ligatures: common-ligatures;
+  font-feature-settings: "liga";
 }
 
 /* Headings END */
@@ -784,10 +837,19 @@ ul {
   margin-top: 0;
 }
 
+body.theme-light .modal-bg {
+  --background-modifier-cover: rgba(0,0,0,0.1) ;
+}
+
+body.theme-dark .modal-bg {
+  --background-modifier-cover: rgba(0,0,0,0.2) ;
+}
+
 .modal.mod-settings {
   max-width: none;
   width: 100%;
   align-self: flex-end;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
 }
 
 .setting-item-description {
@@ -828,6 +890,12 @@ ul.dataview-ul {
 
 body {
   font-weight: var(--body-weight);
+}
+
+b,
+.cm-s-obsidian .cm-strong {
+  font-weight: 600;
+  font-weight: var(--bold-weight);
 }
 
 .markdown-preview-view hr {
@@ -879,48 +947,14 @@ body {
 
 /* @settings
 
-name: Typomagical text settings
+name: Typomagical Text
 id: typomagical-text
 settings:
 	-
-		id: ligatures
-		title: Ligatures
+		id: body-ligatures
+		title: Text Ligatures
 		description: Decorative conjoined characters, such as the "ffi" in "office" and "ft" in "often".
-		type: class-select
-		default: heading-ligatures
-		options:
-			-
-				label: All ligatures
-				value: all-ligatures
-			-
-				label: Ligatures on headings
-				value: heading-ligatures
-			-
-				label: No ligatures
-				value: no-ligatures
-	-
-		id: text-scale
-		title: Text scale
-		description: The rate of growth between text and heading sizes. No scaling means headings and body text are the same size. Blank means Typomagical will attempt to choose the right scale based on your screen size.
-		type: class-select
-		allowEmpty: true
-		default: none
-		options:
-			-
-				label: 1.00 No scaling
-				value: type-scale-none
-			-
-				label: 1.067 Minor Second
-				value: type-scale-minor-second
-			-
-				label: 1.125 Major Second
-				value: type-scale-major-second
-			-
-				label: 1.20 Minor Third
-				value: type-scale-minor-third
-			-
-				label: 1.25 Major Third
-				value: type-scale-major-third
+		type: class-toggle
 	-
 		id: mjx-font
 		title: MathJax font
@@ -966,6 +1000,15 @@ settings:
 		description: The boldness of body text. For high resolution displays I recommend 300 or 400.
 		type: variable-number-slider
 		default: 400
+		min: 200
+		max: 800
+		step: 100
+	-
+		id: bold-weight
+		title: Bold text weight
+		description: The boldness of **bold** text. I recommend 600 or 700.
+		type: variable-number-slider
+		default: 600
 		min: 200
 		max: 800
 		step: 100
@@ -1042,25 +1085,14 @@ settings:
 }
 
 /*
-		Ligatures
-		No class is needed for all-ligatures, because ligatures are enabled by default.
-	*/
-body.css-settings-manager.no-ligatures {
-  font-variant-ligatures: no-common-ligatures;
+	Ligatures
+	No class is needed for all-ligatures, because ligatures are enabled by default.
+*/
+body {
+  font-variant-ligatures: none;
 }
 
-body.css-settings-manager.heading-ligatures {
-  font-variant-ligatures: no-common-ligatures;
-}
-
-.heading-ligatures h1,
-.heading-ligatures .cm-header-1,
-body.css-settings-manager.heading-ligatures h2,
-body.css-settings-manager.heading-ligatures h3,
-body.css-settings-manager.heading-ligatures h4,
-body.css-settings-manager.heading-ligatures h5,
-body.css-settings-manager.heading-ligatures h6,
-.all-ligatures h2 {
+body.css-settings-manager.body-ligatures {
   font-variant-ligatures: common-ligatures;
   font-feature-settings: "liga";
 }
@@ -1086,7 +1118,7 @@ body.css-settings-manager.heading-ligatures h6,
 
 /* @settings
 
-name: Typomagical colour settings
+name: Typomagical Colour
 id: typomagical-colour
 settings:
 	-
@@ -1544,3 +1576,5 @@ body.obsidian-high-contrast.theme-light .suggestion-hotkey {
 }
 
 /* Calendar END */
+
+/*# sourceMappingURL=obsidian.css.map */
