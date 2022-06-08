@@ -85,48 +85,14 @@ b,
 
 /* @settings
 
-name: Typomagical text settings
+name: Typomagical Text
 id: typomagical-text
 settings:
 	-
-		id: ligatures
-		title: Ligatures
+		id: body-ligatures
+		title: Text Ligatures
 		description: Decorative conjoined characters, such as the "ffi" in "office" and "ft" in "often".
-		type: class-select
-		default: heading-ligatures
-		options:
-			-
-				label: All ligatures
-				value: all-ligatures
-			-
-				label: Ligatures on headings
-				value: heading-ligatures
-			-
-				label: No ligatures
-				value: no-ligatures
-	-
-		id: text-scale
-		title: Text scale
-		description: The rate of growth between text and heading sizes. No scaling means headings and body text are the same size. Blank means Typomagical will attempt to choose the right scale based on your screen size.
-		type: class-select
-		allowEmpty: true
-		default: none
-		options:
-			-
-				label: 1.00 No scaling
-				value: type-scale-none
-			-
-				label: 1.067 Minor Second
-				value: type-scale-minor-second
-			-
-				label: 1.125 Major Second
-				value: type-scale-major-second
-			-
-				label: 1.20 Minor Third
-				value: type-scale-minor-third
-			-
-				label: 1.25 Major Third
-				value: type-scale-major-third
+		type: class-toggle
 	-
 		id: mjx-font
 		title: MathJax font
@@ -258,23 +224,13 @@ settings:
 }
 
 /*
-		Ligatures
-		No class is needed for all-ligatures, because ligatures are enabled by default.
-	*/
-body.css-settings-manager.no-ligatures {
-	font-variant-ligatures: no-common-ligatures;
+	Ligatures
+	No class is needed for all-ligatures, because ligatures are enabled by default.
+*/
+body {
+	font-variant-ligatures: none;
 }
-body.css-settings-manager.heading-ligatures {
-	font-variant-ligatures: no-common-ligatures;
-}
-.heading-ligatures h1,
-.heading-ligatures .cm-header-1,
-body.css-settings-manager.heading-ligatures h2,
-body.css-settings-manager.heading-ligatures h3,
-body.css-settings-manager.heading-ligatures h4,
-body.css-settings-manager.heading-ligatures h5,
-body.css-settings-manager.heading-ligatures h6,
-.all-ligatures h2 {
+body.css-settings-manager.body-ligatures {
 	font-variant-ligatures: common-ligatures;
 	font-feature-settings: "liga";
 }
@@ -304,7 +260,7 @@ body.css-settings-manager.heading-ligatures h6,
 
 /* @settings
 
-name: Typomagical colour settings
+name: Typomagical Colour
 id: typomagical-colour
 settings:
 	-

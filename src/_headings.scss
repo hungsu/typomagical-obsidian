@@ -153,7 +153,7 @@ h1.embedded-note-title.embedded-note-title, // mgmeyers Embedded Note Titles
 
 /* @settings
 
-name: Typomagical Heading settings
+name: Typomagical Headings
 id: typomagical-title
 settings:
 	-
@@ -174,7 +174,7 @@ settings:
 		default: 650
 		min: 400
 		max: 900
-		step: 50
+		step: 25
 	-
 		id: alignment-title
 		title: Title alignment
@@ -212,6 +212,29 @@ settings:
 		max: 800
 		step: 100
 	-
+		id: text-scale
+		title: Heading scale
+		description: The rate of growth between text and heading sizes. No scaling means headings and body text are the same size. Blank means Typomagical will attempt to choose the right scale based on your screen size.
+		type: class-select
+		allowEmpty: true
+		default: none
+		options:
+			-
+				label: 1.00 No scaling
+				value: type-scale-none
+			-
+				label: 1.067 Minor Second
+				value: type-scale-minor-second
+			-
+				label: 1.125 Major Second
+				value: type-scale-major-second
+			-
+				label: 1.20 Minor Third
+				value: type-scale-minor-third
+			-
+				label: 1.25 Major Third
+				value: type-scale-major-third
+	-
 		id: line-height-headings
 		title: Heading line height
 		description: Height of each line in headings. I recommend around 1.2. If you have Embedded Note Titles plugin, that setting overrides this.
@@ -220,6 +243,12 @@ settings:
 		min: 1.00
 		max: 2.00
 		step: 0.05
+	-
+		id: heading-ligatures
+		title: Heading ligatures
+		description: Decorative conjoined characters, such as the "ffi" in "office" and "ft" in "often".
+		type: class-toggle
+		default: true
 	*/
 
 .theme-light {
@@ -283,6 +312,34 @@ body:not(.align-title-left) {
 .cm-header-6,
 .markdown-preview-section h6 {
 	color: var(--text-title-h6);
+}
+
+.css-settings-manager {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-variant-ligatures: none;
+	}
+	&.heading-ligatures {
+		h1,
+		.cm-header-1,
+		h2,
+		.cm-header-2,
+		h3,
+		.cm-header-3,
+		h4,
+		.cm-header-4,
+		h5,
+		.cm-header-5,
+		h6,
+		.cm-header-6 {
+			font-variant-ligatures: common-ligatures;
+			font-feature-settings: "liga";
+		}
+	}
 }
 
 /* Headings END */
