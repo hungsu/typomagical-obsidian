@@ -625,6 +625,17 @@ body:not(.align-title-left) .markdown-preview-section.markdown-preview-section h
 }
 
 /* Headings END */
+@keyframes skinnyheavy {
+  0% {
+    font-weight: 300;
+  }
+  50% {
+    font-weight: 900;
+  }
+  100% {
+    font-weight: 300;
+  }
+}
 /*
 Links
 [[]]
@@ -878,7 +889,7 @@ ul.dataview-ul {
   margin-block-end: 0.5em;
 }
 
-:root {
+body {
   --font-default: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
   --line-height-body: 1.45;
@@ -1576,5 +1587,3 @@ body.obsidian-high-contrast.theme-light .suggestion-hotkey {
 }
 
 /* Calendar END */
-
-/*# sourceMappingURL=obsidian.css.map */
