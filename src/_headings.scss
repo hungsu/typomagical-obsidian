@@ -63,17 +63,9 @@
 	/* A good Title font should have a beautiful Ampersand (&) and ligatures */
 	--font-title: "Amiri";
 	--line-height-headings: 1.2; // Also controlled by style settings id line-height-headings in index.scss
+	--heading-weight: 600;
 }
 
-.cm-s-obsidian .cm-header,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-weight: 300;
-	font-weight: var(--heading-weight);
-}
 
 .css-settings-manager h1.embedded-note-title,
 .css-settings-manager h1.cm-line.embedded-note-title,
@@ -111,6 +103,15 @@ h1.embedded-note-title.embedded-note-title, // mgmeyers Embedded Note Titles
 	line-height: var(--line-height-headings);
 }
 
+.cm-s-obsidian .cm-header,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: var(--heading-weight);
+}
+
 .cm-header-2,
 .markdown-preview-view h2,
 .cm-header-3,
@@ -121,7 +122,6 @@ h1.embedded-note-title.embedded-note-title, // mgmeyers Embedded Note Titles
 .markdown-preview-view h5,
 .cm-header-6,
 .markdown-preview-view h6 {
-	font-weight: 300;
 	font-weight: var(--heading-weight);
 	letter-spacing: -0.03em;
 }

@@ -356,16 +356,7 @@ body.type-scale-major-third {
   /* A good Title font should have a beautiful Ampersand (&) and ligatures */
   --font-title: "Amiri";
   --line-height-headings: 1.2;
-}
-
-.cm-s-obsidian .cm-header,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 300;
-  font-weight: var(--heading-weight);
+  --heading-weight: 600;
 }
 
 .css-settings-manager h1.embedded-note-title,
@@ -403,6 +394,15 @@ h1.embedded-note-title.embedded-note-title,
   line-height: var(--line-height-headings);
 }
 
+.cm-s-obsidian .cm-header,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--heading-weight);
+}
+
 .cm-header-2,
 .markdown-preview-view h2,
 .cm-header-3,
@@ -413,7 +413,6 @@ h1.embedded-note-title.embedded-note-title,
 .markdown-preview-view h5,
 .cm-header-6,
 .markdown-preview-view h6 {
-  font-weight: 300;
   font-weight: var(--heading-weight);
   letter-spacing: -0.03em;
 }
@@ -721,6 +720,11 @@ body.ss-links-sans {
   --font-links: "Source Sans Pro", sans-serif;
 }
 
+.cm-string.cm-url {
+  font-family: var(--font-monospace);
+  font-size: 0.8em;
+}
+
 /* END Links */
 /* Lists START */
 /*
@@ -892,6 +896,7 @@ ul.dataview-ul {
 body {
   --font-default: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
   	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
+  --font-text: var(--font-default);
   --line-height-body: 1.45;
 }
 
@@ -1065,7 +1070,7 @@ settings:
 		id: callout-style
 		title: Callout style
 		type: class-select
-		default: callout-default
+		default: callout-border-gradient
 		options:
 			-
 				label: Obsidian default
