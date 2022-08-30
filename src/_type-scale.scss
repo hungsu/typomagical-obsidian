@@ -5,68 +5,68 @@
 		Minor Third scale of 1.2 seems good on desktop
 		window width where things start to wrap when Readable line length setting is turned on seems to be around 782px
 	*/
-	--h6: clamp(1.125em, calc(1rem + 3vw), 1.2em);
-	--h5: clamp(1.266em, calc(1rem + 3vw), 1.44em);
-	--h4: clamp(1.424em, calc(1rem + 3vw), 1.728em);
-	--h3: clamp(1.602em, calc(0.8rem + 2.5vw), 2.074em);
-	--h2: clamp(1.802em, calc(0.6rem + 3.7vw), 2.488em);
-	--h1: clamp(2.027em, calc(0.4rem + 5.1vw), 2.986em);
+	--h6-size: clamp(1.125em, calc(1rem + 3vw), 1.2em);
+	--h5-size: clamp(1.266em, calc(1rem + 3vw), 1.44em);
+	--h4-size: clamp(1.424em, calc(1rem + 3vw), 1.728em);
+	--h3-size: clamp(1.602em, calc(0.8rem + 2.5vw), 2.074em);
+	--h2-size: clamp(1.802em, calc(0.6rem + 3.7vw), 2.488em);
+	--h1-size: clamp(2.027em, calc(0.4rem + 5.1vw), 2.986em);
 }
 
 body.type-scale-none {
-	--h6: var(--font-text-size);
-	--h5: var(--font-text-size);
-	--h4: var(--font-text-size);
-	--h3: var(--font-text-size);
-	--h2: var(--font-text-size);
-	--h1: var(--font-text-size);
+	--h6-size: var(--font-text-size);
+	--h5-size: var(--font-text-size);
+	--h4-size: var(--font-text-size);
+	--h3-size: var(--font-text-size);
+	--h2-size: var(--font-text-size);
+	--h1-size: var(--font-text-size);
 }
 
 body.type-scale-slight {
-	--h6: 1rem;
-	--h5: clamp(1rem, 12vw - 3.7rem, 1.1rem);
-	--h4: clamp(1rem, 12vw - 3.7rem, 1.2rem);
-	--h3: clamp(1.125rem, 12vw - 3.7rem, 1.3rem);
-	--h2: clamp(1.125rem, 12vw - 3.7rem, 1.4rem);
-	--h1: clamp(1.125rem, 12vw - 3.7rem, 1.5rem);
+	--h6-size: 1rem;
+	--h5-size: clamp(1rem, 12vw - 3.7rem, 1.1rem);
+	--h4-size: clamp(1rem, 12vw - 3.7rem, 1.2rem);
+	--h3-size: clamp(1.125rem, 12vw - 3.7rem, 1.3rem);
+	--h2-size: clamp(1.125rem, 12vw - 3.7rem, 1.4rem);
+	--h1-size: clamp(1.125rem, 12vw - 3.7rem, 1.5rem);
 }
 
 /* 1.125 */
 body.type-scale-minor-second {
-	--h6: 1.067em;
-	--h5: 1.138em;
-	--h4: 1.215em;
-	--h3: 1.296em;
-	--h2: 1.383em;
-	--h1: 1.476em;
+	--h6-size: 1.067em;
+	--h5-size: 1.138em;
+	--h4-size: 1.215em;
+	--h3-size: 1.296em;
+	--h2-size: 1.383em;
+	--h1-size: 1.476em;
 }
 
 /* 1.125 */
 body.type-scale-major-second {
-	--h6: 1.125em;
-	--h5: 1.266em;
-	--h4: 1.424em;
-	--h3: 1.602em;
-	--h2: 1.802em;
-	--h1: 2.027em;
+	--h6-size: 1.125em;
+	--h5-size: 1.266em;
+	--h4-size: 1.424em;
+	--h3-size: 1.602em;
+	--h2-size: 1.802em;
+	--h1-size: 2.027em;
 }
 
 /* 1.2 */
 body.type-scale-minor-third {
-	--h6: 1.2em;
-	--h5: 1.44em;
-	--h4: 1.728em;
-	--h3: 2.074em;
-	--h2: 2.488em;
-	--h1: 2.986em;
+	--h6-size: 1.2em;
+	--h5-size: 1.44em;
+	--h4-size: 1.728em;
+	--h3-size: 2.074em;
+	--h2-size: 2.488em;
+	--h1-size: 2.986em;
 }
 
 /* 1.25 */
 body.type-scale-major-third {
-	--h6: 1.25em;
-	--h5: 1.563em;
-	--h4: 1.953em;
-	--h3: 2.441em;
-	--h2: 3.052em;
-	--h1: 3.815em;
+	--h6-size: 1.25em;
+	--h5-size: 1.563em;
+	--h4-size: 1.953em;
+	--h3-size: 2.441em;
+	--h2-size: 3.052em;
+	--h1-size: 3.815em;
 }

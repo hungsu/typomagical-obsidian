@@ -59,15 +59,12 @@ Links
 a,
 .cm-url,
 .cm-hmd-internal-link,
+.cm-s-obsidian span.cm-hmd-internal-link,
 .cm-link,
 .markdown-rendered .internal-link,
 .markdown-preview-view .internal-link {
-	text-decoration: none;
 	font-family: var(--font-links);
 	font-variant-ligatures: none;
-	&:hover {
-		color: var(--text-accent-hover);
-	}
 }
 
 .markdown-rendered .internal-link:hover {
@@ -92,7 +89,13 @@ body.ss-links-sans {
 }
 
 // In source mode and live preview mode, the string between the parentheses of a markdown link. []()
-.cm-string.cm-url {
+.markdown-source-view.mod-cm6 .cm-url {
+	font-family: var(--font-monospace);
+	font-size: 0.8em;
+	color: var(--link-external-color);
+}
+
+.cm-hashtag {
 	font-family: var(--font-monospace);
 	font-size: 0.8em;
 }

@@ -60,4 +60,4 @@ Sass
 ### Consequences
 
 - Outside developers must know Sass and have it installed to contribute.
-- var intellisense no longer works
+- var intellisense no longer work

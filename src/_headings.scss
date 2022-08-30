@@ -83,7 +83,6 @@ h1.embedded-note-title.embedded-note-title.embedded-note-title,
 	font-weight: var(--title-weight);
 	color: var(--text-title-h1);
 	font-family: var(--font-title);
-	font-size: var(--h1); // Amiri is slightly smaller than Spectral at the same font size.
 	padding-bottom: 7px; // Without this, heading descenders like "y" get cut off at short line-heights
 }
 
@@ -124,31 +123,6 @@ h6 {
 .markdown-preview-view h6 {
 	font-weight: var(--heading-weight);
 	letter-spacing: -0.03em;
-}
-
-.cm-header-2,
-.markdown-preview-view h2 {
-	font-size: var(--h2);
-}
-
-.cm-header-3,
-.markdown-preview-view h3 {
-	font-size: var(--h3);
-}
-
-.cm-header-4,
-.markdown-preview-view h4 {
-	font-size: var(--h4);
-}
-
-.cm-header-5,
-.markdown-preview-view h5 {
-	font-size: var(--h5);
-}
-
-.cm-header-6,
-.markdown-preview-view h6 {
-	font-size: var(--h6);
 }
 
 /* @settings
@@ -252,12 +226,12 @@ settings:
 	*/
 
 .theme-light {
-	--title-gradient-top: var(--text-accent);
+	--title-gradient-top: var(--link-color);
 	--title-gradient-bottom: hsl(249, 34%, 35%);
 }
 .theme-dark {
 	--title-gradient-top: var(--text-normal);
-	--title-gradient-bottom: var(--text-accent);
+	--title-gradient-bottom: var(--link-color);
 }
 .ss-title-gradient {
 	h1.embedded-note-title.embedded-note-title.embedded-note-title,

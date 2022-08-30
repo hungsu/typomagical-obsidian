@@ -12,14 +12,36 @@ body {
 	--font-default: "Spectral", -apple-system, BlinkMacSystemFont, "Segoe UI",
 		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
 	--font-text: var(--font-default);
+	--link-unresolved-color: #d5aecf;
+	--link-unresolved-opacity: 1;
+	--link-external-decoration: none;
+	--link-external-decoration-hover: underline;
+	--tag-color: #eeb662;
+	--tag-color-hover: #f7d865;
+	--code-normal: #62d770;
+	--link-decoration: none;
+
+	// Variables I created
 	--line-height-body: 1.45; // Also modified by style-settings id line-height-body
 }
 
 .theme-light {
+	--code-normal: #4db95a;
+	--link-color-hover: #8177eb;
+	--link-external-color: #2f9bb7;
+	--link-external-color-hover: rgb(72, 191, 224);
+	--tag-color: var(--text-normal);
+	--tag-color-hover: var(--text-normal);
+	--tag-background: #eeb662;
+	--tag-background-hover: #f7d865;
 }
 
 .theme-dark {
-	--text-accent: hsl(248, 75%, 79%);
+	--link-color: hsl(248, 75%, 79%);
+	--link-color-hover: #8177eb;
+
+	--link-external-color: #7fcae6;
+	--link-external-color-hover: #89ebe5;
 }
 
 body {
@@ -49,10 +71,12 @@ b,
 	color: hsl(30, 69%, 59%);
 }
 .theme-light .graph-view.color-fill-attachment {
-	color: hsl(0, 74%, 37%);
+	// color: hsl(0, 74%, 37%);
+	color: #2f9bb7;
 }
 .theme-dark .graph-view.color-fill-attachment {
-	color: hsl(0, 64%, 42%);
+	// color: hsl(0, 64%, 42%);
+	color: #7fcae6
 }
 .graph-view.color-fill-unresolved {
 }
@@ -323,8 +347,8 @@ body.ficus-ruby.theme-light {
 	--background-modifier-error-rgb: 230, 135, 135;
 	--background-modifier-error-hover: #bb0000;
 	--background-modifier-cover: rgba(0, 0, 0, 0.8);
-	--text-accent: #800000;
-	--text-accent-hover: #c94458;
+	--link-color: #800000;
+	--link-color-hover: #c94458;
 	--text-normal: #333834;
 	--text-muted: #525e5b;
 	--text-muted-rgb: 136, 136, 136;
@@ -368,8 +392,8 @@ body.ficus-ruby.theme-dark {
 	--background-modifier-error-rgb: 61, 0, 0;
 	--background-modifier-error-hover: #563032;
 	--background-modifier-cover: rgba(0, 0, 0, 0.6);
-	--text-accent: #fa858f;
-	--text-accent-hover: #f4465d;
+	--link-color: #fa858f;
+	--link-color-hover: #f4465d;
 	--text-normal: #f9ead9;
 	--text-muted: #d5c4a1;
 	--text-faint: #bdae93;
@@ -439,7 +463,7 @@ body.ficus-ruby.theme-dark .view-action {
 }
 
 body.ficus-ruby.theme-dark .suggestion-item.is-selected {
-	background-color: var(--text-accent-hover);
+	background-color: var(--link-color-hover);
 }
 
 body.ficus-ruby.theme-dark .workspace-ribbon.mod-right.is-collapsed {
@@ -456,11 +480,6 @@ body.ficus-ruby.theme-dark .status-bar {
 
 .markdown-source-view.mod-cm6 .cm-gutters {
 background-color: transparent !important;
-}
-
-body.ficus-ruby.theme-dark a,
-.cm-hmd-internal-link {
-	color: var(--text-accent);
 }
 
 /* START Vileplume */
@@ -498,8 +517,8 @@ body.vileplume {
 	--interactive-hover: var(--dark0);
 	--interactive-before: var(--dark3);
 	--background-modifier-border: var(--dark2);
-	--text-accent: var(--yellow);
-	--text-accent-hover: var(--yellow59);
+	--link-color: var(--yellow);
+	--link-color-hover: var(--yellow59);
 	--interactive-accent-rgb: var(--orange);
 	--inline-code: var(--frost1);
 	--code-block: var(--frost1);
@@ -539,8 +558,8 @@ body.vileplume.theme-light {
 	--text-link: var(--frost0);
 	--text-highlight-bg: var(--light0);
 	--text-selection: var(--light0);
-	--text-accent-hover: var(--yellow);
-	--text-accent: var(--yellow59);
+	--link-color-hover: var(--yellow);
+	--link-color: var(--yellow59);
 	--title-gradient-top: var(--text-title-h1);
 	--title-gradient-bottom: var(--text-normal);
 }
@@ -573,11 +592,11 @@ body.vileplume.theme-light {
 .vileplume .side-dock-ribbon-action.is-active:hover,
 .vileplume .nav-action-button:hover,
 .vileplume .side-dock-collapse-btn:hover {
-	color: var(--text-accent);
+	color: var(--link-color);
 }
 
 .vileplume .graph-view.color-text {
-	color: var(--text-accent-hover);
+	color: var(--link-color-hover);
 }
 .vileplume .graph-view.graph-view.color-fill-focused {
 	color: var(--yellow59);
@@ -601,13 +620,17 @@ body.vileplume.theme-light {
 
 .side-dock-ribbon-tab:hover,
 body.obsidian-high-contrast .side-dock-ribbon-action:hover {
-	color: var(--text-accent-hover);
+	color: var(--link-color-hover);
 }
 
 body.obsidian-high-contrast.theme-light {
 	--background-secondary: #fff;
 	--background-secondary-alt: #fff;
-	--text-accent: hsl(250, 65%, 50%);
+	--link-color: hsl(250, 65%, 50%);
+
+	// Chosen using Firefox WCAG, has 4.53 contrast on white background.
+	--link-external-color: hsl(193.2, 100%, 31.2%);
+	--link-external-color-hover: rgb(72, 191, 224);
 }
 
 body.obsidian-high-contrast.theme-dark {
@@ -712,10 +735,10 @@ body.obsidian-high-contrast.theme-light .suggestion-hotkey {
 	font-style: italic;
 }
 #calendar-container .today:not(.active) {
-	// color: var(--text-accent);
 	background-image: linear-gradient(transparent, var(--interactive-hover));
 }
 #calendar-container .reset-button {
-	color: var(--text-accent);
+	color: var(--link-color);
 }
 /* Calendar END */
+
