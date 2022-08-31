@@ -259,6 +259,8 @@ settings:
 
 
 body:not(.align-title-left) {
+	.HyperMD-header-line.HyperMD-header-line-1.cm-line, // When user makes a row of === under some text in source or live preview mode
+	.inline-title,
 	.embedded-note-title.embedded-note-title,
 	.HyperMD-header-1,
 	.markdown-preview-section.markdown-preview-section h1 {

@@ -360,15 +360,14 @@ body.type-scale-major-third {
 }
 
 .css-settings-manager h1.embedded-note-title,
-.css-settings-manager h1.cm-line.embedded-note-title,
-.cm-s-obsidian .cm-header.cm-header-1 {
+.css-settings-manager h1.cm-line.embedded-note-title {
   font-weight: 700;
   font-weight: var(--title-weight);
 }
 
 h1,
 h1.embedded-note-title.embedded-note-title.embedded-note-title,
-.cm-header-1,
+.cm-s-obsidian .cm-header.cm-header-1 .cm-header-1,
 .markdown-preview-view h1 {
   font-weight: 700;
   font-weight: var(--title-weight);
@@ -525,6 +524,7 @@ settings:
   --title-gradient-bottom: var(--link-color);
 }
 
+.ss-title-gradient .inline-title,
 .ss-title-gradient h1.embedded-note-title.embedded-note-title.embedded-note-title,
 .ss-title-gradient .cm-header-1,
 .ss-title-gradient .markdown-preview-view h1 {
@@ -542,6 +542,8 @@ settings:
   text-shadow: none !important;
 }
 
+body:not(.align-title-left) .HyperMD-header-line.HyperMD-header-line-1.cm-line,
+body:not(.align-title-left) .inline-title,
 body:not(.align-title-left) .embedded-note-title.embedded-note-title,
 body:not(.align-title-left) .HyperMD-header-1,
 body:not(.align-title-left) .markdown-preview-section.markdown-preview-section h1 {
@@ -609,7 +611,7 @@ body:not(.align-title-left) .markdown-preview-section.markdown-preview-section h
     font-weight: 300;
   }
 }
-.workspace-tabs .workspace-leaf-content h1, .workspace-tabs .workspace-leaf-content h1.embedded-note-title.embedded-note-title {
+.mod-left-split .workspace-tabs .workspace-leaf-content h1, .mod-left-split .workspace-tabs .workspace-leaf-content h1.embedded-note-title.embedded-note-title {
   font-size: var(--h2-size);
 }
 
@@ -696,9 +698,8 @@ body.ss-links-sans {
   color: var(--link-external-color);
 }
 
-.cm-hashtag {
-  font-family: var(--font-monospace);
-  font-size: 0.8em;
+.cm-s-obsidian .cm-formatting-hashtag {
+  font-family: var(--font-normal);
 }
 
 /* END Links */
@@ -736,6 +737,10 @@ ul {
   font-variant-ligatures: common-ligatures;
 }
 
+.mod-top-left-space ol li::before {
+  font-size: 1em;
+}
+
 /* Lists END */
 /*
 	Blockquotes
@@ -748,6 +753,21 @@ ul {
 body {
   --blockquote-border-thickness: 1px;
   --blockquote-border-color: var(--text-normal) ;
+}
+
+.blockquote-bustle blockquote {
+  padding: var(--size-4-4) 0 0 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  font-size: 1.25em;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  border-top: 1px solid var(--blockquote-border-color);
+  border-left: none;
+  margin-left: var(--size-4-12);
+}
+.blockquote-bustle .mod-left-split blockquote {
+  margin-left: var(--size-4-4);
 }
 
 .blockquote-neuomorphic .markdown-preview-view blockquote {
@@ -839,6 +859,41 @@ body.theme-dark .modal-bg {
   padding: 0.5em;
 }
 
+/* Calendar by liamcain START */
+#calendar-container {
+  --color-background-today: var(--link-color);
+}
+#calendar-container .active .dot-container svg {
+  fill: white;
+}
+
+#calendar-container h3.title {
+  font-family: var(--font-title);
+}
+
+#calendar-container .year {
+  color: var(--text);
+  letter-spacing: -0.05em;
+}
+
+#calendar-container .month {
+  font-weight: 700;
+}
+
+#calendar-container .today {
+  font-style: italic;
+}
+
+#calendar-container .today:not(.active) {
+  color: var(--color-text-day);
+  box-shadow: inset 0 0 1px var(--link-color);
+}
+
+#calendar-container .reset-button {
+  color: var(--link-color);
+}
+
+/* Calendar END */
 ul.dataview-ul {
   list-style: none;
   padding-inline-start: 0;
@@ -916,14 +971,21 @@ b,
 }
 
 /* Tables START */
-.markdown-preview-view th {
-  border-top-color: transparent;
+body {
+  --table-column-first-border-width: 0;
+  --table-column-last-border-width: 0;
+  --table-header-border-width: 0;
+  --table-row-last-border-width: 0;
 }
 
 .markdown-preview-view td,
 .markdown-preview-view th {
   border-right-color: transparent;
   border-left-color: transparent;
+}
+
+.markdown-rendered table {
+  margin: 1.5em 0;
 }
 
 /* Tables END */
@@ -1038,6 +1100,9 @@ settings:
 			-
 				label: Plain box
 				value: blockquote-plain
+			-
+				label: Big with top border
+				value: blockquote-bustle
 			-
 				label: Neuomorphic soft shadows
 				value: blockquote-neuomorphic
@@ -1503,9 +1568,8 @@ body.obsidian-high-contrast.theme-light .suggestion-hotkey {
 
 /* The Link icon when we embed with ![[]] */
 .markdown-embed-link {
-  right: 1em;
-  top: -0.6em;
-  background: var(--background-primary);
+  right: 0;
+  top: 0;
 }
 
 .markdown-embed .markdown-preview-view {
@@ -1527,40 +1591,3 @@ body.obsidian-high-contrast.theme-light .suggestion-hotkey {
 .math-inline mjx-math {
   padding: 0;
 }
-
-/* Calendar by liamcain START */
-#calendar-container {
-  --color-text-today: var(--txt-accent)
-  .active {
-  	.dot-container {
-  		--color-dot: var(--text-on-accent)
-  	}
-  } ;
-}
-
-#calendar-container h3.title {
-  font-family: var(--font-title);
-}
-
-#calendar-container .year {
-  color: var(--text);
-  letter-spacing: -0.05em;
-}
-
-#calendar-container .month {
-  font-weight: 700;
-}
-
-#calendar-container .today {
-  font-style: italic;
-}
-
-#calendar-container .today:not(.active) {
-  background-image: linear-gradient(transparent, var(--interactive-hover));
-}
-
-#calendar-container .reset-button {
-  color: var(--link-color);
-}
-
-/* Calendar END */
