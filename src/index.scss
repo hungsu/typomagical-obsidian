@@ -6,6 +6,8 @@
 @use "./lists";
 @use "./blockquote";
 @use "./modal-settings";
+
+@use "./plugins/calendar";
 @use "./plugins/dataview";
 
 body {
@@ -710,35 +712,4 @@ body.obsidian-high-contrast.theme-light .suggestion-hotkey {
 .math-inline mjx-math {
 	padding: 0;
 }
-
-/* Calendar by liamcain START */
-#calendar-container {
-	--color-text-today: var(--txt-accent)
-	.active {
-		.dot-container {
-			--color-dot: var(--text-on-accent)
-		}
-	}
-}
-#calendar-container h3.title {
-	font-family: var(--font-title);
-}
-#calendar-container .year {
-	color: var(--text);
-	letter-spacing: -0.05em;
-}
-#calendar-container .month {
-	font-weight: 700;
-}
-
-#calendar-container .today {
-	font-style: italic;
-}
-#calendar-container .today:not(.active) {
-	background-image: linear-gradient(transparent, var(--interactive-hover));
-}
-#calendar-container .reset-button {
-	color: var(--link-color);
-}
-/* Calendar END */
 
