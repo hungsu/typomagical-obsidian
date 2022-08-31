@@ -12,6 +12,25 @@ body {
 	--blockquote-border-color: var(--text-normal)
 }
 
+.blockquote-bustle {
+	blockquote {
+		padding: var(--size-4-4) 0 0 0;
+		margin-inline-start: 0;
+		margin-inline-end: 0;
+		font-size: 1.25em;
+		font-weight: 500;
+		letter-spacing: -0.05em;
+		border-top: 1px solid var(--blockquote-border-color);
+		border-left: none;
+		margin-left: var(--size-4-12);
+	}
+	// Decrease the left margin if in sidebar, since there's much less space
+	// Cannot use a media query here
+	.mod-left-split blockquote {
+		margin-left: var(--size-4-4);
+	}
+}
+
 // Vileplume style blockquote
 .blockquote-neuomorphic .markdown-preview-view blockquote {
   border-radius: 10px;
