@@ -1035,7 +1035,7 @@ settings:
 				label: Ordinary
 				value: ordinary-ol
 	-
-		id: default-font
+		id: font-default
 		title: Body font
 		description: The font for body
 		type: variable-select
