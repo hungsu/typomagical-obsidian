@@ -52,7 +52,7 @@ Links
 		U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
-:root {
+body {
 	--font-links: "Alegreya SC", "Spectral", serif;
 }
 
@@ -73,11 +73,7 @@ a,
 
 .markdown-source-view.mod-cm6 .cm-url,
 .markdown-source-view.mod-cm6 .cm-underline {
-	color: var(--text-accent);
 	text-decoration: none;
-	&:hover {
-		color: var(--text-accent-hover);
-	}
 }
 
 body.ss-links-spectral {
@@ -95,9 +91,8 @@ body.ss-links-sans {
 	color: var(--link-external-color);
 }
 
-.cm-hashtag {
-	font-family: var(--font-monospace);
-	font-size: 0.8em;
+.cm-s-obsidian .cm-formatting-hashtag {
+	font-family: var(--font-normal);
 }
 
 /* END Links */
