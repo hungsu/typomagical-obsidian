@@ -1,0 +1,16 @@
+body {
+	--table-column-first-border-width: 0;
+	--table-column-last-border-width: 0;
+	--table-header-border-width: 0;
+	--table-row-last-border-width: 0;
+}
+
+.markdown-preview-view td,
+.markdown-preview-view th {
+	border-right-color: transparent;
+	border-left-color: transparent;
+}
+
+.markdown-rendered table {
+	margin: 1.5em 0;
+}

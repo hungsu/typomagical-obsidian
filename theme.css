@@ -223,7 +223,8 @@ body.type-scale-major-third {
 
 h1,
 h1.embedded-note-title.embedded-note-title.embedded-note-title,
-.cm-s-obsidian .cm-header.cm-header-1 .cm-header-1,
+.cm-s-obsidian .cm-header.cm-header-1,
+.HyperMD-header-1.HyperMD-header .cm-header-1,
 .markdown-preview-view h1 {
   font-weight: 700;
   font-weight: var(--title-weight);
@@ -593,6 +594,23 @@ ul {
 }
 
 /* Lists END */
+body {
+  --table-column-first-border-width: 0;
+  --table-column-last-border-width: 0;
+  --table-header-border-width: 0;
+  --table-row-last-border-width: 0;
+}
+
+.markdown-preview-view td,
+.markdown-preview-view th {
+  border-right-color: transparent;
+  border-left-color: transparent;
+}
+
+.markdown-rendered table {
+  margin: 1.5em 0;
+}
+
 /*
 	Blockquotes
 	>
@@ -825,25 +843,6 @@ b,
   width: 100%;
 }
 
-/* Tables START */
-body {
-  --table-column-first-border-width: 0;
-  --table-column-last-border-width: 0;
-  --table-header-border-width: 0;
-  --table-row-last-border-width: 0;
-}
-
-.markdown-preview-view td,
-.markdown-preview-view th {
-  border-right-color: transparent;
-  border-left-color: transparent;
-}
-
-.markdown-rendered table {
-  margin: 1.5em 0;
-}
-
-/* Tables END */
 /* Wrap long nav text*/
 .nav-file-title,
 .nav-folder-title,

@@ -4,6 +4,7 @@
 @use "./_headings.scss";
 @use "./links";
 @use "./lists";
+@use "./table";
 @use "./blockquote";
 @use "./modal-settings";
 
@@ -88,18 +89,6 @@ b,
 .markdown-preview-section iframe {
 	width: 100%;
 }
-
-/* Tables START */
-.markdown-preview-view th {
-	border-top-color: transparent;
-}
-
-.markdown-preview-view td,
-.markdown-preview-view th {
-	border-right-color: transparent;
-	border-left-color: transparent;
-}
-/* Tables END */
 
 /* Wrap long nav text*/
 .nav-file-title,
@@ -691,9 +680,8 @@ body.obsidian-high-contrast.theme-light .suggestion-hotkey {
 
 /* The Link icon when we embed with ![[]] */
 .markdown-embed-link {
-	right: 1em;
-	top: -0.6em;
-	background: var(--background-primary);
+	right: 0;
+	top: 0;
 }
 
 .markdown-embed .markdown-preview-view {
