@@ -95,4 +95,13 @@ body.ss-links-sans {
 	font-family: var(--font-normal);
 }
 
-/* END Links */
+// When "No file is open", the links underneath e.g. "Create New File"
+.empty-state-action {
+	color: var(--link-color)
+}
+
+.cm-s-obsidian .cm-formatting-hashtag,
+.cm-hashtag {
+	font-size: 0.8em;
+	font-family: var(--font-monospace);
+}
