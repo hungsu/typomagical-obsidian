@@ -215,11 +215,6 @@ body.type-scale-major-third {
   --heading-weight: 600;
 }
 
-.css-settings-manager h1.embedded-note-title,
-.css-settings-manager .inline-title {
-  font-weight: var(--title-weight);
-}
-
 h1,
 h1.embedded-note-title,
 .inline-title,
@@ -230,6 +225,12 @@ h1.embedded-note-title,
   color: var(--text-title-h1);
   font-family: var(--font-title);
   padding-bottom: 7px;
+}
+
+.css-settings-manager h1,
+.css-settings-manager h1.embedded-note-title,
+.css-settings-manager .inline-title {
+  font-weight: var(--title-weight);
 }
 
 h1.embedded-note-title.embedded-note-title,

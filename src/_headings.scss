@@ -67,17 +67,11 @@
 }
 
 
-.css-settings-manager {
-	h1.embedded-note-title,
-	.inline-title {
-		font-weight: var(--title-weight);
-	}
-}
 
 h1,
 h1.embedded-note-title,
-/* H1 in source code view. This .cm-s-obsidian selector is only to override .cm-s-obsidian .cm-header */
 .inline-title, // Inline title introduce by Obsidian 1.0
+/* H1 in source code view. This .cm-s-obsidian selector is only to override .cm-s-obsidian .cm-header */
 .cm-s-obsidian .cm-header.cm-header-1,
 .HyperMD-header-1.HyperMD-header .cm-header-1,
 .markdown-preview-view h1 {
@@ -85,6 +79,14 @@ h1.embedded-note-title,
 	color: var(--text-title-h1);
 	font-family: var(--font-title);
 	padding-bottom: 7px; // Without this, heading descenders like "y" get cut off at short line-heights
+}
+
+.css-settings-manager {
+	h1,
+	h1.embedded-note-title,
+	.inline-title {
+		font-weight: var(--title-weight);
+	}
 }
 
 h1.embedded-note-title.embedded-note-title, // mgmeyers Embedded Note Titles
