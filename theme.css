@@ -217,6 +217,7 @@ body.type-scale-major-third {
 
 h1,
 h1.embedded-note-title,
+.cm-header.cm-header-1,
 .inline-title,
 .cm-s-obsidian .cm-header.cm-header-1,
 .HyperMD-header-1.HyperMD-header .cm-header-1,
@@ -229,6 +230,7 @@ h1.embedded-note-title,
 
 .css-settings-manager h1,
 .css-settings-manager h1.embedded-note-title,
+.css-settings-manager .cm-header.cm-header-1,
 .css-settings-manager .inline-title {
   font-weight: var(--title-weight);
 }

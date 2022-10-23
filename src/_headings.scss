@@ -70,6 +70,7 @@
 
 h1,
 h1.embedded-note-title,
+.cm-header.cm-header-1, // H1 in live preview mode
 .inline-title, // Inline title introduce by Obsidian 1.0
 /* H1 in source code view. This .cm-s-obsidian selector is only to override .cm-s-obsidian .cm-header */
 .cm-s-obsidian .cm-header.cm-header-1,
@@ -84,6 +85,7 @@ h1.embedded-note-title,
 .css-settings-manager {
 	h1,
 	h1.embedded-note-title,
+	.cm-header.cm-header-1,
 	.inline-title {
 		font-weight: var(--title-weight);
 	}
@@ -325,3 +327,9 @@ body:not(.align-title-left) {
 }
 
 /* Headings END */
+
+.mod-left-split .workspace-tabs .workspace-leaf-content {
+	h1, h1.embedded-note-title.embedded-note-title {
+		font-size: var(--h2-size);
+	}
+}
