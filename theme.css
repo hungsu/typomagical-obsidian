@@ -216,18 +216,17 @@ body.type-scale-major-third {
 }
 
 .css-settings-manager h1.embedded-note-title,
-.css-settings-manager h1.cm-line.embedded-note-title {
-  font-weight: 700;
+.css-settings-manager .inline-title {
   font-weight: var(--title-weight);
 }
 
 h1,
-h1.embedded-note-title.embedded-note-title.embedded-note-title,
+h1.embedded-note-title,
+.inline-title,
 .cm-s-obsidian .cm-header.cm-header-1,
 .HyperMD-header-1.HyperMD-header .cm-header-1,
 .markdown-preview-view h1 {
   font-weight: 700;
-  font-weight: var(--title-weight);
   color: var(--text-title-h1);
   font-family: var(--font-title);
   padding-bottom: 7px;
@@ -442,6 +441,7 @@ body:not(.align-title-left) .markdown-preview-section.markdown-preview-section h
 }
 .css-settings-manager.heading-ligatures h1,
 .css-settings-manager.heading-ligatures .cm-header-1,
+.css-settings-manager.heading-ligatures .inline-title,
 .css-settings-manager.heading-ligatures h2,
 .css-settings-manager.heading-ligatures .cm-header-2,
 .css-settings-manager.heading-ligatures h3,
@@ -457,17 +457,6 @@ body:not(.align-title-left) .markdown-preview-section.markdown-preview-section h
 }
 
 /* Headings END */
-@keyframes skinnyheavy {
-  0% {
-    font-weight: 300;
-  }
-  50% {
-    font-weight: 900;
-  }
-  100% {
-    font-weight: 300;
-  }
-}
 .mod-left-split .workspace-tabs .workspace-leaf-content h1, .mod-left-split .workspace-tabs .workspace-leaf-content h1.embedded-note-title.embedded-note-title {
   font-size: var(--h2-size);
 }

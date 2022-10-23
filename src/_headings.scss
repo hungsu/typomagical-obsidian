@@ -67,21 +67,21 @@
 }
 
 
-.css-settings-manager h1.embedded-note-title,
-.css-settings-manager h1.cm-line.embedded-note-title
-{
-	font-weight: 700;
-	font-weight: var(--title-weight);
+.css-settings-manager {
+	h1.embedded-note-title,
+	.inline-title {
+		font-weight: var(--title-weight);
+	}
 }
 
 h1,
-h1.embedded-note-title.embedded-note-title.embedded-note-title,
+h1.embedded-note-title,
 /* H1 in source code view. This .cm-s-obsidian selector is only to override .cm-s-obsidian .cm-header */
+.inline-title, // Inline title introduce by Obsidian 1.0
 .cm-s-obsidian .cm-header.cm-header-1,
 .HyperMD-header-1.HyperMD-header .cm-header-1,
 .markdown-preview-view h1 {
 	font-weight: 700;
-	font-weight: var(--title-weight);
 	color: var(--text-title-h1);
 	font-family: var(--font-title);
 	padding-bottom: 7px; // Without this, heading descenders like "y" get cut off at short line-heights
@@ -234,7 +234,9 @@ settings:
 	--title-gradient-top: var(--text-normal);
 	--title-gradient-bottom: var(--link-color);
 }
+
 .ss-title-gradient {
+	.inline-title,
 	h1.embedded-note-title.embedded-note-title.embedded-note-title,
 	.cm-header-1,
 	.markdown-preview-view h1 {
@@ -303,6 +305,7 @@ body:not(.align-title-left) {
 	&.heading-ligatures {
 		h1,
 		.cm-header-1,
+		.inline-title,
 		h2,
 		.cm-header-2,
 		h3,
