@@ -701,7 +701,14 @@ body {
 
 sup.footnote-ref {
   position: relative;
-  bottom: 0.3em;
+  bottom: 0.2em;
+  padding-left: 0.1em;
+}
+
+.footnote-link {
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.05em;
 }
 
 body.theme-light .modal-bg {
