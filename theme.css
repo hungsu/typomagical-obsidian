@@ -699,6 +699,11 @@ body {
   transform: rotate(180deg) scale(1.25);
 }
 
+sup.footnote-ref {
+  position: relative;
+  bottom: 0.3em;
+}
+
 body.theme-light .modal-bg {
   --background-modifier-cover: rgba(0,0,0,0.1) ;
 }
@@ -1013,6 +1018,7 @@ body.css-settings-manager.body-ligatures {
   font-family: var(--default-font);
 }
 
+.cm-content .cm-line,
 .ͼ1 .cm-scroller,
 .markdown-preview-view {
   line-height: var(--line-height-body);
