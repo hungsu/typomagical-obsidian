@@ -464,6 +464,14 @@ body:not(.align-title-left) .markdown-preview-section.markdown-preview-section h
   font-size: var(--h2-size);
 }
 
+body:not(.no-image-alttext-caption) .image-embed[alt]:not([alt$=".png"], [alt$=".jpg"], [alt$=".jpeg"], [alt$=".tiff"])::after {
+  display: block;
+  content: attr(alt);
+  color: var(--text-muted);
+  margin-bottom: 1em;
+  text-align: center;
+}
+
 /*
 Links
 [[]]
@@ -710,6 +718,9 @@ sup.footnote-ref {
   font-weight: 500;
   letter-spacing: 0.05em;
 }
+.footnote-link:hover {
+  text-decoration: none;
+}
 
 body.theme-light .modal-bg {
   --background-modifier-cover: rgba(0,0,0,0.1) ;
@@ -799,6 +810,7 @@ body {
   --tag-color-hover: #f7d865;
   --code-normal: #62d770;
   --link-decoration: none;
+  --modal-height: 75vh;
   --line-height-body: 1.45;
 }
 
