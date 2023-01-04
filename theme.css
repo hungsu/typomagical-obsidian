@@ -383,10 +383,10 @@ settings:
   --title-gradient-bottom: var(--link-color);
 }
 
+.ss-title-gradient h1,
 .ss-title-gradient .inline-title,
 .ss-title-gradient h1.embedded-note-title.embedded-note-title.embedded-note-title,
-.ss-title-gradient .cm-header-1,
-.ss-title-gradient .markdown-preview-view h1 {
+.ss-title-gradient .cm-header-1 {
   background-image: -webkit-linear-gradient(-90deg, var(--title-gradient-top) 0%, var(--title-gradient-bottom) 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;

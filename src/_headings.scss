@@ -240,10 +240,10 @@ settings:
 }
 
 .ss-title-gradient {
+	h1,
 	.inline-title,
 	h1.embedded-note-title.embedded-note-title.embedded-note-title,
-	.cm-header-1,
-	.markdown-preview-view h1 {
+	.cm-header-1 {
 		background-image: -webkit-linear-gradient(-90deg, var(--title-gradient-top) 0%, var(--title-gradient-bottom) 100%);
 		-webkit-text-fill-color: transparent;
 		-webkit-background-clip: text;
