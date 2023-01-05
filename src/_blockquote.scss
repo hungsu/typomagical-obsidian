@@ -97,3 +97,8 @@ body {
 		}
 	}
 }
+
+// [!quote] is facing the wrong way and too small by default
+.svg-icon.svg-icon.lucide-quote {
+	transform: rotate(180deg) scale(1.25);
+}
