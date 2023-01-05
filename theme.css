@@ -564,6 +564,12 @@ body.ss-links-sans {
   font-family: var(--font-monospace);
 }
 
+.is-live-preview .external-link {
+  position: relative;
+  top: -4px;
+  background-position-y: 0;
+}
+
 /* Lists START */
 /*
   Concourse Index by Matthew Butterick

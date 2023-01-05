@@ -105,3 +105,10 @@ body.ss-links-sans {
 	font-size: 0.8em;
 	font-family: var(--font-monospace);
 }
+
+// Obsidian breaks this icon by default. Remove this code if it gets fixed.
+.is-live-preview .external-link {
+    position: relative;
+    top: -4px;
+    background-position-y: 0;
+}
