@@ -951,6 +951,10 @@ body.ficus-ruby.theme-dark .status-bar {
 
 #calendar-container .reset-button {
   color: var(--link-color);
+  text-transform: initial;
+  font-family: "Alegreya SC";
+  font-size: 0.9em;
+  font-weight: 500;
 }
 
 /* Calendar END */
