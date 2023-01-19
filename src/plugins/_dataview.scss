@@ -9,6 +9,7 @@ ul.dataview-ul {
 .dataview.inline-field-key {
 	font-family: var(--font-text);
 	padding: 0;
+	background-color: transparent;
 }
 
 .dataview.inline-field-value::before {
