@@ -4,3 +4,15 @@ ul.dataview-ul {
 	margin-block-start:0.5em;
 	margin-block-end:0.5em;
 }
+
+.dataview.inline-field-value,
+.dataview.inline-field-key {
+	font-family: var(--font-text);
+	padding: 0;
+}
+
+.dataview.inline-field-value::before {
+	content: '·';
+	color: var(--text-muted);
+	padding: 0 var(--size-4-1);
+}
