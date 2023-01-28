@@ -722,7 +722,7 @@ body {
   display: none;
 }
 .callout-quote-style [data-callout=quote]::after {
-  font-family: "Alegreya Sans SC";
+  font-family: "Times New Roman", "Playfair Display";
   font-size: 3em;
   text-align: center;
   line-height: 1;
