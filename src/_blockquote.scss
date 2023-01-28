@@ -102,3 +102,49 @@ body {
 .svg-icon.svg-icon.lucide-quote {
 	transform: rotate(180deg) scale(1.25);
 }
+
+.callout-quote-style [data-callout="quote"] {
+	&.callout.callout {
+		border: none;
+		display: flex;
+		flex-direction: column-reverse;
+		.callout-icon {display: none;}
+	}
+
+	&::after {
+		font-family: 'Alegreya Sans SC';
+		font-size: 3em;
+		text-align: center;
+		line-height: 1;
+		content: '“';
+		font-weight: 900
+	}
+	.callout-content.callout-content {
+		padding: 0;
+		font-size: 1.35em; // at 1.4em, breaks my Mark Twain quote too soon
+		text-align: center;
+		font-weight: 300;
+		font-variant-ligatures: discretionary-ligatures;
+		font-feature-settings: "liga";
+	}
+	.callout-title.callout-title {
+		padding-top: 0;
+		justify-content: center;
+		color: var(--text-normal);
+		.callout-title-inner {
+			font-weight: 400;
+		}
+		&::before {
+			content: '\2015' // quotation dash
+		}
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	.callout-fold {
+		transform: scale(0.75);
+		svg {
+			stroke: var(--text-accent);
+		}
+	}
+}

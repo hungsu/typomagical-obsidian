@@ -713,6 +713,51 @@ body {
   transform: rotate(180deg) scale(1.25);
 }
 
+.callout-quote-style [data-callout=quote].callout.callout {
+  border: none;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.callout-quote-style [data-callout=quote].callout.callout .callout-icon {
+  display: none;
+}
+.callout-quote-style [data-callout=quote]::after {
+  font-family: "Alegreya Sans SC";
+  font-size: 3em;
+  text-align: center;
+  line-height: 1;
+  content: "“";
+  font-weight: 900;
+}
+.callout-quote-style [data-callout=quote] .callout-content.callout-content {
+  padding: 0;
+  font-size: 1.35em;
+  text-align: center;
+  font-weight: 300;
+  font-variant-ligatures: discretionary-ligatures;
+  font-feature-settings: "liga";
+}
+.callout-quote-style [data-callout=quote] .callout-title.callout-title {
+  padding-top: 0;
+  justify-content: center;
+  color: var(--text-normal);
+}
+.callout-quote-style [data-callout=quote] .callout-title.callout-title .callout-title-inner {
+  font-weight: 400;
+}
+.callout-quote-style [data-callout=quote] .callout-title.callout-title::before {
+  content: "―";
+}
+.callout-quote-style [data-callout=quote] .callout-title.callout-title:hover {
+  cursor: pointer;
+}
+.callout-quote-style [data-callout=quote] .callout-fold {
+  transform: scale(0.75);
+}
+.callout-quote-style [data-callout=quote] .callout-fold svg {
+  stroke: var(--text-accent);
+}
+
 sup.footnote-ref {
   position: relative;
   bottom: 0.2em;
@@ -723,9 +768,6 @@ sup.footnote-ref {
   text-decoration: none;
   font-weight: 500;
   letter-spacing: 0.05em;
-}
-.footnote-link:hover {
-  text-decoration: none;
 }
 
 body.theme-light .modal-bg {
@@ -990,7 +1032,6 @@ body {
   --tag-color-hover: #f7d865;
   --code-normal: #62d770;
   --link-decoration: none;
-  --modal-height: 75vh;
   --line-height-body: 1.45;
 }
 
@@ -1180,6 +1221,11 @@ settings:
 			-
 				label: Icon and gradient border
 				value: callout-border-gradient
+	-
+		id: callout-quote-style
+		title: Quote Callout style
+		description: Change [!quote] callouts to magazine style
+		type: class-toggle
 	-
 		id: alignment
 		title: Alignment

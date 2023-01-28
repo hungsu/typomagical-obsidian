@@ -227,6 +227,11 @@ settings:
 				label: Icon and gradient border
 				value: callout-border-gradient
 	-
+		id: callout-quote-style
+		title: Quote Callout style
+		description: Change [!quote] callouts to magazine style
+		type: class-toggle
+	-
 		id: alignment
 		title: Alignment
 		description: How all text is aligned
