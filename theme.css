@@ -1308,7 +1308,7 @@ settings:
 		description: The next setting will work when this is on
 		type: class-toggle
 	-
-		id: background-color
+		id: ss-background-color
 		title: Background color
 		description: Overwrite background color with one of your choice
 		type: variable-color
@@ -1316,8 +1316,12 @@ settings:
 		format: hex
 		default: '#000000'
 	*/
+.background-color-enable {
+  --ss-background-color: #000000 ;
+}
+
 .background-color-enable.background-color-enable.background-color-enable {
-  --background-primary: var(--background-color) ;
+  --background-primary: var(--ss-background-color) ;
 }
 
 .markdown-source-view.mod-cm6 .cm-gutters {
