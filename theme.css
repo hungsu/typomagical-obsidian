@@ -768,6 +768,10 @@ sup.footnote-ref {
   text-decoration: none;
   font-weight: 500;
   letter-spacing: 0.05em;
+  margin-left: 0.5em;
+}
+.footnote-link:hover {
+  text-decoration: none;
 }
 
 body.theme-light .modal-bg {
