@@ -762,19 +762,27 @@ body {
 }
 
 sup.footnote-ref {
-  position: relative;
-  bottom: 0.2em;
-  padding-left: 0.1em;
+  line-height: 1;
 }
 
 .footnote-link {
   text-decoration: none;
   font-weight: 500;
   letter-spacing: 0.05em;
-  margin-left: 0.5em;
 }
 .footnote-link:hover {
   text-decoration: none;
+}
+
+.footnote-backref {
+  margin-left: 0.5em;
+}
+
+.circled-ol .footnotes ol {
+  padding-inline-start: 18px;
+}
+.circled-ol .footnotes ol li::before {
+  margin-left: -1.3rem;
 }
 
 body.theme-light .modal-bg {
