@@ -754,6 +754,7 @@ body {
   cursor: pointer;
 }
 .callout-quote-style [data-callout=quote] .callout-fold {
+  margin-top: 0;
   transform: scale(0.75);
 }
 .callout-quote-style [data-callout=quote] .callout-fold svg {

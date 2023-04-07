@@ -144,6 +144,7 @@ body {
 		cursor: pointer;
 	}
 	.callout-fold {
+		margin-top: 0;
 		transform: scale(0.75);
 		svg {
 			stroke: var(--text-accent);
