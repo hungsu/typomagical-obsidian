@@ -105,9 +105,11 @@ body {
 
 .callout-quote-style [data-callout="quote"] {
 	&.callout.callout {
+		background-color: transparent;
 		border: none;
 		display: flex;
 		flex-direction: column-reverse;
+		padding: 0;
 		.callout-icon {display: none;}
 	}
 
@@ -137,9 +139,9 @@ body {
 		&::before {
 			content: '\2015' // quotation dash
 		}
-		&:hover {
-			cursor: pointer;
-		}
+	}
+	&.is-collapsible .callout-title:hover {
+		cursor: pointer;
 	}
 	.callout-fold {
 		transform: scale(0.75);

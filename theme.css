@@ -714,9 +714,11 @@ body {
 }
 
 .callout-quote-style [data-callout=quote].callout.callout {
+  background-color: transparent;
   border: none;
   display: flex;
   flex-direction: column-reverse;
+  padding: 0;
 }
 .callout-quote-style [data-callout=quote].callout.callout .callout-icon {
   display: none;
@@ -748,7 +750,7 @@ body {
 .callout-quote-style [data-callout=quote] .callout-title.callout-title::before {
   content: "―";
 }
-.callout-quote-style [data-callout=quote] .callout-title.callout-title:hover {
+.callout-quote-style [data-callout=quote].is-collapsible .callout-title:hover {
   cursor: pointer;
 }
 .callout-quote-style [data-callout=quote] .callout-fold {
