@@ -1038,6 +1038,7 @@ body {
   --tag-color-hover: #f7d865;
   --code-normal: #62d770;
   --link-decoration: none;
+  --modal-height: 75vh;
   --line-height-body: 1.45;
 }
 

@@ -27,6 +27,7 @@ body {
 	--tag-color-hover: #f7d865;
 	--code-normal: #62d770;
 	--link-decoration: none;
+	--modal-height: 75vh; // 85vh originally
 
 	// Variables I created
 	--line-height-body: 1.45; // Also modified by style-settings id line-height-body
@@ -275,9 +276,9 @@ body.css-settings-manager.body-ligatures {
 }
 
 .align-justified {
-  p {
-	  text-align: justify;
-  }
+	p {
+		text-align: justify;
+	}
 }
 
 // On mobile, if user turns on Editor/Fold Heading or Editor/Fold List, it bumps in the headings in an ugly way
@@ -335,7 +336,7 @@ settings:
 }
 
 .markdown-source-view.mod-cm6 .cm-gutters {
-background-color: transparent !important;
+	background-color: transparent !important;
 }
 
 /* START Vileplume */
