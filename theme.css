@@ -464,7 +464,19 @@ body:not(.align-title-left) .markdown-preview-section.markdown-preview-section h
   font-size: var(--h2-size);
 }
 
-body:not(.no-image-alttext-caption) .image-embed[alt]:not([alt$=".png"], [alt$=".jpg"], [alt$=".jpeg"], [alt$=".tiff"])::after {
+/* @settings
+
+name: Typomagical Images
+id: typomagical-images
+settings:
+	-
+		id: ss-image-caption
+		title: Image captions
+		description: Show captions underneath images using ![filename.jpg|caption]. Does not work for ![](url.jpg).
+		type: class-toggle
+*/
+.ss-image-caption .image-embed[alt]:not([alt$=".png"], [alt$=".jpg"], [alt$=".jpeg"], [alt$=".tiff"])::after,
+body:not(.no-image-alttext-caption) .published-container .image-embed[alt]:not([alt$=".png"], [alt$=".jpg"], [alt$=".jpeg"], [alt$=".tiff"])::after {
   display: block;
   content: attr(alt);
   color: var(--text-muted);
