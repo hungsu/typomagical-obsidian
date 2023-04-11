@@ -36,6 +36,6 @@ An Obsidian theme for typographic appreciators, with support for [Style Settings
 - [Decisions](./decisions.md) - a list of decisions made, along with reasoning.
 - [Contributing](./CONTRIBUTING.md) - If you are a developer and want to submit a change, look here
 
-I work on this team for myself and for my small but wonderful following of fans 💚 If you would like to support development of this theme, you can give me a tip here:
+I work on this theme for myself and for my small but wonderful following of fans 💚 If you would like to support development of this theme, you can give me a tip here:
 
 <a href='https://ko-fi.com/D1D2E9XML' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
