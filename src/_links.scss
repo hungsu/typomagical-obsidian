@@ -107,8 +107,7 @@ body.ss-links-sans {
 }
 
 // Obsidian breaks this icon by default. Remove this code if it gets fixed.
+.markdown-rendered .external-link,
 .is-live-preview .external-link {
-    position: relative;
-    top: -4px;
     background-position-y: 0;
 }

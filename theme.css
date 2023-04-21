@@ -606,9 +606,8 @@ body.ss-links-sans {
   font-family: var(--font-monospace);
 }
 
+.markdown-rendered .external-link,
 .is-live-preview .external-link {
-  position: relative;
-  top: -4px;
   background-position-y: 0;
 }
 
