@@ -1094,7 +1094,6 @@ body {
 
 .theme-light {
   --code-normal: #4db95a;
-  --link-color-hover: #8177eb;
   --link-external-color: #2f9bb7;
   --link-external-color-hover: rgb(72, 191, 224);
   --tag-color: var(--text-normal);
@@ -1104,8 +1103,7 @@ body {
 }
 
 .theme-dark {
-  --link-color: hsl(248, 75%, 79%);
-  --link-color-hover: #8177eb;
+  --accent-l: 79%;
   --link-external-color: #7fcae6;
   --link-external-color-hover: #89ebe5;
 }
