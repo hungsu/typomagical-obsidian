@@ -568,6 +568,26 @@ a,
   font-family: var(--font-links);
   font-variant-ligatures: none;
 }
+a:hover,
+.cm-url:hover,
+.cm-hmd-internal-link:hover,
+.cm-s-obsidian span.cm-hmd-internal-link:hover,
+.cm-link:hover,
+.markdown-rendered .internal-link:hover,
+.markdown-preview-view .internal-link:hover {
+  filter: brightness(1.15);
+}
+
+.theme-light a:hover,
+.theme-light .cm-url:hover,
+.theme-light .cm-hmd-internal-link:hover,
+.theme-light .cm-s-obsidian span.cm-hmd-internal-link:hover,
+.theme-light .cm-link:hover,
+.theme-light .markdown-rendered .internal-link:hover,
+.theme-light .markdown-preview-view .internal-link:hover {
+  filter: saturate(30%);
+  filter: brightness(0.6);
+}
 
 .markdown-rendered .internal-link:hover {
   text-decoration: underline;

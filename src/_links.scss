@@ -65,6 +65,24 @@ a,
 .markdown-preview-view .internal-link {
 	font-family: var(--font-links);
 	font-variant-ligatures: none;
+	&:hover {
+		filter: brightness(1.15);
+	}
+}
+
+.theme-light {
+	a,
+	.cm-url,
+	.cm-hmd-internal-link,
+	.cm-s-obsidian span.cm-hmd-internal-link,
+	.cm-link,
+	.markdown-rendered .internal-link,
+	.markdown-preview-view .internal-link {
+		&:hover {
+			filter: saturate(30%);
+			filter: brightness(0.6);
+		}
+	}
 }
 
 .markdown-rendered .internal-link:hover {
