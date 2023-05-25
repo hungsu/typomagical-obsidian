@@ -133,6 +133,7 @@ body.ss-links-sans {
 .ss-hide-external-link-icon {
 	.markdown-rendered .external-link,
 	.is-live-preview .external-link {
+		background-image: none;
 		padding-right: 0;
 	}
 }
