@@ -631,6 +631,11 @@ body.ss-links-sans {
   background-position-y: 0;
 }
 
+.ss-hide-external-link-icon .markdown-rendered .external-link,
+.ss-hide-external-link-icon .is-live-preview .external-link {
+  padding-right: 0;
+}
+
 /* Lists START */
 /*
   Concourse Index by Matthew Butterick
@@ -1314,6 +1319,10 @@ settings:
 			-
 				label: Justified
 				value: align-justified
+	-
+		id: ss-hide-external-link-icon
+		title: Hide external link icons
+		type: class-toggle
 	*/
 /* Change inline mhchem equations font to better blend with the text */
 .mathjax-font-typomagical mjx-container mjx-math mjx-texatom {

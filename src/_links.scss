@@ -129,3 +129,10 @@ body.ss-links-sans {
 .is-live-preview .external-link {
     background-position-y: 0;
 }
+
+.ss-hide-external-link-icon {
+	.markdown-rendered .external-link,
+	.is-live-preview .external-link {
+		padding-right: 0;
+	}
+}

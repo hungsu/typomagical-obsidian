@@ -242,6 +242,10 @@ settings:
 			-
 				label: Justified
 				value: align-justified
+	-
+		id: ss-hide-external-link-icon
+		title: Hide external link icons
+		type: class-toggle
 	*/
 
 /* Change inline mhchem equations font to better blend with the text */
