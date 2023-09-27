@@ -683,6 +683,11 @@ body {
   --table-row-last-border-width: 0;
 }
 
+.markdown-rendered thead tr > th {
+  vertical-align: bottom;
+}
+
+.markdown-rendered thead tr > th,
 .markdown-preview-view td,
 .markdown-preview-view th {
   border-right-color: transparent;
