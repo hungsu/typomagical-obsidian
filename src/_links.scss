@@ -137,3 +137,7 @@ body.ss-links-sans {
 		padding-right: 0;
 	}
 }
+
+.metadata-property[data-property-key="tags"] .multi-select-pill {
+	font-family: var(--font-links);
+}
