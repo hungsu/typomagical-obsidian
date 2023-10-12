@@ -1737,7 +1737,7 @@ settings:
 	-
 		id: theme-variant
 		title: Theme variant
-		description: Palette swaps. Don't see one you like? Let me know on forum.obsidian.md/u/hungsu!
+		description: Palette swaps. Don't see one you like? Let me know on https://github.com/hungsu/typomagical-obsidian/issues
 		type: class-select
 		allowEmpty: false
 		default: obsidian
@@ -1745,6 +1745,9 @@ settings:
 			-
 				label: Obsidian
 				value: obsidian
+			-
+				label: Coherence (dark only)
+				value: coherence
 			-
 				label: Ficus Ruby
 				value: ficus-ruby
@@ -1822,6 +1825,17 @@ body.vileplume {
   --vim-cursor: var(--orange);
   --text-selection: var(--red53);
   /* Annoying - affects both Edit and Preview, but Preview has translucency */
+}
+
+body.coherence.theme-dark {
+  --color-base-05: hsl(260, 23%, 5%);
+  --color-base-20: hsl(260, 23%, 20%);
+  --color-base-30: hsl(260, 23%, 30%);
+  --ribbon-background: var(--color-base-05);
+  --titlebar-background: var(--color-base-05);
+  --titlebar-background-focused: var(--color-base-05);
+  --background-primary: var(--color-base-05);
+  --background-secondary: var(--color-base-05);
 }
 
 .vileplume ::-webkit-scrollbar {
