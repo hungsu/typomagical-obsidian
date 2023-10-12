@@ -1,6 +1,6 @@
 @use "./_type-scale.scss";
 @use "./fonts/spectral";
-@use "./_source-sans.scss";
+@use "./fonts/alegreya-sans";
 @use "./_headings.scss";
 @use "./image";
 @use "./links";
@@ -148,8 +148,8 @@ settings:
 				label: Spectral
 				value: Spectral
 			-
-				label: Source Sans Pro
-				value: Source Sans Pro
+				label: Alegreya Sans
+				value: 'Alegreya Sans'
 	-
 		id: body-weight
 		title: Body text weight
@@ -191,7 +191,7 @@ settings:
 				label: Spectral (Serif)
 				value: ss-links-spectral
 			-
-				label: Source Sans Pro
+				label: Alegreya Sans SC
 				value: ss-links-sans
 	-
 		id: blockquote
