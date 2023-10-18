@@ -1019,11 +1019,11 @@ ul {
   padding-inline-start: 36px;
   counter-reset: foobar;
 }
-.circled-ol ol li {
+.circled-ol ol > li {
   list-style: none;
   margin-left: 0;
 }
-.circled-ol ol li::before {
+.circled-ol ol > li::before {
   counter-increment: foobar;
   content: counter(foobar);
   font-size: 1.1rem;

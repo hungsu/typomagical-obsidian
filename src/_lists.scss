@@ -24,12 +24,12 @@ ul {
 		padding-inline-start: 36px;
 		counter-reset: foobar;
 	}
-	ol li {
+	ol > li {
 		// We cannot use ::marker because it does not have margin or width properties
 		list-style: none;
 		margin-left: 0;
 	}
-	ol li::before {
+	ol > li::before {
 		counter-increment: foobar;
 		content: counter(foobar);
 		font-size: 1.10rem;
