@@ -1,0 +1,10 @@
+body.coherence.theme-dark {
+	--color-base-05: hsl(260, 23%, 5%); // From Coherence
+	--color-base-20: hsl(260, 23%, 20%);
+	--color-base-30: hsl(260, 23%, 30%);
+	--ribbon-background: var(--color-base-05); // Was 20
+	--titlebar-background: var(--color-base-05); // Was 20
+	--titlebar-background-focused: var(--color-base-05); // Was 20
+	--background-primary: var(--color-base-05); // From Coherence
+	--background-secondary: var(--color-base-05); // Was 20
+}
