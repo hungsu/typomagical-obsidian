@@ -1,0 +1,20 @@
+/* @settings
+
+name: Announcements
+id: typomagical-title
+settings:
+	-
+		id: no-network-update
+		title: "25 February 2024: Typomagical now works 100% offline"
+		description: "Obsidian has required all theme developers to remove network requests from their themes. This is so Obsidian can be used 100% offline, and also for security reasons. To comply, Typomagical has removed some features. These include:
+
+		- Amiri font for titles
+
+		- Body text weight setting
+
+
+		If you dearly miss these, please contact me by filing a Github issue.
+		"
+		type: info-text
+		markdown: true
+*/

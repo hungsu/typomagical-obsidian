@@ -1,3 +1,9 @@
+> *Attention！*
+> Typomagical has removed the following features:
+> - Amiri font
+> - Body text weight setting slider
+> This is because as of 2024, all Obsidian themes are required to meet local-first and security guidelines as shown [here](https://docs.obsidian.md/Developer+policies).
+> If you strongly desire the return of Amiri, please contact me here on Github.
 
 ![Screenshot](https://raw.githubusercontent.com/hungsu/typomagical-obsidian/main/Typomagical.gif)
 
