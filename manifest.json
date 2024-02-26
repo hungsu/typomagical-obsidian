@@ -1,7 +1,7 @@
 {
    "name": "Typomagical",
    "version": "2.0.0",
-   "minAppVersion": "0.16.0",
+   "minAppVersion": "1.0.0",
    "author": "Hung-Su",
    "authorUrl": "https://github.com/hungsu/"
 }
