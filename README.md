@@ -1,7 +1,8 @@
 > *Attention！*
 > Typomagical has removed the following features:
 > - Amiri font
-> - Body text weight setting slider
+> - All weights of Spectral except 400 and 700
+> - All weights of Alegreya Sans except 400 and 800
 > This is because as of 2024, all Obsidian themes are required to meet local-first and security guidelines as shown [here](https://docs.obsidian.md/Developer+policies).
 > If you strongly desire the return of Amiri, please contact me here on Github.
 
@@ -36,6 +37,15 @@ An Obsidian theme for typographic appreciators, with support for [Style Settings
 3. Use this search box to find “Typo”, then click “Use”
 
 ![Screenshot of Obsidian community themes search interface](https://forum.obsidian.md/uploads/default/original/3X/e/f/ef852693d6fc59d88a9b9edde9077cfbfe306b44.png)
+
+### Installing extra font weights
+
+1. Go to the Google Fonts page of the font you want weights for, [Spectral](https://fonts.google.com/specimen/Spectral) or [Alegreya Sans](https://fonts.google.com/specimen/Alegreya+Sans?query=alegreya+sans)
+2. Click *Get font* then the *Download All* button. A zip file will download.
+3. Extract the zip file. You should see a large number of TrueType Font files, or .TTF files.
+4. This step varies based on the operating system you are on.
+   1. If you're on Windows or Mac, you can double click a file then click Install in the resulting window that opens.
+   2. If you have a Samsung Android phone, you will need to rename the .TTF to .APK, then "install" it like an app.
 
 ## Further reading
 

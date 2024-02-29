@@ -5,6 +5,21 @@ name: Announcements
 id: typomagical-title
 settings:
 	-
+		id: font-weight-return
+		title: "29 February 2024: Font weight slider returned"
+		description: "By request, *body font weight* slider has been returned, with a caveat. You will need to install any desired weights, most likely from Google Fonts. Some links below:
+
+		- [Spectral on Google Fonts](https://fonts.google.com/specimen/Spectral)
+
+		- [Spectral on Github](https://github.com/productiontype/spectral)
+
+		- [Alegreya Sans on Google Fonts](https://fonts.google.com/specimen/Alegreya+Sans?query=alegreya+sans)
+
+		- [Alegreya Sans on Github](https://github.com/huertatipografica/Alegreya-Sans)
+		"
+		type: info-text
+		markdown: true
+	-
 		id: no-network-update
 		title: "25 February 2024: Typomagical now works 100% offline"
 		description: "Obsidian has required all theme developers to remove network requests from their themes. This is so Obsidian can be used 100% offline, and also for security reasons. To comply, Typomagical has removed some features. These include:
@@ -1390,7 +1405,7 @@ body {
   --tag-color-hover: #f7d865;
   --code-normal: #62d770;
   --link-decoration: none;
-  --modal-height: 65vh;
+  --modal-height: 75vh;
   --line-height-body: 1.45;
 }
 
@@ -1507,7 +1522,7 @@ settings:
 	-
 		id: body-weight
 		title: Body text weight
-		description: The boldness of body text. For high resolution displays I recommend 300 or 400.
+		description: "The boldness of body text. For high resolution displays I recommend 300 or 400. As of 2024-February, you will need to install these weights yourself. Please see this theme's Announcements for more info."
 		type: variable-number-slider
 		default: 400
 		min: 200
