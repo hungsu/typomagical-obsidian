@@ -4,28 +4,13 @@ name: Announcements
 id: typomagical-title
 settings:
 	-
-		id: font-weight-return
-		title: "29 February 2024: Font weight slider returned"
-		description: "By request, *body font weight* slider has been returned, with a caveat. You will need to install any desired weights, most likely from Google Fonts. Some links below:
-
-		- [Spectral on Google Fonts](https://fonts.google.com/specimen/Spectral)
-
-		- [Spectral on Github](https://github.com/productiontype/spectral)
-
-		- [Alegreya Sans on Google Fonts](https://fonts.google.com/specimen/Alegreya+Sans?query=alegreya+sans)
-
-		- [Alegreya Sans on Github](https://github.com/huertatipografica/Alegreya-Sans)
-		"
-		type: info-text
-		markdown: true
-	-
 		id: no-network-update
 		title: "25 February 2024: Typomagical now works 100% offline"
 		description: "Obsidian has required all theme developers to remove network requests from their themes. This is so Obsidian can be used 100% offline, and also for security reasons. To comply, Typomagical has removed some features. These include:
 
 		- Amiri font for titles
 
-		- Body text weight setting
+		- Body text weight setting, only 400 and 700 will work
 
 
 		If you dearly miss these, please contact me by filing a Github issue.
