@@ -1,6 +1,8 @@
 @use "./fonts/bitter";
 @use "./fonts/playfair-display";
 
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 :root {
 	/* A good Title font should have a beautiful Ampersand (&) and ligatures */
 	--font-title: "Playfair Display";
@@ -82,6 +84,7 @@ settings:
 		type: variable-select
 		default: Bitter
 		options:
+				- Amiri
 				- Bitter
 				- Playfair Display
 	-

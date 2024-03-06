@@ -1,9 +1,14 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 /* @settings
 
 name: Announcements
 id: typomagical-title
 settings:
+	-
+		id: amiri-returned
+		title: "4 March 2024: Amiri returned"
+		description: "Kepano has clarified that while Obsidian does ban network requests in themes, it makes an exception for requests from fonts.googleapis.com. Thus, Amiri is back in Obsidian, but requires an internet connection to work."
 	-
 		id: no-network-update
 		title: "25 February 2024: Typomagical now works 100% offline"
@@ -524,6 +529,7 @@ settings:
 		type: variable-select
 		default: Bitter
 		options:
+				- Amiri
 				- Bitter
 				- Playfair Display
 	-

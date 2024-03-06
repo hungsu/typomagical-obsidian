@@ -4,6 +4,10 @@ name: Announcements
 id: typomagical-title
 settings:
 	-
+		id: amiri-returned
+		title: "4 March 2024: Amiri returned"
+		description: "Kepano has clarified that while Obsidian does ban network requests in themes, it makes an exception for requests from fonts.googleapis.com. Thus, Amiri is back in Obsidian, but requires an internet connection to work."
+	-
 		id: no-network-update
 		title: "25 February 2024: Typomagical now works 100% offline"
 		description: "Obsidian has required all theme developers to remove network requests from their themes. This is so Obsidian can be used 100% offline, and also for security reasons. To comply, Typomagical has removed some features. These include:
