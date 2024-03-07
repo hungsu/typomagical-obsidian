@@ -158,20 +158,20 @@ settings:
 	-
 		id: body-weight
 		title: Body text weight
-		description: "The boldness of body text. As of 2024-February, only 400, 500, and 700 will work.If you require additional weights, please file a Github issue."
+		description: "The boldness of body text. 900 is only available for Alegreya Sans."
 		type: variable-number-slider
 		default: 400
 		min: 200
-		max: 800
+		max: 900
 		step: 100
 	-
 		id: bold-weight
 		title: Bold text weight
-		description: The boldness of **bold** text. I recommend 600 or 700.
+		description: The boldness of **bold** text. 900 is only available for Alegreya Sans.
 		type: variable-number-slider
 		default: 600
 		min: 200
-		max: 800
+		max: 900
 		step: 100
 	-
 		id: line-height-body

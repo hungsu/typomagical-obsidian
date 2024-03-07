@@ -4,9 +4,17 @@ name: Announcements
 id: typomagical-title
 settings:
 	-
+		id: body-weights
+		title: "6 March 2024: Body weights"
+		description: "Since Obsidian allows Google fonts, I've reintroduced all font weights for Spectral and Alegreya Sans. I've also expanded the weight slider from 200–800 to 200–900, so that Alegreya Sans users can use the **Black** 900 weight available."
+		type: info-text
+		markdown: true
+	-
 		id: amiri-returned
 		title: "4 March 2024: Amiri returned"
 		description: "Kepano has clarified that while Obsidian does ban network requests in themes, it makes an exception for requests from fonts.googleapis.com. Thus, Amiri is back in Obsidian, but requires an internet connection to work."
+		type: info-text
+		markdown: true
 	-
 		id: no-network-update
 		title: "25 February 2024: Typomagical now works 100% offline"
