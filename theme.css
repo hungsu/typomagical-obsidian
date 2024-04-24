@@ -703,6 +703,11 @@ body {
   --font-links: "Alegreya SC", "Spectral", serif;
 }
 
+.cm-s-obsidian span.cm-link a,
+.cm-s-obsidian span.cm-url a {
+  color: var(--link-external-color);
+}
+
 a,
 .cm-url,
 .cm-hmd-internal-link,
