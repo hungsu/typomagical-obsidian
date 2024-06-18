@@ -556,7 +556,7 @@ settings:
 	*/
 .theme-light {
   --title-gradient-top: var(--link-color);
-  --title-gradient-bottom: hsl(249, 34%, 35%);
+  --title-gradient-bottom: color-mix(in lch, var(--link-color), black) ;
 }
 
 .theme-dark {
