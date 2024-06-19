@@ -556,7 +556,7 @@ settings:
 	*/
 .theme-light {
   --title-gradient-top: var(--link-color);
-  --title-gradient-bottom: color-mix(in lch, var(--link-color), black) ;
+  --title-gradient-bottom: color-mix(in hsl, var(--link-color), black) ;
 }
 
 .theme-dark {
@@ -1397,6 +1397,10 @@ ul.dataview-ul {
   content: "·";
   color: var(--text-muted);
   padding: 0 var(--size-4-1);
+}
+
+#time-ruler [aria-describedby=DndDescribedBy-1] svg {
+  color: var(--text-on-accent);
 }
 
 body {

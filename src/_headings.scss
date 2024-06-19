@@ -174,7 +174,7 @@ settings:
 
 .theme-light {
 	--title-gradient-top: var(--link-color);
-	--title-gradient-bottom: color-mix(in lch, var(--link-color), black)
+	--title-gradient-bottom: color-mix(in hsl, var(--link-color), black)
 }
 .theme-dark {
 	--title-gradient-top: var(--text-normal);
