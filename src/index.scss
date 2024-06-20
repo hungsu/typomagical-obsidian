@@ -37,6 +37,7 @@ body {
 
 	// Variables I created
 	--line-height-body: 1.45; // Also modified by style-settings id line-height-body
+	--bold-weight: 600;
 }
 
 .theme-light {
@@ -62,7 +63,6 @@ body {
 b,
 // .cm-s-obsidian .cm-strong is an existing selector
 .cm-s-obsidian .cm-strong {
-	font-weight: 600;
 	font-weight: var(--bold-weight);
 }
 

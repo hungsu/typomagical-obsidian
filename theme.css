@@ -1417,6 +1417,7 @@ body {
   --link-decoration: none;
   --modal-height: 75vh;
   --line-height-body: 1.45;
+  --bold-weight: 600;
 }
 
 .theme-light {
@@ -1441,7 +1442,6 @@ body {
 
 b,
 .cm-s-obsidian .cm-strong {
-  font-weight: 600;
   font-weight: var(--bold-weight);
 }
 
