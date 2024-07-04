@@ -4,6 +4,9 @@
 
 An Obsidian theme for typographic appreciators, with support for [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) by mgmeyers
 
+> Latest update 2.1.0
+> In source mode, set heading size to be the same as other text. Added a Style Setting to turn this off, under Typomagical Headings > Source mode heading size reset
+
 -----
 
 ## Features
@@ -38,6 +41,10 @@ An Obsidian theme for typographic appreciators, with support for [Style Settings
 4. This step varies based on the operating system you are on.
    1. If you're on Windows or Mac, you can double click a file then click Install in the resulting window that opens.
    2. If you have a Samsung Android phone, you will need to rename the .TTF to .APK, then "install" it like an app.
+
+## Recent changes
+
+- 2.1.0: In source mode, set heading size to be the same as other text. Added a Style Setting to turn this off, under Typomagical Headings > Source mode heading size reset
 
 ## Further reading
 
