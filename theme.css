@@ -650,7 +650,7 @@ body:not(.align-title-left) .markdown-preview-section.markdown-preview-section h
   font-size: var(--h2-size);
 }
 
-body:not(.source-mode-headings-regular) .markdown-source-view {
+body:not(.source-mode-headings-regular) .markdown-source-view:not(.is-live-preview) {
   --h1-size: var(--font-text-size);
   --h2-size: var(--font-text-size);
   --h3-size: var(--font-text-size);
@@ -658,7 +658,7 @@ body:not(.source-mode-headings-regular) .markdown-source-view {
   --h5-size: var(--font-text-size);
   --h6-size: var(--font-text-size);
 }
-body:not(.source-mode-headings-regular) .markdown-source-view .HyperMD-header-1.HyperMD-header-1 {
+body:not(.source-mode-headings-regular) .markdown-source-view:not(.is-live-preview) .HyperMD-header-1.HyperMD-header-1 {
   text-align: left;
 }
 

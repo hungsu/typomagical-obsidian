@@ -281,7 +281,7 @@ body:not(.align-title-left) {
 	}
 }
 
-body:not(.source-mode-headings-regular) .markdown-source-view {
+body:not(.source-mode-headings-regular) .markdown-source-view:not(.is-live-preview) {
 	--h1-size: var(--font-text-size);
 	--h2-size: var(--font-text-size);
 	--h3-size: var(--font-text-size);
