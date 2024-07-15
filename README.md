@@ -11,6 +11,15 @@ An Obsidian theme for typographic appreciators, with support for [Style Settings
 
 ## Features
 
+![Callout screenshot](https://raw.githubusercontent.com/hungsu/typomagical-obsidian/main/images/callout-quote.png)
+
+Magazine style [!QUOTE] callouts.
+
+```
+> [!quote] Arthur Schopenhauer
+> A constant flow of thoughts expressed by other people can stop and deaden your own thought and your own initiative. #quote
+```
+
 - No tacky underlines - we achieve everything with  **bold**, *italic*, [small caps](https://practicaltypography.com/small-caps.html) and ***bold italic***
 - Friendly text sizing
 	- Responds correctly to the Text size slider in settings to Pinch-to-zoom, and to the Ctrl+ shortcut!
