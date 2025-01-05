@@ -8,20 +8,26 @@ name: Announcements
 id: typomagical-title
 settings:
 	-
+		id: ann-source-mode-heading-size
+		title: "2024 July 4: Source mode text size"
+		description: "In source mode, set heading size to be the same as other text. Added a Style Setting to turn this off, under Typomagical Headings > Source mode heading size reset"
+		type: info-text
+		markdown: true
+	-
 		id: body-weights
-		title: "6 March 2024: Body weights"
+		title: "2024 March 6: Body weights"
 		description: "Since Obsidian allows Google fonts, I've reintroduced all font weights for Spectral and Alegreya Sans. I've also expanded the weight slider from 200–800 to 200–900, so that Alegreya Sans users can use the **Black** 900 weight available."
 		type: info-text
 		markdown: true
 	-
 		id: amiri-returned
-		title: "4 March 2024: Amiri returned"
+		title: "2024 March 4: Amiri returned"
 		description: "Kepano has clarified that while Obsidian does ban network requests in themes, it makes an exception for requests from fonts.googleapis.com. Thus, Amiri is back in Obsidian, but requires an internet connection to work."
 		type: info-text
 		markdown: true
 	-
 		id: no-network-update
-		title: "25 February 2024: Typomagical now works 100% offline"
+		title: "2024 February 25 : Typomagical now works 100% offline"
 		description: "Obsidian has required all theme developers to remove network requests from their themes. This is so Obsidian can be used 100% offline, and also for security reasons. To comply, Typomagical has removed some features. These include:
 
 		- Amiri font for titles
@@ -1256,8 +1262,7 @@ body.vileplume {
   --vim-cursor: var(--orange);
   --text-selection: var(
   	--red53
-  );
-  /* Annoying - affects both Edit and Preview, but Preview has translucency */
+  ); /* Annoying - affects both Edit and Preview, but Preview has translucency */
 }
 
 .vileplume ::-webkit-scrollbar {
@@ -1335,15 +1340,15 @@ body.vileplume.theme-light {
 }
 
 .vileplume.theme-light .graph-view.color-line {
-  color: #d9e1cc;
+  color: hsl(83, 26%, 84%);
 }
 
 .vileplume.theme-light .graph-view.color-fill {
-  color: #62a368;
+  color: hsl(126, 26%, 51%);
 }
 
 .vileplume.theme-light .graph-view.graph-view.color-fill-attachment {
-  color: #f19f65;
+  color: hsl(25, 83%, 67%);
 }
 
 body.coherence.theme-dark {
@@ -1469,11 +1474,11 @@ b,
 
 /* GRAPH */
 .theme-light .graph-view.color-fill-tag {
-  color: #e07d1a;
+  color: hsl(30, 79%, 49%);
 }
 
 .theme-dark .graph-view.color-fill-tag {
-  color: #df964e;
+  color: hsl(30, 69%, 59%);
 }
 
 .theme-light .graph-view.color-fill-attachment {
@@ -1507,6 +1512,16 @@ settings:
 		title: Text Ligatures
 		description: Decorative conjoined characters, such as the "ffi" in "office" and "ft" in "often".
 		type: class-toggle
+	-
+		id: paragraph-indent
+		title: Indent Paragraph First Lines
+		description: Indent the first line of all paragraphs. Default 0 = no indenting
+		type: variable-number-slider
+		default: 0
+		min: 0
+		max: 4
+		step: 1
+		format: rem
 	-
 		id: mjx-font
 		title: MathJax font
@@ -1646,6 +1661,11 @@ settings:
 /* Change inline mhchem equations font to better blend with the text */
 .mathjax-font-typomagical mjx-container mjx-math mjx-texatom {
   font-family: var(--default-font);
+}
+
+/* Change the indentation of the first line of paragraphs. Default = 0 for no indentation */
+.cm-line {
+  text-indent: var(--paragraph-indent);
 }
 
 /*
@@ -1824,3 +1844,5 @@ body.obsidian-high-contrast.theme-light .suggestion-hotkey {
 .math-inline mjx-math {
   padding: 0;
 }
+
+/*# sourceMappingURL=theme.css.map */

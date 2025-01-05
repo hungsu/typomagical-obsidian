@@ -118,6 +118,16 @@ settings:
 		description: Decorative conjoined characters, such as the "ffi" in "office" and "ft" in "often".
 		type: class-toggle
 	-
+		id: paragraph-indent
+		title: Indent Paragraph First Lines
+		description: Indent the first line of all paragraphs. Default 0 = no indenting
+		type: variable-number-slider
+		default: 0
+		min: 0
+		max: 4
+		step: 1
+		format: rem
+	-
 		id: mjx-font
 		title: MathJax font
 		description: Font for MathJax e.g. $inline equation$ and $$centered equation$$
@@ -257,6 +267,11 @@ settings:
 /* Change inline mhchem equations font to better blend with the text */
 .mathjax-font-typomagical mjx-container mjx-math mjx-texatom {
 	font-family: var(--default-font);
+}
+
+/* Change the indentation of the first line of paragraphs. Default = 0 for no indentation */
+.cm-line {
+	text-indent: var(--paragraph-indent);
 }
 
 /*
