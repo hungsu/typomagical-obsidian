@@ -233,8 +233,9 @@ settings:
 	-
 		id: callout-quote-style
 		title: Quote Callout style
-		description: Change [!quote] callouts to magazine style
+		description: "Change [!quote] callouts to magazine style. To use, place the name after: `> [!quote] Arnold Schwarzenegger`. Does not work well with collapsible quote callouts."
 		type: class-toggle
+        markdown: true
 	-
 		id: alignment
 		title: Alignment
