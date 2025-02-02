@@ -8,6 +8,12 @@ name: Announcements
 id: typomagical-title
 settings:
 	-
+		id: ann-blockquotes-live-preview
+		title: "2025 February 2: Blockquotes now work in Live Preview"
+		description: "The 'big with top border' and 'neuomorphic soft shadows' options now work in Live Preview"
+		type: info-text
+		markdown: true
+	-
 		id: ann-source-mode-heading-size
 		title: "2024 July 4: Source mode text size"
 		description: "In source mode, set heading size to be the same as other text. Added a Style Setting to turn this off, under Typomagical Headings > Source mode heading size reset"
@@ -884,8 +890,15 @@ body {
   --blockquote-border-color: var(--text-normal) ;
 }
 
+.blockquote-bustle .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:before,
+.blockquote-bustle .markdown-source-view.mod-cm6 .cm-blockquote-border:before {
+  content: initial;
+  width: 0;
+}
+.blockquote-bustle .is-live-preview .HyperMD-quote,
 .blockquote-bustle blockquote {
   padding: var(--size-4-4) 0 0 0;
+  padding-inline-start: 0px !important;
   margin-inline-start: 0;
   margin-inline-end: 0;
   font-size: 1.25em;
@@ -893,12 +906,18 @@ body {
   letter-spacing: -0.05em;
   border-top: 1px solid var(--blockquote-border-color);
   border-left: none;
-  margin-left: var(--size-4-12);
+  margin-left: var(--size-4-12) !important;
 }
 .blockquote-bustle .mod-left-split blockquote {
   margin-left: var(--size-4-4);
 }
 
+.blockquote-neuomorphic .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:before,
+.blockquote-neuomorphic .markdown-source-view.mod-cm6 .cm-blockquote-border:before {
+  content: initial;
+  width: 0;
+}
+.blockquote-neuomorphic .is-live-preview .HyperMD-quote,
 .blockquote-neuomorphic .markdown-preview-view blockquote {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.03);
@@ -1597,12 +1616,12 @@ settings:
 	-
 		id: blockquote
 		title: Blockquotes
-		description: How all blockquotes should look
+		description: How blockquotes (not callouts) should look
 		type: class-select
 		default: blockquote-plain
 		options:
 			-
-				label: Plain box
+				label: Obsidian default
 				value: blockquote-plain
 			-
 				label: Big with top border

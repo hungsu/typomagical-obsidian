@@ -13,8 +13,16 @@ body {
 }
 
 .blockquote-bustle {
+	.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:before,
+	.markdown-source-view.mod-cm6 .cm-blockquote-border:before {
+		content: initial;
+		width: 0;
+	}
+
+	.is-live-preview .HyperMD-quote,
 	blockquote {
 		padding: var(--size-4-4) 0 0 0;
+		padding-inline-start: 0px !important; // to override 10px from 
 		margin-inline-start: 0;
 		margin-inline-end: 0;
 		font-size: 1.25em;
@@ -22,7 +30,7 @@ body {
 		letter-spacing: -0.05em;
 		border-top: 1px solid var(--blockquote-border-color);
 		border-left: none;
-		margin-left: var(--size-4-12);
+		margin-left: var(--size-4-12) !important; // Obsidian devs in their wisdom used !important in `.markdown-source-view.mod-cm6 .cm-content > *`
 	}
 	// Decrease the left margin if in sidebar, since there's much less space
 	// Cannot use a media query here
@@ -32,13 +40,22 @@ body {
 }
 
 // Vileplume style blockquote
-.blockquote-neuomorphic .markdown-preview-view blockquote {
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.03);
-  padding: 10px 20px;
-  position: relative;
-  box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.05), 10px 10px 30px rgba(0, 0, 0, 0.2);
-  background-color: rgba(255, 255, 255, 0.01);
+.blockquote-neuomorphic {
+	.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:before,
+	.markdown-source-view.mod-cm6 .cm-blockquote-border:before {
+		content: initial;
+		width: 0;
+	}
+
+	.is-live-preview .HyperMD-quote, 
+	.markdown-preview-view blockquote {
+		border-radius: 10px;
+		border: 1px solid rgba(255, 255, 255, 0.03);
+		padding: 10px 20px;
+		position: relative;
+		box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.05), 10px 10px 30px rgba(0, 0, 0, 0.2);
+		background-color: rgba(255, 255, 255, 0.01);
+	}
 }
 
 .callout-icon-only {

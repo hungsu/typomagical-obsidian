@@ -4,6 +4,12 @@ name: Announcements
 id: typomagical-title
 settings:
 	-
+		id: ann-blockquotes-live-preview
+		title: "2025 February 2: Blockquotes now work in Live Preview"
+		description: "The 'big with top border' and 'neuomorphic soft shadows' options now work in Live Preview"
+		type: info-text
+		markdown: true
+	-
 		id: ann-source-mode-heading-size
 		title: "2024 July 4: Source mode text size"
 		description: "In source mode, set heading size to be the same as other text. Added a Style Setting to turn this off, under Typomagical Headings > Source mode heading size reset"

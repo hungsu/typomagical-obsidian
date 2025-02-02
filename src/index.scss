@@ -202,12 +202,12 @@ settings:
 	-
 		id: blockquote
 		title: Blockquotes
-		description: How all blockquotes should look
+		description: How blockquotes (not callouts) should look
 		type: class-select
 		default: blockquote-plain
 		options:
 			-
-				label: Plain box
+				label: Obsidian default
 				value: blockquote-plain
 			-
 				label: Big with top border
