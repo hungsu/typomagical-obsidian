@@ -785,12 +785,6 @@ body.ss-links-sans {
   --font-links: "Alegreya Sans SC", sans-serif;
 }
 
-.markdown-source-view.mod-cm6 .cm-url {
-  font-family: var(--font-monospace);
-  font-size: 0.8em;
-  color: var(--link-external-color);
-}
-
 .cm-s-obsidian .cm-formatting-hashtag {
   font-family: var(--font-normal);
 }
