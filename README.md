@@ -4,8 +4,8 @@
 
 An Obsidian theme for typographic appreciators, with support for [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) by mgmeyers
 
-> Latest update 2.1.0
-> In source mode, set heading size to be the same as other text. Added a Style Setting to turn this off, under Typomagical Headings > Source mode heading size reset
+> Latest update 3.0.0
+> Breaking change - Most font weights removed to comply with developer guidelines to be fully local.
 
 -----
 

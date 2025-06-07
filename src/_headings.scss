@@ -1,13 +1,13 @@
 @use "./fonts/bitter";
 @use "./fonts/playfair-display";
-
-@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@use "./fonts/amiri";
 
 :root {
 	/* A good Title font should have a beautiful Ampersand (&) and ligatures */
 	--font-title: "Playfair Display";
 	--line-height-headings: 1.2; // Also controlled by style settings id line-height-headings in index.scss
 	--heading-weight: 600;
+	--h1-font: var(--font-title);
 }
 
 h1,
@@ -82,7 +82,7 @@ settings:
 		title: Title font
 		description: Titles, or H1s, are special. Thus, they should look special. Choose a Title font that suits you!
 		type: variable-select
-		default: Bitter
+		default: Playfair Display
 		options:
 				- Amiri
 				- Bitter
@@ -90,7 +90,7 @@ settings:
 	-
 		id: title-weight
 		title: Title weight
-		description: The boldness of H1 text
+		description: The boldness of H1 text. Amiri only has 400 and 700 available as I don't personally use it. Please file a Github issue if you require more weights.
 		type: variable-number-slider
 		default: 650
 		min: 100

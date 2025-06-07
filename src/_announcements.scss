@@ -4,6 +4,12 @@ name: Announcements
 id: typomagical-title
 settings:
 	-
+		id: ann-font-weight-removal
+		title: "2025 June 6: Font weights removed"
+		description: "Most extra weights for Spectral and Alegreya Sans have been removed, leaving 400 and 700 for Spectral, 400 and 800 for Alegreya Sans. The slider setting remains for advanced users who are able to install the fonts manually."
+		type: info-text
+		markdown: true
+	-
 		id: ann-blockquotes-live-preview
 		title: "2025 February 2: Blockquotes now work in Live Preview"
 		description: "The 'big with top border' and 'neuomorphic soft shadows' options now work in Live Preview"
