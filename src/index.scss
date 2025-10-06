@@ -16,6 +16,7 @@
 @use "./themes/ficus-ruby.scss";
 @use "./themes/vileplume.scss";
 @use "./themes/coherence.scss";
+@use "./themes/pentiment.scss";
 
 @use "./plugins/calendar";
 @use "./plugins/dataview";
@@ -311,6 +312,9 @@ settings:
 			-
 				label: Obsidian
 				value: obsidian
+			-
+				label: Pentiment
+				value: pentiment
 			-
 				label: Coherence (dark only)
 				value: coherence

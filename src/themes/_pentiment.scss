@@ -1,0 +1,11 @@
+body.pentiment {
+	--background-primary: rgb(250,245,234); // 254,234,184   232,229,214 might be a bit green
+    --interactive-normal: rgb(254,234,184);
+    --text-normal: rgb(51,33,19);  // 106,86,49
+    --code-normal: rgb(254,234,184);
+    --text-accent: rgb(196,63,46); // 152,2,11 is dark, 196,63,46
+    --text-accent-hover: rgb(196,63,46); // mostly the same, let underline show
+    --text-faint: rgb(184,174,162);
+    --link-weight: 500;
+    --code-background: rgb(84,76,74);
+}
