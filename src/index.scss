@@ -452,6 +452,7 @@ body.obsidian-high-contrast.theme-light .suggestion-hotkey {
 }
 
 body:not(.ss-revert-highlight) {
+	.cm-s-obsidian span.cm-highlight,
 	.markdown-rendered mark,
 	.search-result-file-matched-text {
 		background: linear-gradient(

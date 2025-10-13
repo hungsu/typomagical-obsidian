@@ -1959,6 +1959,7 @@ body.obsidian-high-contrast.theme-light .suggestion-hotkey {
   padding: 0;
 }
 
+body:not(.ss-revert-highlight) .cm-s-obsidian span.cm-highlight,
 body:not(.ss-revert-highlight) .markdown-rendered mark,
 body:not(.ss-revert-highlight) .search-result-file-matched-text {
   background: linear-gradient(to bottom, var(--text-highlight-bg), rgba(var(--text-highlight-bg-rgb), 0.15));
