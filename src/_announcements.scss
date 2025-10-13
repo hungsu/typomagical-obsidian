@@ -4,6 +4,12 @@ name: Announcements
 id: typomagical-title
 settings:
 	-
+		id: ann-gradient-highlights
+		title: "2025 October 13: Highlights use gradient by default"
+		description: "Highlights now use a gradient background by default. You can revert to solid background using the Style Setting 'Solid background for highlights'."
+		type: info-text
+		markdown: true
+	-
 		id: ann-font-weight-removal
 		title: "2025 June 6: Font weights removed"
 		description: "Most extra weights for Spectral and Alegreya Sans have been removed, leaving 400 and 700 for Spectral, 400 and 800 for Alegreya Sans. The slider setting remains for advanced users who are able to install the fonts manually."

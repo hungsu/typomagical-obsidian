@@ -254,6 +254,11 @@ settings:
 		id: ss-hide-external-link-icon
 		title: Hide external link icons
 		type: class-toggle
+	-
+		id: ss-revert-highlight
+		title: Solid background for highlights
+		description: Revert to Obsidian's solid background for highlights, instead of the gradient
+		type: class-toggle
 	*/
 
 /* Change inline mhchem equations font to better blend with the text */
@@ -446,3 +451,13 @@ body.obsidian-high-contrast.theme-light .suggestion-hotkey {
 	padding: 0;
 }
 
+body:not(.ss-revert-highlight) {
+	.markdown-rendered mark,
+	.search-result-file-matched-text {
+		background: linear-gradient(
+			to bottom,
+			var(--text-highlight-bg),
+			rgba(var(--text-highlight-bg-rgb), 0.15)
+		);
+	}
+}
