@@ -465,10 +465,13 @@ body:not(.ss-revert-highlight) {
 	.cm-s-obsidian span.cm-highlight,
 	.markdown-rendered mark,
 	.search-result-file-matched-text {
+		// Gradient from a highlight colour to the background color, assuming that highlights can only appear on background-primary.
+		// If highlights exist on other backgrounds, this should be changed to use alpha transparency instead.
+		// We are not using transparency now because it doesn't blend well.
 		background: linear-gradient(
 			to bottom,
 			var(--text-highlight-bg),
-			rgba(var(--text-highlight-bg-rgb), 0.15)
+			var(--background-primary) 
 		);
 	}
 }
