@@ -4,6 +4,12 @@ name: Announcements
 id: typomagical-title
 settings:
 	-
+		id: ann-catppuccin
+		title: "2025 October 13: Catppuccin theme added"
+		description: "A new theme, Catppuccin, has been added. It has three variants: Frappe, Macchiato, and Mocha. You can select it in Typomagical Colour > Theme variant. Setting Obsidian to Light Mode will use the Latte variant."
+		type: info-text
+		markdown: true
+	-
 		id: ann-gradient-highlights
 		title: "2025 October 13: Highlights use gradient by default"
 		description: "Highlights now use a gradient background by default. You can revert to solid background using the Style Setting 'Solid background for highlights'."

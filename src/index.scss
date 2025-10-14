@@ -17,6 +17,7 @@
 @use "./themes/vileplume.scss";
 @use "./themes/coherence.scss";
 @use "./themes/pentiment.scss";
+@use "./themes/catppuccin.scss";
 
 @use "./plugins/calendar";
 @use "./plugins/dataview";
@@ -317,6 +318,15 @@ settings:
 			-
 				label: Obsidian
 				value: obsidian
+			-
+				label: Catppuccin Frappe
+				value: catppuccin-frappe
+			-
+				label: Catppuccin Macchiato
+				value: catppuccin-macchiato
+			-
+				label: Catppuccin Mocha
+				value: catppuccin-mocha
 			-
 				label: Pentiment
 				value: pentiment
