@@ -1604,6 +1604,8 @@ body.catppuccin-frappe.theme-dark {
   --background-primary-alt: var(--cp-base);
   --background-secondary: var(--cp-surface0);
   --background-secondary-alt: var(--cp-surface1);
+  --background-modifier-border: var(--cp-surface0);
+  --table-border-color: var(--cp-surface1);
   --text-normal: var(--cp-text);
   --text-faint: var(--cp-subtext0);
   --text-muted: var(--cp-subtext1);
