@@ -259,6 +259,12 @@ body.catppuccin-macchiato.theme-dark,
 body.catppuccin-mocha.theme-dark {
   --code-normal: var(--cp-green);
   --code-background: var(--cp-mantle);
+
+  --interactive-normal: var(--cp-mantle);
+  --background-modifier-form-field: var(--cp-mantle);
+  --background-modifier-border: var(--cp-surface0);
+  --background-modifier-border-hover: var(--cp-surface0);
+  --background-modifier-border-focus: var(--cp-surface1);
 }
 
 /* Scrollbar tweaks scoped to the theme */
