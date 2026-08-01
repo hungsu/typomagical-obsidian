@@ -92,7 +92,7 @@ body {
 		border-image: linear-gradient(
 				90deg,
 				transparent,
-				rgba(var(--callout-color), 0.25)
+				color-mix(in srgb, var(--callout-color) 25%, transparent)
 			)
 			1;
 		.callout-icon {
